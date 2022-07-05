@@ -4,6 +4,7 @@ const Footer = () => {
     return (
         <div>
             footer
+            day la test
         </div>
     );
 };
