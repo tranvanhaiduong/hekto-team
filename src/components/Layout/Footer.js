@@ -3,7 +3,10 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            footerádasdfasf
+
+            footer
+            day la test
+
         </div>
     );
 };
