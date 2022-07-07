@@ -1,6 +1,8 @@
 import "./App.scss";
 import Home from "./page/Home";
 import GridDefault from "./page/GridDefault";
+import Error from "./page/Error";
+import About from "./page/About";
 import ShopList from "./page/ShopList";
 import ShopLeft from "./page/ShopLeft";
 import { Routes, Route } from "react-router-dom";
@@ -25,6 +27,15 @@ import "./scss/Footer.scss";
 import "./scss/Navigation.scss";
 import "./scss/ContentShop.scss";
 import "./scss/Search.scss";
+import "./scss/Error.scss"
+import "./scss/About.scss"
+import "./scss/FAQ.scss"
+import "./scss/Contact.scss"
+import "./scss/SingleBlog.scss"
+import FAQ from "./page/FAQ";
+import Contact from "./page/Contact";
+import SingleBlock from "./page/SingleBlog";
+
 import "./scss/PlayWood.scss";
 import "./scss/Description.scss";
 import "./scss/Related.scss";
@@ -33,6 +44,11 @@ function App() {
     <Routes>
       <Route path="/" element={<Home></Home>} />
       <Route path="/shop" element={<GridDefault />} />
+      <Route path="/error" element={<Error/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/faq" element={<FAQ/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/singleblock" element={<SingleBlock/>}/>
       <Route path="/shoplist" element={<ShopList />} />
       <Route path="/shopleft" element={<ShopLeft />} />
       <Route path="/products" element={<ProductDetails />} />
