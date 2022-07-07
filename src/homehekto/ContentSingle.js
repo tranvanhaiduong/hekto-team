@@ -163,7 +163,7 @@ function ContentSingle() {
           <div className="contentsingle__right__recentpost__content">
             <div className="contentsingle__right__recentpost__content__post">
               <div className="contentsingle__right__recentpost__content__post__image">
-                <img src="./images/Rectangle 128.png" alt=""></img>
+                <img src="./images/Rectangle 126 (2).png" alt=""></img>
               </div>
               <div className="contentsingle__right__recentpost__content__post__text">
                 <p>It is a long established fact</p>
