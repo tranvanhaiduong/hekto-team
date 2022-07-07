@@ -1,7 +1,10 @@
 import "./App.scss";
 import Home from "./page/Home";
 import GridDefault from "./page/GridDefault";
+import ShopList from "./page/ShopList";
+import ShopLeft from "./page/ShopLeft";
 import { Routes, Route } from "react-router-dom";
+import ProductDetails from "./page/ProductDetails";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./scss/Featured.scss";
@@ -22,11 +25,17 @@ import "./scss/Footer.scss";
 import "./scss/Navigation.scss";
 import "./scss/ContentShop.scss";
 import "./scss/Search.scss";
+import "./scss/PlayWood.scss";
+import "./scss/Description.scss";
+import "./scss/Related.scss";
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home></Home>} />
       <Route path="/shop" element={<GridDefault />} />
+      <Route path="/shoplist" element={<ShopList />} />
+      <Route path="/shopleft" element={<ShopLeft />} />
+      <Route path="/products" element={<ProductDetails />} />
     </Routes>
   );
 }
