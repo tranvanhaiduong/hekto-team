@@ -1,20 +1,19 @@
+import Footer from "../homehekto/Footer";
 import Header from "../homehekto/Header";
+import Logo from "../homehekto/Logo";
 import Navbar from "../homehekto/Navbar";
 import Navigation from "../homehekto/Navigation";
-import Logo from "../homehekto/Logo";
-import Footer from "../homehekto/Footer";
 import Search from "../homehekto/Search";
-function GridDefault() {
+function ShopList() {
   return (
-    <div className="Shop_Grid">
+    <div className="Shop_List">
       <Header />
       <Navbar />
-      <Navigation title="Shop Grid Default" name="Shop Grid Default" />
+      <Navigation title="Shop List" name="Shop List" />
       <Search />
       <Logo />
       <Footer />
     </div>
   );
 }
-
-export default GridDefault;
+export default ShopList;
