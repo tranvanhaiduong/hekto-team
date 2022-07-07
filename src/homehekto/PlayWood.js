@@ -38,13 +38,13 @@ function PlayWood() {
           <div className="contentShop__playwood__chair__right__share">
             <p>Share</p>
             <div className="contentShop__playwood__chair__right__share__fb">
-              <img alt="" src="./images/Vector (9).png"></img>
+              <img alt="" src="./images/Group 202.png"></img>
             </div>
             <div className="contentShop__playwood__chair__right__share__instagram">
-              <img alt="" src="./images/Vector (12).png"></img>
+              <img alt="" src="./images/inta.png"></img>
             </div>
             <div className="contentShop__playwood__chair__right__share__fb">
-              <img alt="" src="./images/Vector (11).png"></img>
+              <img alt="" src="./images/Group 204.png"></img>
             </div>
           </div>
         </div>

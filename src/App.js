@@ -28,6 +28,8 @@ import "./scss/Search.scss";
 import "./scss/PlayWood.scss";
 import "./scss/Description.scss";
 import "./scss/Related.scss";
+import "./scss/ShopGridProduct.scss";
+import "./scss/ShopList.scss";
 function App() {
   return (
     <Routes>
