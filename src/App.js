@@ -32,6 +32,8 @@ import "./scss/About.scss"
 import "./scss/FAQ.scss"
 import "./scss/Contact.scss"
 import "./scss/SingleBlog.scss"
+import "./scss/ContentSingleLeft.scss"
+import "./scss/ContentSingleRight.scss"
 import FAQ from "./page/FAQ";
 import Contact from "./page/Contact";
 import SingleBlock from "./page/SingleBlog";
