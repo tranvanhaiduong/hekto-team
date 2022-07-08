@@ -12,7 +12,7 @@ function Navbar() {
         <a href="/">Products</a>
         <a href="/">Blog</a>
         <a href="/shop">Shop</a>
-        <a href="/">Contact</a>
+        <a href="/contact">Contact</a>
       </div>
       <div className="navbar__search">
         <div className="navbar__search__input">
