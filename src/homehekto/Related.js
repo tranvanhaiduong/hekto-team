@@ -52,19 +52,21 @@ function Related() {
     },
   ];
   return (
-    <div className="contentShop__related">
-      <div className="contentShop__related__products">
-        <h1>Related Products</h1>
-      </div>
-      <div className="contentShop__related__slide">
-        {fakedata.map((fake) => (
-          <RelatedProduct
-            image={fake.image}
-            title={fake.title}
-            rating={fake.rating}
-            price={fake.price}
-          />
-        ))}
+    <div id="related">
+      <div className="contentShop__related">
+        <div className="contentShop__related__products">
+          <h1>Related Products</h1>
+        </div>
+        <div className="contentShop__related__slide">
+          {fakedata.map((fake) => (
+            <RelatedProduct
+              image={fake.image}
+              title={fake.title}
+              rating={fake.rating}
+              price={fake.price}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
