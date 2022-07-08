@@ -1,4 +1,13 @@
+#related {
+  display: flex;
+  justify-content: center;
+}
 .contentShop__related {
+  margin-bottom: 128px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+
   margin-bottom: 128px;
   &__products {
     margin-top: 125px;
@@ -21,12 +30,12 @@
         font-family: "Josefin Sans";
         font-size: 13px;
         font-weight: 500;
-        &__img {
-          height: 340px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+      }
+      &__img {
+        height: 340px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       &__men {
         &__fashion {
@@ -38,6 +47,7 @@
             font-family: "Josefin Sans";
             font-size: 16px;
             font-weight: 600;
+            margin-bottom: 15px;
           }
         }
       }

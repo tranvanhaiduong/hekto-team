@@ -30,6 +30,7 @@ import "./scss/Description.scss";
 import "./scss/Related.scss";
 import "./scss/ShopGridProduct.scss";
 import "./scss/ShopList.scss";
+import "./scss/ShopLeft.scss";
 function App() {
   return (
     <Routes>
