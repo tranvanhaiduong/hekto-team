@@ -49,6 +49,7 @@ import "./scss/ShopGridProduct.scss";
 import "./scss/ShopList.scss";
 import MyAccount from "./page/MyAccount";
 import BlogPage from "./page/BlogPage";
+import "./scss/ShopLeft.scss";
 function App() {
   return (
     <Routes>
