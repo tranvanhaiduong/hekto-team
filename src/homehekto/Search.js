@@ -8,13 +8,17 @@ function Search() {
       <div className="contentShop__search__right">
         <div className="contentShop__search__right__page">
           <p>Per Page:</p>
-          <input></input>
+          <div className="contentShop__search__right__page__input">
+            <input></input>
+          </div>
         </div>
         <div className="contentShop__search__right__sort">
           <p>Sort By:</p>
-          <div className="contentShop__search__right__sort__img">
+          <div className="contentShop__search__right__sort__input">
             <input placeholder="Best Match"></input>
-            <img alt="" src="./images/Vector (2).png"></img>
+            <div className="contentShop__search__right__sort__input__icon">
+              <img alt="" src="./images/Vector (2).png"></img>
+            </div>
           </div>
         </div>
         <div className="contentShop__search__right__view">
@@ -23,7 +27,9 @@ function Search() {
             <img alt="" src="./images/clarity.png"></img>
             <img alt="" src="./images/Vector (7).png"></img>
           </div>
-          <input></input>
+          <div className="contentShop__search__right__view__input">
+            <input></input>
+          </div>
         </div>
       </div>
     </div>

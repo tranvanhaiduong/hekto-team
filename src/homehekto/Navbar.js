@@ -9,7 +9,7 @@ function Navbar() {
           Home<i class="fal fa-chevron-down"></i>
         </a>
         <a href="/">Pages</a>
-        <a href="/">Products</a>
+        <a href="/products">Products</a>
         <a href="/">Blog</a>
         <a href="/shop">Shop</a>
         <a href="/contact">Contact</a>
