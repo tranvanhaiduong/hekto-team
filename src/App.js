@@ -47,14 +47,16 @@ import "./scss/Description.scss";
 import "./scss/Related.scss";
 import "./scss/ShopGridProduct.scss";
 import "./scss/ShopList.scss";
+import MyAccount from "./page/MyAccount";
+import BlogPage from "./page/BlogPage";
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home></Home>} />
       <Route path="/" element={<GridDefault />} />
-      <Route path="/shop" element={<ShoppingCurt/>}/>
-      <Route path="/" element={<OrderCompleted/>}/>
-      <Route path="/contact" element={<RegisterAccount/>}/>
+      <Route path="/ShoppingCurt" element={<ShoppingCurt/>}/>
+      <Route path="/ordercompleted" element={<OrderCompleted/>}/>
+      <Route path="/registeraccount" element={<RegisterAccount/>}/>
       <Route path="/shop" element={<GridDefault />} />
       <Route path="/error" element={<Error/>}/>
       <Route path="/about" element={<About/>}/>
@@ -64,6 +66,8 @@ function App() {
       <Route path="/shoplist" element={<ShopList />} />
       <Route path="/shopleft" element={<ShopLeft />} />
       <Route path="/products" element={<ProductDetails />} />
+      <Route path="/myaccount" element={<MyAccount/>}/>
+      <Route path="/blogpage" element={<BlogPage/>}/>
     </Routes>
   );
 }
