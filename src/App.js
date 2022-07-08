@@ -1,6 +1,10 @@
 import "./App.scss";
 import Home from "./page/Home";
 import GridDefault from "./page/GridDefault";
+import ShoppingCurt from "./page/ShoppingCurt"; 
+import OrderCompleted from "./page/OrderCompleted";
+import RegisterAccount from "./page/RegisterAccount";
+
 import Error from "./page/Error";
 import About from "./page/About";
 import ShopList from "./page/ShopList";
@@ -47,6 +51,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home></Home>} />
+      <Route path="/" element={<GridDefault />} />
+      <Route path="/shop" element={<ShoppingCurt/>}/>
+      <Route path="/" element={<OrderCompleted/>}/>
+      <Route path="/contact" element={<RegisterAccount/>}/>
       <Route path="/shop" element={<GridDefault />} />
       <Route path="/error" element={<Error/>}/>
       <Route path="/about" element={<About/>}/>
