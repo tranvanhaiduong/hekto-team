@@ -1,4 +1,4 @@
-import shopgrid_product from "../fake -data/fakedata-shopgrid";
+import {shopgrid_product} from "../fake -data/fakedata-shopgrid";
 import GridProduct from "./GridProduct";
 function ShopGridProduct() {
   return (

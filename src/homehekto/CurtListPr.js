@@ -1,31 +1,29 @@
 import CurtProduct from "../homehekto/CurtProduct";
 import Label from "../homehekto/label";
+import React , { useState, useEffect } from "react";
+import {  useSelector,useDispatch } from "react-redux";
+import productData from "../fake -data/fakedata-shopgrid";
+import { clearCart } from "../redux/CartItemsSlice";
+import { useNavigate } from "react-router-dom";
+ function CurtListPr() {
+  const cartItems = useSelector((state) => state.cartItems.value);
+  console.log(cartItems);
+  const dispatch = useDispatch();
+  const [cartProducts, setCartProducts] = useState([]);
+  
+  useEffect(() => {
+    setCartProducts(productData.getCartDetail(cartItems));
+  }, [cartItems]);
 
-export default function CurtListPr() {
-
-     const listCurt = [
-      {
-        image : "../images/productCurt1.png",
-        Name : "Ut diam consequat"
-      },
-      {
-        image : "../images/productCurt2.png",
-        Name : "Vel faucibus posuere"
-      },
-      {
-        image : "../images/productCurt3.png",
-        Name : "Ac vitae vestibulum"
-      },
-      {
-        image : "../images/productCurt4.png",
-        Name : "Elit massa diam"
-      },
-      {
-        image : "../images/productCurt5.png",
-        Name : "Proin pharetra elementum"
-      }
-    ];
-
+  const clearCarts = () => {
+    dispatch(clearCart());
+  };
+  const navigate=useNavigate();
+  const handleCheckOut=()=>(
+    navigate("/ordercompleted"),
+    dispatch(clearCart())
+  )
+  
     return (
       <div className="ProductCurt">
         <div className="ProductCurt__left">
@@ -33,17 +31,18 @@ export default function CurtListPr() {
             <h className="ProductCurt__left__up__prd">Product</h>
             <h className="ProductCurt__left__up__pri">price</h>
             <h className="ProductCurt__left__up__qtt">Quantity</h>
-            <h className="ProductCurt__left__up__tol">Total</h>{" "}
+            <h className="ProductCurt__left__up__tol">Total</h>
           </div>
           <div className="ProductCurt__left__bwn">
-              {listCurt.map((curt) => (
-                <CurtProduct image={curt.image} Name={curt.Name}/>
-              ))}
+              {cartProducts.length > 0 &&
+                  cartProducts.map((item, index) => (
+                    <CurtProduct item={item} key={index} />
+                  ))}
           </div>
           <div className="ProductCurt__left__down">
             <button className="ProductCurt__left__down__upd">
               Update Curt</button>
-            <button className="ProductCurt__left__down__cle">
+            <button className="ProductCurt__left__down__cle" onClick={clearCarts}>
               Clear Curt</button>
           </div>
         </div>
@@ -64,7 +63,7 @@ export default function CurtListPr() {
                 <p className="ProductCurt__right__cartTT__btn__ckb__p">Shipping & taxes calculated at checkout</p>
               </div>
               <div className="ProductCurt__right__cartTT__btn__btcl">
-                <button className="ProductCurt__right__cartTT__btn__btcl__bt">Proceed To Checkout</button>
+                <button className="ProductCurt__right__cartTT__btn__btcl__bt" onClick={handleCheckOut}>Proceed To Checkout</button>
               </div>
             </div>
           </div>
@@ -79,3 +78,4 @@ export default function CurtListPr() {
       </div>
     );
 }
+export default CurtListPr;
