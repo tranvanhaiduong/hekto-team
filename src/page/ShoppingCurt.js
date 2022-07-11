@@ -12,15 +12,15 @@ import "../scss/CurtProduct.scss";
 import "../scss/Label.scss";
 
 function ShoppingCurt() {
+  
   return (
     <div className="Home_hekto">
       <Header/>
       <Navbar/>
       <Navigation title="Shopping Curt" name="Shopping Curt"></Navigation>
-      <CurtListPr/>
+      <CurtListPr />
       <Footer/>
     </div>
   );
 }
-
 export default ShoppingCurt;

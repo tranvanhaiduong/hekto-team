@@ -50,26 +50,29 @@ import "./scss/ShopList.scss";
 import MyAccount from "./page/MyAccount";
 import BlogPage from "./page/BlogPage";
 import "./scss/ShopLeft.scss";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 function App() {
   return (
-    <Routes>
+    <Provider store={store}>
+      <Routes>
       <Route path="/" element={<Home></Home>} />
-      <Route path="/" element={<GridDefault />} />
-      <Route path="/ShoppingCurt" element={<ShoppingCurt/>}/>
       <Route path="/ordercompleted" element={<OrderCompleted/>}/>
       <Route path="/registeraccount" element={<RegisterAccount/>}/>
-      <Route path="/shop" element={<GridDefault />} />
-      <Route path="/error" element={<Error/>}/>
+      <Route path="/products" element={<GridDefault />} />
+      <Route path="/*" element={<Error/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/faq" element={<FAQ/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/singleblock" element={<SingleBlock/>}/>
       <Route path="/shoplist" element={<ShopList />} />
       <Route path="/shopleft" element={<ShopLeft />} />
-      <Route path="/products" element={<ProductDetails />} />
+      <Route path="/products/:pid" element={<ProductDetails />} />
+      <Route path="/ShoppingCurt" element={<ShoppingCurt/>}/>
       <Route path="/myaccount" element={<MyAccount/>}/>
       <Route path="/blogpage" element={<BlogPage/>}/>
     </Routes>
+    </Provider>
   );
 }
 

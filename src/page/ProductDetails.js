@@ -6,13 +6,18 @@ import PlayWood from "../homehekto/PlayWood";
 import Related from "../homehekto/Related";
 import Logo from "../homehekto/Logo";
 import Footer from "../homehekto/Footer";
+import { useParams } from "react-router-dom";
+import productData from "../fake -data/fakedata-shopgrid";
 function ProductDetails() {
+  const { pid } = useParams();
+
+  const product = productData.getById(pid);
   return (
     <div className="Product__Deatails">
       <Header />
       <Navbar />
       <Navigation title="Product Details" name="Product Details" />
-      <PlayWood />
+      <PlayWood image={product.image} title={product.title} pid={product.pid} price={product.price}/>
       <Description />
       <Related />
       <Logo />
