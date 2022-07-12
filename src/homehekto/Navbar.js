@@ -8,10 +8,10 @@ function Navbar() {
         <a href="/" className="navbar__menu__selected">
           Home<i class="fal fa-chevron-down"></i>
         </a>
-        <a href="/">Pages</a>
-        <a href="/products">Products</a>
-        <a href="/">Blog</a>
-        <a href="/shop">Shop</a>
+        <a href="/page">Pages</a>
+        <a href="/product">Products</a>
+        <a href="/blog">Blog</a>
+        <a href="/shoplist">Shop</a>
         <a href="/contact">Contact</a>
       </div>
       <div className="navbar__search">

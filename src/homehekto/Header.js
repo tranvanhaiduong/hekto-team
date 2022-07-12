@@ -1,4 +1,8 @@
+import { useSelector } from "react-redux";
+
 function Header() {
+  const app = useSelector((state) => state.cartItems.value);
+  const number = app.length;
   return (
     <div className="header">
       <div className="header__bar">
@@ -26,9 +30,14 @@ function Header() {
             <a href="/#">
               Wishlist<i class="fal fa-heart"></i>
             </a>
-            <a href="/#">
-              <i class="fal fa-shopping-cart"></i>
-            </a>
+            <div className="header__bar__right__list__cart">
+              <a href="/ShoppingCurt">
+                <i class="fal fa-shopping-cart"></i>
+              </a>
+              <span className="header__bar__right__list__cart__quantity">
+                {number}
+              </span>
+            </div>
           </div>
         </div>
       </div>
