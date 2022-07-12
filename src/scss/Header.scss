@@ -107,6 +107,22 @@
     }
   }
 }
+.header__bar__right__list__cart {
+  position: relative;
+}
+span.header__bar__right__list__cart__quantity {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media only screen and(max-width:495px) {
   .header {
     &__bar {

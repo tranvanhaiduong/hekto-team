@@ -1,4 +1,4 @@
-import {shopgrid_product} from "../fake -data/fakedata-shopgrid";
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 import GridProduct from "./GridProduct";
 import Slider from "react-slick";
 function ShopGridProduct() {
@@ -46,7 +46,11 @@ function ShopGridProduct() {
         </div>
         <div id="shopgrid__pc">
           {shopgrid_product.map((product) => (
-            <GridProduct image={product.image} title={product.title} />
+            <GridProduct
+              image={product.image}
+              title={product.title}
+              pid={product.pid}
+            />
           ))}
         </div>
       </div>

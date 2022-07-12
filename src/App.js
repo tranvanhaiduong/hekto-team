@@ -1,7 +1,7 @@
 import "./App.scss";
 import Home from "./page/Home";
 import GridDefault from "./page/GridDefault";
-import ShoppingCurt from "./page/ShoppingCurt"; 
+import ShoppingCurt from "./page/ShoppingCurt";
 import OrderCompleted from "./page/OrderCompleted";
 import RegisterAccount from "./page/RegisterAccount";
 
@@ -31,13 +31,13 @@ import "./scss/Footer.scss";
 import "./scss/Navigation.scss";
 import "./scss/ContentShop.scss";
 import "./scss/Search.scss";
-import "./scss/Error.scss"
-import "./scss/About.scss"
-import "./scss/FAQ.scss"
-import "./scss/Contact.scss"
-import "./scss/SingleBlog.scss"
-import "./scss/ContentSingleLeft.scss"
-import "./scss/ContentSingleRight.scss"
+import "./scss/Error.scss";
+import "./scss/About.scss";
+import "./scss/FAQ.scss";
+import "./scss/Contact.scss";
+import "./scss/SingleBlog.scss";
+import "./scss/ContentSingleLeft.scss";
+import "./scss/ContentSingleRight.scss";
 import FAQ from "./page/FAQ";
 import Contact from "./page/Contact";
 import SingleBlock from "./page/SingleBlog";
@@ -56,22 +56,22 @@ function App() {
   return (
     <Provider store={store}>
       <Routes>
-      <Route path="/" element={<Home></Home>} />
-      <Route path="/ordercompleted" element={<OrderCompleted/>}/>
-      <Route path="/registeraccount" element={<RegisterAccount/>}/>
-      <Route path="/products" element={<GridDefault />} />
-      <Route path="/*" element={<Error/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/faq" element={<FAQ/>}/>
-      <Route path="/contact" element={<Contact/>}/>
-      <Route path="/singleblock" element={<SingleBlock/>}/>
-      <Route path="/shoplist" element={<ShopList />} />
-      <Route path="/shopleft" element={<ShopLeft />} />
-      <Route path="/products/:pid" element={<ProductDetails />} />
-      <Route path="/ShoppingCurt" element={<ShoppingCurt/>}/>
-      <Route path="/myaccount" element={<MyAccount/>}/>
-      <Route path="/blogpage" element={<BlogPage/>}/>
-    </Routes>
+        <Route path="/" element={<Home></Home>} />
+        <Route path="/ordercompleted" element={<OrderCompleted />} />
+        <Route path="/registeraccount" element={<RegisterAccount />} />
+        <Route path="/product" element={<GridDefault />} />
+        <Route path="/*" element={<Error />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/singleblock" element={<SingleBlock />} />
+        <Route path="/shoplist" element={<ShopList />} />
+        <Route path="/page" element={<ShopLeft />} />
+        <Route path="/product/:pid" element={<ProductDetails />} />
+        <Route path="/ShoppingCurt" element={<ShoppingCurt />} />
+        <Route path="/myaccount" element={<MyAccount />} />
+        <Route path="/blog" element={<BlogPage />} />
+      </Routes>
     </Provider>
   );
 }

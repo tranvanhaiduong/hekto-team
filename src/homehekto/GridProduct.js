@@ -1,4 +1,4 @@
-function GridProduct({ image, title }) {
+function GridProduct({ image, title, pid }) {
   return (
     <div className="contentShop__shopgrid__listitem__product">
       <div className="contentShop__shopgrid__listitem__product__img">
@@ -6,7 +6,7 @@ function GridProduct({ image, title }) {
       </div>
       <div className="contentShop__shopgrid__listitem__product__shopping">
         <div className="contentShop__shopgrid__listitem__product__shopping__shop">
-          <a href="/">
+          <a href={`product/${pid}`}>
             <img alt="" src="./images/Group.png"></img>
           </a>
           <a href="/">
