@@ -5,11 +5,14 @@
   align-items: center;
   margin-bottom: 80px;
   &__listitem {
-    display: grid;
-    grid-template-columns: 270px 270px 270px 270px;
-    column-gap: 50px;
-    row-gap: 80px;
+    #shopgrid__pc {
+      display: grid;
+      grid-template-columns: 270px 270px 270px 270px;
+      column-gap: 50px;
+      row-gap: 80px;
+    }
     &__product {
+      position: relative;
       &__img {
         background: #f6f7fb;
         height: 280px;
@@ -21,6 +24,21 @@
           left: 50%;
         }
       }
+      &__shopping {
+        display: none;
+        &__shop {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-left: 19px;
+          row-gap: 13px;
+        }
+      }
+
       &__title {
         display: flex;
         flex-direction: column;
@@ -54,5 +72,82 @@
         }
       }
     }
+  }
+}
+#shopgrid__mobile {
+  display: none;
+}
+.slick-track {
+  display: flex;
+  gap: 15px;
+}
+.contentShop__shopgrid__listitem__product:hover {
+  .contentShop__shopgrid__listitem__product__img {
+    background: #ebf4f3;
+  }
+  .contentShop__shopgrid__listitem__product__shopping {
+    display: block;
+  }
+}
+@media only screen and(max-width:495px) {
+  .navigation__title {
+    font-size: 30px;
+    top: 30%;
+    width: 100%;
+    max-width: 269px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navigation__shop {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 260px;
+  }
+  .contentShop__shopgrid__listitem {
+    #shopgrid__pc {
+      display: none;
+    }
+    #shopgrid__mobile {
+      display: block;
+    }
+    height: auto;
+    grid-template-columns: 97%;
+    width: 100%;
+  }
+}
+@media only screen and(min-width:495px) and(max-width:767px) {
+  .contentShop__shopgrid__listitem {
+    #shopgrid__pc {
+      display: none;
+    }
+    #shopgrid__mobile {
+      display: block;
+    }
+    height: auto;
+    grid-template-columns: 97%;
+    width: 100%;
+  }
+}
+
+@media only screen and(min-width:768px) and(max-width:1257px) {
+  .contentShop__shopgrid__listitem {
+    &__product {
+      &__title {
+        h1 {
+          font-size: 17px;
+        }
+      }
+    }
+    #shopgrid__pc {
+      display: none;
+    }
+    #shopgrid__mobile {
+      display: block;
+    }
+    height: auto;
+    grid-template-columns: 97%;
+    width: 100%;
   }
 }

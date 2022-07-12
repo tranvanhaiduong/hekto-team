@@ -4,6 +4,20 @@ function GridProduct({ image, title }) {
       <div className="contentShop__shopgrid__listitem__product__img">
         <img alt="" src={image}></img>
       </div>
+      <div className="contentShop__shopgrid__listitem__product__shopping">
+        <div className="contentShop__shopgrid__listitem__product__shopping__shop">
+          <a href="/">
+            <img alt="" src="./images/Group.png"></img>
+          </a>
+          <a href="/">
+            <img alt="" src="./images/Vector (5).png"></img>
+          </a>
+          <a href="/">
+            <img alt="" src="./images/Vector (6).png"></img>
+          </a>
+        </div>
+      </div>
+
       <div className="contentShop__shopgrid__listitem__product__title">
         <h1>{title}</h1>
         <div className="contentShop__shopgrid__listitem__product__title__color">
