@@ -1,5 +1,5 @@
+import Slider from "react-slick";
 import RelatedProduct from "./RelatedProduct";
-
 function Related() {
   const fakedata = [
     {
@@ -51,6 +51,33 @@ function Related() {
       ],
     },
   ];
+  var settings = {
+    dots: false,
+    infinite: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 495,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          rows: 1,
+        },
+      },
+      {
+        breakpoint: 795,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          rows: 2,
+        },
+      },
+    ],
+  };
   return (
     <div id="related">
       <div className="contentShop__related">
@@ -58,14 +85,28 @@ function Related() {
           <h1>Related Products</h1>
         </div>
         <div className="contentShop__related__slide">
-          {fakedata.map((fake) => (
-            <RelatedProduct
-              image={fake.image}
-              title={fake.title}
-              rating={fake.rating}
-              price={fake.price}
-            />
-          ))}
+          <div id="related__pc">
+            {fakedata.map((fake) => (
+              <RelatedProduct
+                image={fake.image}
+                title={fake.title}
+                rating={fake.rating}
+                price={fake.price}
+              />
+            ))}
+          </div>
+          <div id="related__mobile">
+            <Slider {...settings}>
+              {fakedata.map((fake) => (
+                <RelatedProduct
+                  image={fake.image}
+                  title={fake.title}
+                  rating={fake.rating}
+                  price={fake.price}
+                />
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </div>
