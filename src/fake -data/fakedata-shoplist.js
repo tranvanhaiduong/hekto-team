@@ -1,5 +1,6 @@
 const shoplist = [
   {
+    pid: "sl1",
     image: "./images/Rectangle 32.png",
     title: "Accumsan tincidunt",
     color: [
@@ -25,6 +26,7 @@ const shoplist = [
     ],
   },
   {
+    pid: "sl2",
     image: "./images/Rectangle 32 (1).png",
     title: "Accumsan tincidunt",
     color: [
@@ -50,6 +52,7 @@ const shoplist = [
     ],
   },
   {
+    pid: "sl3",
     image: "./images/Rectangle 32 (2).png",
     title: "Accumsan tincidunt",
     color: [
@@ -75,6 +78,7 @@ const shoplist = [
     ],
   },
   {
+    pid: "sl4",
     image: "./images/Rectangle 32 (3).png",
     title: "Accumsan tincidunt",
     color: [
@@ -100,6 +104,7 @@ const shoplist = [
     ],
   },
   {
+    pid: "sl5",
     image: "./images/Rectangle 32 (4).png",
     title: "Accumsan tincidunt",
     color: [
@@ -125,6 +130,7 @@ const shoplist = [
     ],
   },
   {
+    pid: "sl6",
     image: "./images/Rectangle 32 (5).png",
     title: "Accumsan tincidunt",
     color: [
@@ -150,6 +156,7 @@ const shoplist = [
     ],
   },
   {
+    pid: "sl7",
     image: "./images/Rectangle 32 (6).png",
     title: "Accumsan tincidunt",
     color: [

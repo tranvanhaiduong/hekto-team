@@ -137,6 +137,7 @@ span.header__bar__right__list__cart__quantity {
       z-index: 100;
     }
   }
+
   .headercheck:checked ~ .header__mobile {
     transform: translateX(0);
   }
@@ -156,6 +157,22 @@ span.header__bar__right__list__cart__quantity {
         }
       }
     }
+  }
+  .header__bar__right__list__cart {
+    position: relative;
+  }
+  span.header__bar__right__list__cart__quantity {
+    position: absolute;
+    top: 5px;
+    right: -7px;
+    background: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and(min-width:495px) and(max-width:767px) {
@@ -191,6 +208,19 @@ span.header__bar__right__list__cart__quantity {
         }
       }
     }
+  }
+  span.header__bar__right__list__cart__quantity {
+    position: absolute;
+    top: 5px;
+    right: -7px;
+    background: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and(min-width:768px) and(max-width:1275px) {

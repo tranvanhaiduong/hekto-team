@@ -208,6 +208,7 @@ function ShopLeftSidebar() {
         <div className="contentShop__shopleft__listproduct">
           {shopleft.map((list) => (
             <LeftProduct
+              pid={list.pid}
               image={list.image}
               title={list.title}
               colors={list.color}
@@ -316,6 +317,7 @@ function ShopLeftSidebar() {
           <Slider {...settings}>
             {shopleft.map((list) => (
               <LeftProduct
+                pid={list.pid}
                 image={list.image}
                 title={list.title}
                 colors={list.color}

@@ -51,30 +51,36 @@ function Header() {
         </label>
         <ul>
           <li>
-            <a href="/#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="/#">Pages</a>
+            <a href="/page">Pages</a>
           </li>
           <li>
-            <a href="/#">Products</a>
+            <a href="/product">Products</a>
           </li>
           <li>
-            <a href="/#">Blog</a>
+            <a href="/blog">Blog</a>
           </li>
           <li>
-            <a href="/#">Shop</a>
+            <a href="/shoplist">Shop</a>
           </li>
           <li>
             <a href="/#">Contact</a>
           </li>
         </ul>
       </div>
+
       <div className="header__right">
         <div className="header__right__login">
-          <a href="/#">
-            <i class="fal fa-shopping-cart"></i>
-          </a>
+          <div className="header__bar__right__list__cart">
+            <a href="/ShoppingCurt">
+              <i class="fal fa-shopping-cart"></i>
+            </a>
+            <span className="header__bar__right__list__cart__quantity">
+              {number}
+            </span>
+          </div>
           <a href="/#">
             <i class="fal fa-user"></i>
           </a>
