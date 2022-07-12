@@ -39,6 +39,7 @@ function ShopListProduct() {
       <div id="shoplist__pc">
         {shoplist.map((list) => (
           <ListProduct
+            pid={list.pid}
             image={list.image}
             title={list.title}
             colors={list.color}

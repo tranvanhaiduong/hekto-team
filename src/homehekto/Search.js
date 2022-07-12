@@ -17,15 +17,15 @@ function Search() {
           <div className="contentShop__search__right__sort__input">
             <input placeholder="Best Match"></input>
             <div className="contentShop__search__right__sort__input__icon">
-              <img alt="" src="./images/Vector (2).png"></img>
+              <img alt="" src="/images/Vector (2).png"></img>
             </div>
           </div>
         </div>
         <div className="contentShop__search__right__view">
           <div className="contentShop__search__right__view__img">
             <p>View:</p>
-            <img alt="" src="./images/clarity.png"></img>
-            <img alt="" src="./images/Vector (7).png"></img>
+            <img alt="" src="/images/clarity.png"></img>
+            <img alt="" src="/images/Vector (7).png"></img>
           </div>
           <div className="contentShop__search__right__view__input">
             <input></input>

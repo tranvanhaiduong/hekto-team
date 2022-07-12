@@ -1,4 +1,8 @@
+import { useDispatch } from "react-redux";
+import { addItem } from "../redux/CartItemsSlice";
+import { toast } from "react-toastify";
 function LeftProduct({
+  pid,
   image,
   title,
   colors,
@@ -8,6 +12,19 @@ function LeftProduct({
   description,
   vectors,
 }) {
+  const dispath = useDispatch();
+  const addCart = () => {
+    dispath(
+      addItem({
+        pid: pid,
+        image: image,
+        title: title,
+        price: price,
+        quantity: 1,
+      })
+    );
+    toast.success("Add to cart");
+  };
   return (
     <div className="contentShop__shopleft__listproduct__product">
       <div className="contentShop__shopleft__listproduct__product__img">
@@ -35,11 +52,21 @@ function LeftProduct({
           <p>{description}</p>
         </div>
         <div className="contentShop__shopleft__listproduct__product__title__vector">
-          {vectors.map((vector) => (
-            <div className="contentShop__shopleft__listproduct__product__title__vector__img">
-              <img alt="" src={vector}></img>
-            </div>
-          ))}
+          <div className="contentShop__shopleft__listproduct__product__title__vector__img">
+            <a onClick={addCart}>
+              <img alt="" src="/images/Group.png"></img>
+            </a>
+          </div>
+          <div className="contentShop__shopleft__listproduct__product__title__vector__img">
+            <a href="/page">
+              <img alt="" src="/images/Vector (5).png"></img>
+            </a>
+          </div>
+          <div className="contentShop__shopleft__listproduct__product__title__vector__img">
+            <a href={`/product/${pid}`}>
+              <img alt="" src="/images/Vector (6).png"></img>
+            </a>
+          </div>
         </div>
       </div>
     </div>

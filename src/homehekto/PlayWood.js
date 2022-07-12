@@ -1,21 +1,20 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
-
 import { addItem } from "../redux/CartItemsSlice";
 function PlayWood(props) {
-  const dispatch=useDispatch();
+  const dispatch = useDispatch();
   const addToCart = () => {
     dispatch(
       addItem({
         pid: props.pid,
         image: props.image,
         title: props.title,
-        price:props.price,
+        price: props.price,
         quantity: 1,
       })
     );
-  }
+  };
   return (
     <div className="contentShop__playwood">
       <div className="contentShop__playwood__chair">
@@ -25,11 +24,9 @@ function PlayWood(props) {
           <img alt="" src="/images/Rectangle 137.png"></img>
         </div>
         <div className="contentShop__playwood__chair__center">
-
           <img alt="" src={props.image}></img>
         </div>
         <div className="contentShop__playwood__chair__right">
-     
           <h1>{props.title}</h1>
           <div className="contentShop__playwood__chair__right__img">
             <img alt="" src="/images/Vector (8).png"></img>
@@ -49,7 +46,7 @@ function PlayWood(props) {
             tellus porttitor purus, et volutpat sit.<br></br>
           </span>
           <div className="contentShop__playwood__chair__right__button">
-            <button  onClick={addToCart}>Add to cart</button>
+            <button onClick={addToCart}>Add to cart</button>
             <img alt="" src="./images/Vector (5).png"></img>
           </div>
           <p>Categories:</p>
@@ -57,13 +54,13 @@ function PlayWood(props) {
           <div className="contentShop__playwood__chair__right__share">
             <p>Share</p>
             <div className="contentShop__playwood__chair__right__share__fb">
-              <img alt="" src="./images/Group 202.png"></img>
+              <img alt="" src="/images/Group 202.png"></img>
             </div>
             <div className="contentShop__playwood__chair__right__share__instagram">
-              <img alt="" src="./images/inta.png"></img>
+              <img alt="" src="/images/inta.png"></img>
             </div>
             <div className="contentShop__playwood__chair__right__share__fb">
-              <img alt="" src="./images/Group 204.png"></img>
+              <img alt="" src="/images/Group 204.png"></img>
             </div>
           </div>
         </div>
@@ -72,6 +69,4 @@ function PlayWood(props) {
   );
 }
 
- export default PlayWood;
-
-
+export default PlayWood;
