@@ -5,16 +5,18 @@ import { useSelector, useDispatch } from "react-redux";
 import productData from "../fake -data/fakedata-shopgrid";
 import { clearCart } from "../redux/CartItemsSlice";
 import { useNavigate } from "react-router-dom";
-import { toHaveStyle } from "@testing-library/jest-dom/dist/matchers";
 import { toast } from "react-toastify";
 function CurtListPr() {
   const cartItems = useSelector((state) => state.cartItems.value);
   console.log(cartItems);
   const dispatch = useDispatch();
   const [cartProducts, setCartProducts] = useState([]);
-
+  const [totalPrice, setTotalPrice] = useState(0);
   useEffect(() => {
     setCartProducts(productData.getCartDetail(cartItems));
+    setTotalPrice(
+      cartItems.reduce((total, item) => total + +item.quantity * +item.price, 0)
+    );
   }, [cartItems]);
 
   const clearCarts = () => {
@@ -60,7 +62,7 @@ function CurtListPr() {
             </div>
             <div className="ProductCurt__right__cartTT__btn__tot">
               <p className="ProductCurt__right__cartTT__btn__tot__i">Totals:</p>
-              <p className="ProductCurt__right__cartTT__btn__tot__p">£325.00</p>
+              <p className="ProductCurt__right__cartTT__btn__tot__p">£{totalPrice}</p>
             </div>
             <div className="ProductCurt__right__cartTT__btn__ckb">
               <input
