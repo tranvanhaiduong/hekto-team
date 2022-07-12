@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 export default function OrderComp(){
+    const navigate = useNavigate();
     return(
         <div className="OrderComp">
             <div className="OrderComp__Tb">
@@ -10,7 +12,7 @@ export default function OrderComp(){
                     an email confirmation when your order is completed.
                     </p>
                 </div>
-                <button className="OrderComp__Tb__btn">Continue Shopping</button>
+                <button className="OrderComp__Tb__btn" onClick={()=>navigate("/product")}>Continue Shopping</button>
                 <div className="OrderComp__Tb__img" >
                     <img className="OrderComp__Tb__img__clock" src="../images/clock 1.png"></img>
                     <img className="OrderComp__Tb__img__check" src="../images/checklist 1.png"></img>
