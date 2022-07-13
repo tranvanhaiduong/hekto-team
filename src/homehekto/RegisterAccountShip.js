@@ -1,5 +1,6 @@
 import RegisterAccountContact from "./RegisterAccountContact";
 import RegisterAccountProduct from "./RegisterAccountProduct";
+import Slider from "react-slick";
 
 export default function RegisterAccountShip() {
   const ListProduct = [
@@ -19,6 +20,33 @@ export default function RegisterAccountShip() {
       image: "../images/RectangleAc5.png",
     },
   ];
+  var settings = {
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    rows: 5,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slideToSroll: 1,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+      {
+        breakpoint: 495,
+        settings: {
+          slidesToShow: 1,
+          slideToSroll: 1,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="RegisterAccountShip">
       <div className="RegisterAccountShip__vp">
@@ -32,10 +60,13 @@ export default function RegisterAccountShip() {
           <RegisterAccountContact />
         </div>
         <div className="RegisterAccountShip__ship__right">
+
           <div className="RegisterAccountShip__ship__right__product">
+          <Slider {...settings}>
             {ListProduct.map((product) => (
               <RegisterAccountProduct image={product.image} />
             ))}
+            </Slider>
           </div>
           <div className="RegisterAccountShip__ship__right__checkout">
             <div className="ProductCurt__right__cartTT">

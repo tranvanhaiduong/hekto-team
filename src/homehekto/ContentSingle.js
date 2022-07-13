@@ -1,3 +1,5 @@
+
+
 function ContentSingle() {
   const fakeProduct = [
     {
@@ -43,7 +45,7 @@ function ContentSingle() {
       <div className="contentsingle__left">
         <div className="contentsingle__left__post">
           <div className="contentsingle__left__post__banner">
-            <img
+            <img className="contentsingle__left__post__banner__img"
               src="./images/bruce-mars-FWVMhUa_wbY-unsplash 2.png"
               alt=""
             ></img>
@@ -97,10 +99,10 @@ function ContentSingle() {
             </div>
             <div className="contentsingle__left__post__paragraph__banner">
               <div className="contentsingle__left__post__paragraph__banner__image1">
-                <img src="./images/Group 92.png" alt=""></img>
+                <img className="img1" src="./images/Group 92.png" alt=""></img>
               </div>
               <div className="contentsingle__left__post__paragraph__banner__image2">
-                <img src="./images/Rectangle 70.png" alt=""></img>
+                <img className="img2" src="./images/Rectangle 70.png" alt=""></img>
               </div>
             </div>
             <div className="contentsingle__left__post__paragraph__paragraph4">
