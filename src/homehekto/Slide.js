@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
+import { Link, useNavigate } from "react-router-dom";
 class Slide extends React.Component {
   render() {
     var settings = {
@@ -10,6 +11,7 @@ class Slide extends React.Component {
       autoplay: true,
       autoplaySpeed: 3000,
     };
+
     return (
       <Slider {...settings}>
         <div className="slide">
@@ -24,7 +26,9 @@ class Slide extends React.Component {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in
               est adipiscing in phasellus non in justo.
             </p>
-            <button>Shop Now</button>
+            <Link to="/product">
+              <button>Shop Now</button>
+            </Link>
           </div>
           <div className="slide__right">
             <img alt="" src="./images/sofa promotional header.png"></img>

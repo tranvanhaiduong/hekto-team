@@ -63,12 +63,125 @@
 
 @media only screen and(max-width:495px) {
   .contentShop__related {
+    width: 100%;
+    margin-bottom: 50px;
     #related__mobile {
       display: block;
       width: 100%;
     }
     #related__pc {
       display: none;
+    }
+    &__products {
+      width: 100%;
+      text-align: center;
+      margin-top: 75px;
+      h1 {
+        width: 100%;
+      }
+    }
+    &__slide {
+      &__shopfashion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__men {
+          width: 100%;
+          max-width: 270px;
+          display: flex;
+          flex-direction: column;
+          &__fashion {
+            &__rating {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and(min-width:495px) and(max-width:820px) {
+  .contentShop__related {
+    width: 100%;
+    margin-bottom: 50px;
+    #related__mobile {
+      display: block;
+      width: 100%;
+    }
+    #related__pc {
+      display: none;
+    }
+    &__products {
+      width: 100%;
+      text-align: center;
+      margin-top: 75px;
+      h1 {
+        width: 100%;
+      }
+    }
+    &__slide {
+      &__shopfashion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__men {
+          width: 100%;
+          max-width: 270px;
+          display: flex;
+          flex-direction: column;
+          &__fashion {
+            &__rating {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and(min-width:821px) and(max-width:1209px) {
+  .contentShop__related {
+    width: 100%;
+    margin-bottom: 50px;
+    #related__mobile {
+      display: block;
+      width: 100%;
+    }
+    #related__pc {
+      display: none;
+    }
+    &__products {
+      margin-top: 80px;
+      margin-bottom: 47px;
+      width: 100%;
+      text-align: center;
+    }
+    &__slide {
+      &__shopfashion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__men {
+          width: 100%;
+          max-width: 270px;
+          display: flex;
+          flex-direction: column;
+          &__fashion {
+            &__rating {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -122,12 +122,14 @@
 }
 @media only screen and(max-width:495px) {
   .contentShop__playwood {
-    height: 680px;
+    height: 520px;
+    margin-top: 30px;
     &__chair {
       display: flex;
       flex-direction: column;
       align-items: center;
       height: 400px;
+      box-shadow: none;
       &__left {
         display: none;
       }
@@ -136,7 +138,7 @@
         max-width: 300px;
         img {
           width: 100%;
-          max-height: 370px;
+          height: auto;
         }
       }
       &__right {
@@ -147,7 +149,7 @@
         max-width: 300px;
         h1 {
           margin-top: 0px;
-          font-size: 30px;
+          font-size: 20px;
         }
         &__price {
           margin-top: 8px;
@@ -163,6 +165,50 @@
         }
         &__share {
           display: none;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media only screen and(min-width:495px) and(max-width:820px) {
+  .contentShop__playwood {
+    margin-top: 100px;
+    height: 930px;
+    &__chair {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &__right {
+        h1 {
+          margin-top: 12px;
+        }
+        &__button {
+          margin: 24px 0px 17px 70px;
+        }
+        p {
+          margin: 7px 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and(min-width:820px) and(max-width:1209px) {
+  .contentShop__playwood {
+    &__chair {
+      &__center {
+        &__img {
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+      &__right {
+        h1 {
+          font-size: 33px;
+          margin-top: 68px;
         }
       }
     }

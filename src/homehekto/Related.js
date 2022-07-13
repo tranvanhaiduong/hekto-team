@@ -67,13 +67,23 @@ function Related() {
         },
       },
       {
-        breakpoint: 795,
+        breakpoint: 820,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           autoplay: true,
           autoplaySpeed: 3000,
-          rows: 2,
+          rows: 1,
+        },
+      },
+      {
+        breakpoint: 1209,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          rows: 1,
         },
       },
     ],

@@ -1,4 +1,4 @@
-import shoplist from "../fake -data/fakedata-shoplist";
+import { shoplist } from "../fake -data/fakedata-shoplist";
 import ListProduct from "./ListProduct";
 import Slider from "react-slick";
 function ShopListProduct() {

@@ -1,5 +1,5 @@
 import Sidebar from "./Sidebar";
-import shopleft from "../fake -data/fakedata-shopleft";
+import { shopleft } from "../fake -data/fakedata-shopleft";
 import LeftProduct from "./LeftProduct";
 import Slider from "react-slick";
 var settings = {
