@@ -32,10 +32,10 @@ function CurtListPr() {
     <div className="ProductCurt">
       <div className="ProductCurt__left">
         <div className="ProductCurt__left__up">
-          <h className="ProductCurt__left__up__prd">Product</h>
-          <h className="ProductCurt__left__up__pri">price</h>
-          <h className="ProductCurt__left__up__qtt">Quantity</h>
-          <h className="ProductCurt__left__up__tol">Total</h>
+          <p className="ProductCurt__left__up__prd">Product</p>
+          <p className="ProductCurt__left__up__pri">price</p>
+          <p className="ProductCurt__left__up__qtt">Quantity</p>
+          <p className="ProductCurt__left__up__tol">Total</p>
         </div>
         <div className="ProductCurt__left__bwn">
           {cartProducts.length > 0 &&
