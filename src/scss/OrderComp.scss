@@ -59,3 +59,92 @@
         }
     }
 }
+@media screen and ( max-width: 495px ) {
+    .OrderComp{
+        height: 475px;
+        &__Tb{
+            &__td{
+                font-size: 20px;
+            }
+            &__tc{
+                &__t{
+                    font-size: 15px;
+                }
+            }
+            &__img{
+                &__check{
+                    left: 130px;
+                    bottom: -25px;
+                }
+                &__clock{
+                    width: 40px;
+                    bottom: 285px;
+                    right: 65px;
+                }
+                &__tich {
+                    right: 50px;
+                    bottom: 375px;
+                }
+            }
+        }
+    }
+}
+@media only screen and ( min-width: 495px ) and (max-width: 1023px ) {
+    .OrderComp{
+        height: 500px;
+        &__Tb{
+            &__td{
+                font-size: 25px;
+            }
+            &__tc{
+                &__t{
+                    font-size: 20px;
+                }
+            }
+            &__img{
+                &__check{
+                    left: 180px;
+                    bottom: -25px;
+                }
+                &__clock{
+                    width: 60px;
+                    bottom: 285px;
+                    right: 130px;
+                }
+                &__tich {
+                    right: 50px;
+                    bottom: 375px;
+                }
+            }
+        }
+    }
+}
+@media screen and (width:1024px) {
+    .OrderComp{
+        &__Tb{
+            &__td{
+                font-size: 25px;
+            }
+            &__tc{
+                &__t{
+                    font-size: 20px;
+                }
+            }
+            &__img{
+                &__check{
+                    left: 460px;
+                    bottom: 0px;
+                }
+                &__clock{
+                    width: 60px;
+                    right: 360px;
+                    bottom: 280px;
+                }
+                &__tich {
+                    right: 50px;
+                    bottom: 375px;
+                }
+            }
+        }
+    }
+}
