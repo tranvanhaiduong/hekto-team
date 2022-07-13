@@ -24,6 +24,7 @@ function ListProduct({
       })
     );
     toast.success("Add to cart");
+    console.log(price);
   };
   return (
     <div className="contentShop__shoplist__product">
