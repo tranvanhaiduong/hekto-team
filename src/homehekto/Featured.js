@@ -23,14 +23,14 @@ class Featured extends React.Component {
       ],
     };
     const listImages = [
-      "./images/image 1168.png",
-      "./images/image 3.png",
-      "./images/image 1169.png",
-      "./images/image 1.png",
-      "./images/image 1168.png",
-      "./images/image 3.png",
-      "./images/image 1169.png",
-      "./images/image 1.png",
+      "/images/image 1168.png",
+      "/images/image 3.png",
+      "/images/image 1169.png",
+      "/images/image 1.png",
+      "/images/image 1168.png",
+      "/images/image 3.png",
+      "/images/image 1169.png",
+      "/images/image 1.png",
     ];
     return (
       <div className="content__featured">

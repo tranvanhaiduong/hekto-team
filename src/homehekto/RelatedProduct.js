@@ -4,7 +4,7 @@ function RelatedProduct({ image, title, rating, price }) {
       <div className="contentShop__related__slide__shopfashion__img">
         <img alt="" src={image}></img>
       </div>
-      <div className="contentShop__related__slide__shopfashion___men">
+      <div className="contentShop__related__slide__shopfashion__men">
         <div className="contentShop__related__slide__shopfashion__men__fashion">
           <p>{title}</p>
           <div className="contentShop__related__slide__shopfashion__men__fashion__rating">

@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 
 import { addItem } from "../redux/CartItemsSlice";
+import { toast } from "react-toastify";
 function PlayWood(props) {
   const dispatch = useDispatch();
   const addToCart = () => {
@@ -14,6 +15,7 @@ function PlayWood(props) {
         quantity: 1,
       })
     );
+    toast.success("Add to cart");
   };
   return (
     <div className="contentShop__playwood">
@@ -47,7 +49,7 @@ function PlayWood(props) {
           </span>
           <div className="contentShop__playwood__chair__right__button">
             <button onClick={addToCart}>Add to cart</button>
-            <img alt="" src="./images/Vector (5).png"></img>
+            <img alt="" src="/images/Vector (5).png"></img>
           </div>
           <p>Categories:</p>
           <p>Tags</p>

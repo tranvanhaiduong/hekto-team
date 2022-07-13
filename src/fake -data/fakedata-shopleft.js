@@ -1,4 +1,4 @@
-const shopleft = [
+export const shopleft = [
   {
     pid: "s1",
     image: "/images/Rectangle 32 (7).png",
@@ -182,5 +182,8 @@ const shopleft = [
     ],
   },
 ];
-
-export default shopleft;
+const getById = (pid) => shopleft.find((e) => e.pid === pid);
+const shopleftdata = {
+  getById,
+};
+export default shopleftdata;
