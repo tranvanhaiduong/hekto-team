@@ -41,7 +41,6 @@
           flex: 1 1;
           align-items: center;
           border: 1px solid #ffffff;
-          opacity: 0.45;
           input {
             border: none;
             width: 100%;
@@ -59,7 +58,7 @@
           button {
             width: 135px;
             height: 39px;
-            border: none;
+            border: #fb2e86;
             background: #fb2e86;
             border-radius: 3px;
             color: #eeeffb;
@@ -67,6 +66,11 @@
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
+          }
+          button:hover{
+            background: #f23e8c;
+            border: #fb2e86;
+            color: #eeeffb;
           }
         }
       }
