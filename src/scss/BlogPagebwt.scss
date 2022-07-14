@@ -1,5 +1,8 @@
 .BlogPagebwt{
     display: flex;
+    max-width: 1530px;
+    width: 100%;
+    margin: auto;
     &__left{
         flex: 0 0 50%;
         max-width: 50%;
