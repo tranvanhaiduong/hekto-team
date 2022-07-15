@@ -43,7 +43,12 @@
     }
   }
 }
-
+#shopex__mobile{
+  .slick-track {
+    display: flex;
+    gap: 28px;
+  }
+}
 @media only screen and(max-width:495px) {
   .content__shopex {
     margin-bottom: 90px;

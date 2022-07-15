@@ -33,7 +33,7 @@ function CurtListPr() {
       <div className="ProductCurt__left">
         <div className="ProductCurt__left__up">
           <p className="ProductCurt__left__up__prd">Product</p>
-          <p className="ProductCurt__left__up__pri">price</p>
+          <p className="ProductCurt__left__up__pri">Price</p>
           <p className="ProductCurt__left__up__qtt">Quantity</p>
           <p className="ProductCurt__left__up__tol">Total</p>
         </div>
@@ -62,7 +62,7 @@ function CurtListPr() {
             </div>
             <div className="ProductCurt__right__cartTT__btn__tot">
               <p className="ProductCurt__right__cartTT__btn__tot__i">Totals:</p>
-              <p className="ProductCurt__right__cartTT__btn__tot__p">£{totalPrice}</p>
+              <p className="ProductCurt__right__cartTT__btn__tot__p">£{totalPrice}.00</p>
             </div>
             <div className="ProductCurt__right__cartTT__btn__ckb">
               <input
