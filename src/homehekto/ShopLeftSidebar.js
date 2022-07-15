@@ -2,6 +2,7 @@ import Sidebar from "./Sidebar";
 import { shopleft } from "../fake -data/fakedata-shopleft";
 import LeftProduct from "./LeftProduct";
 import Slider from "react-slick";
+import productData, { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 var settings = {
   dots: false,
   infinite: false,
@@ -206,7 +207,8 @@ function ShopLeftSidebar() {
           </div>
         </div>
         <div className="contentShop__shopleft__listproduct">
-          {shopleft.map((list) => (
+          {shopgrid_product.map((list) => (
+             list.pid.includes("sp")?
             <LeftProduct
               pid={list.pid}
               image={list.image}
@@ -218,6 +220,7 @@ function ShopLeftSidebar() {
               description={list.description}
               vectors={list.vector}
             />
+            :null
           ))}
         </div>
       </div>
