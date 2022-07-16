@@ -41,18 +41,22 @@ function ShopGridProduct() {
         <div id="shopgrid__mobile">
           <Slider {...settings}>
             {shopgrid_product.map((product) => (
+              product.pid.includes("sg")?
               <GridProduct image={product.image} title={product.title} />
+              :null
             ))}
           </Slider>
         </div>
         <div id="shopgrid__pc">
           {shopgrid_product.map((product) => (
+             product.pid.includes("sg")?
             <GridProduct
               price={product.price}
               image={product.image}
               title={product.title}
               pid={product.pid}
             />
+            :null
           ))}
         </div>
       </div>

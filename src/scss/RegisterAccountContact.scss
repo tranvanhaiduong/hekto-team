@@ -16,7 +16,7 @@
             font-weight: 700;
         }
         &__alr{
-            margin-left: 300px;
+            margin-left: 400px;
             font-family: 'Lato';
             font-style: normal;
             font-weight: 500;
@@ -62,15 +62,17 @@
             margin-top: 100px;
         }
         &__flname{
-            display: flex;
+            display: grid;
+            gap: 60px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "items adjustments";
             margin-top: 20px;
             &__fname{
                 margin-left: 40px;
-                width: 300px;
+                width: 340px;
             }
             &__lname{
-                width: 295px;
-                margin-left: 50px;
+                width: 340px;
             }
         }
         &__address{
@@ -89,15 +91,17 @@
             margin-top: 20px;
         }
         &__bp{
-            display: flex;
+            display: grid;
+            gap: 60px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "items adjustments";
             margin-top: 20px;
             &__ba{
-                width: 300px;
+                width: 340px;
                 margin-left: 40px;
             }
             &__pc{
-                width: 295px;
-                margin-left: 50px;
+                width: 340px;
             }
         }
     }
@@ -113,3 +117,165 @@
         margin-top: 130px;
     }
 }
+
+
+@media only screen and (max-width: 495px) {
+    .RegisterAccountContact{
+        padding-right: 10px;
+        height: 915px;
+        &__contact{
+            &__cnp{
+                padding-top: 40px;
+                display: block;
+                &__alr{
+                    margin-left: 40px;
+                 }
+                &__login{
+                    margin-left: 40px;
+                }
+            }
+        }
+        &__shipping{
+            &__n{
+                margin-top: 40px;
+            }
+            &__flname{
+                display: block;
+                &__fname{
+                    width: auto;
+                }
+                &__lname{
+                    margin-left: 40px;
+                    width: auto;
+                }
+            }
+            &__bp{
+                display: block;
+                &__ba{
+                    width: auto;
+                    margin-top: 20px;
+                }
+                &__pc{
+                    margin-left: 40px;
+                    width: auto;
+                    margin-top: 20px;
+                }
+            }
+        }
+        &__btn{
+            margin-top: 50px;   
+        }
+    }
+}
+@media only screen and (min-width: 495px) and (max-width: 799px) {
+    .RegisterAccountContact{
+        padding-right: 10px;
+        height: 915px;  
+        &__contact{
+            &__cnp{
+                padding-top: 40px;
+                &__alr{
+                    margin-left: auto;
+                 }
+                &__login{
+                    margin-right: 50px;
+                }
+            }
+        }
+        &__shipping{
+            &__n{
+                margin-top: 40px;
+            }
+            &__flname{
+                display: block;
+                &__fname{
+                    width: 85%;
+                }
+                &__lname{
+                    margin-left: 40px;
+                    width: 85%;
+                }
+            }
+            &__address{
+                width: 85%;
+            }
+            &__city{
+                width: 85%;
+            }
+            &__appaetnentment{
+                width: 85%;
+            }
+            &__bp{
+                display: block;
+                &__ba{
+                    width: 85%;
+                    margin-top: 20px;
+                }
+                &__pc{
+                    margin-left: 40px;
+                    width: 85%;
+                    margin-top: 20px;
+                }
+            }
+        }
+        &__btn{
+            margin-top: 50px;   
+        }
+    }
+}
+@media screen  and (min-width: 799px) and (max-width: 1023px){
+    .RegisterAccountContact{
+        padding-right: 10px;
+        height: 915px;  
+        &__contact{
+            &__cnp{
+                padding-top: 40px;
+                &__alr{
+                    margin-left: auto;
+                 }
+                &__login{
+                    margin-right: 50px;
+                }
+            }
+        }
+        &__shipping{
+            &__n{
+                margin-top: 40px;
+            }
+            &__flname{
+                display: block;
+                &__fname{
+                    width: 85%;
+                }
+                &__lname{
+                    margin-left: 40px;
+                    width: 85%;
+                }
+            }
+            &__address{
+                width: 85%;
+            }
+            &__city{
+                width: 85%;
+            }
+            &__appaetnentment{
+                width: 85%;
+            }
+            &__bp{
+                display: block;
+                &__ba{
+                    width: 85%;
+                    margin-top: 20px;
+                }
+                &__pc{
+                    margin-left: 40px;
+                    width: 85%;
+                    margin-top: 20px;
+                }
+            }
+        }
+        &__btn{
+            margin-top: 50px;   
+        }
+    }
+}   

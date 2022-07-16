@@ -80,3 +80,32 @@
         color: #9096B2;
     }
 }
+@media only screen and (max-width:495px) {
+    .login{
+            margin: auto;
+            width: 100%;
+            height: 474px;
+            max-width: 450px;
+        &__pl{
+            font-size: 17px;
+        }
+        &__email{
+            width: 320px;
+            height: 42px;
+        }
+        &__pass{
+            width: 320px;
+            height: 42px;
+        }
+        &__fyo{
+            font-size: 15px;
+        }
+        &__signin{
+            width: 300px;
+            height: 50px;
+        }
+        &__cra{
+            font-size: 15px;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import BlogPageSingle from "./BlogPageSingle";
+import Slider from "react-slick";
 
 export default function BlogPagebwt() {
   const ListBlogPage = [
@@ -35,15 +36,43 @@ export default function BlogPagebwt() {
     "./images/Rectangle 126 (2).png",
     "./images/Rectangle 129.png"
   ];
+  var settings = {
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    rows: 5,
+    responsive: [
+      {
+        breakpoint: 820,
+        settings: {
+          slidesToShow: 1,
+          slideToSroll: 2,
+          slidesToScroll: 2,
+          rows: 1,
+        },
+      },
+      {
+        breakpoint: 495,
+        settings: {
+          slidesToShow: 1,
+          slideToSroll: 1,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="BlogPagebwt">
       <div className="BlogPagebwt__left">
+        <Slider {...settings}>
         {ListBlogPage.map((blogpage) => (
           <BlogPageSingle image={blogpage.image} Name={blogpage.Name} />
         ))}
+        </Slider>
       </div>
-      <div className="BlogPagebwt__right">
-        <div className="contentsingle__right">
+        <div className=" BlogPagebwt__right contentsingle__right">
           <div className="contentsingle__right__search">
             <div className="contentsingle__right__search__title">Search</div>
             <div className="contentsingle__right__search__content">
@@ -191,6 +220,6 @@ export default function BlogPagebwt() {
           </div>
         </div>
       </div>
-    </div>
+
   );
 }

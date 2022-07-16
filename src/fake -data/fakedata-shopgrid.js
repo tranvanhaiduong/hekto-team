@@ -52,6 +52,7 @@ export const shopgrid_product = [
     image: "/images/res.png",
     title: "Pellentesque condimentum ac",
     price: 32.0,
+  
   },
   {
     pid: "sg10",
@@ -70,6 +71,370 @@ export const shopgrid_product = [
     image: "/images/10011 1.png",
     title: "Purus risus, ut",
     price: 32.0,
+  },
+  {
+    pid: "sp1",
+    image: "/images/Rectangle 32 (7).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "/images/Ellipse 28.png",
+      "/images/Ellipse 29.png",
+      "/images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "/images/Group.png",
+      "/images/Vector (5).png",
+      "/images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sp2",
+    image: "/images/Rectangle 32 (8).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "/images/Ellipse 28.png",
+      "/images/Ellipse 29.png",
+      "/images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "/images/Group.png",
+      "/images/Vector (5).png",
+      "/images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sp3",
+    image: "/images/Rectangle 32 (9).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "./images/Ellipse 28.png",
+      "./images/Ellipse 29.png",
+      "./images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "./images/Group.png",
+      "./images/Vector (5).png",
+      "./images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sp4",
+    image: "/images/Rectangle 32 (10).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "./images/Ellipse 28.png",
+      "./images/Ellipse 29.png",
+      "./images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "./images/Group.png",
+      "./images/Vector (5).png",
+      "./images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sp5",
+    image: "/images/Rectangle 32 (11).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "./images/Ellipse 28.png",
+      "./images/Ellipse 29.png",
+      "./images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "./images/Group.png",
+      "./images/Vector (5).png",
+      "./images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sp6",
+    image: "/images/Rectangle 32 (12).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "./images/Ellipse 28.png",
+      "./images/Ellipse 29.png",
+      "./images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "./images/Group.png",
+      "./images/Vector (5).png",
+      "./images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sp7",
+    image: "/images/Rectangle 32 (13).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "./images/Ellipse 28.png",
+      "./images/Ellipse 29.png",
+      "./images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (8).png",
+      "./images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "./images/Group.png",
+      "./images/Vector (5).png",
+      "./images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sl1",
+    image: "/images/Rectangle 32.png",
+    title: "Accumsan tincidunt",
+    color: [
+      "/images/Ellipse 28.png",
+      "/images/Ellipse 29.png",
+      "/images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "/images/Group.png",
+      "/images/Vector (5).png",
+      "/images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sl2",
+    image: "/images/Rectangle 32 (1).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "/images/Ellipse 28.png",
+      "/images/Ellipse 29.png",
+      "/images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "/images/Group.png",
+      "/images/Vector (5).png",
+      "/images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sl3",
+    image: "/images/Rectangle 32 (2).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "/images/Ellipse 28.png",
+      "/images/Ellipse 29.png",
+      "/images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "/images/Group.png",
+      "/images/Vector (5).png",
+      "/images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sl4",
+    image: "/images/Rectangle 32 (3).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "/images/Ellipse 28.png",
+      "/images/Ellipse 29.png",
+      "/images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "/images/Group.png",
+      "/images/Vector (5).png",
+      "/images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sl5",
+    image: "/images/Rectangle 32 (4).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "/images/Ellipse 28.png",
+      "/images/Ellipse 29.png",
+      "/images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "/images/Group.png",
+      "/images/Vector (5).png",
+      "/images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sl6",
+    image: "/images/Rectangle 32 (5).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "/images/Ellipse 28.png",
+      "/images/Ellipse 29.png",
+      "/images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "/images/Group.png",
+      "/images/Vector (5).png",
+      "/images/Vector (6).png",
+    ],
+  },
+  {
+    pid: "sl7",
+    image: "/images/Rectangle 32 (6).png",
+    title: "Accumsan tincidunt",
+    color: [
+      "/images/Ellipse 28.png",
+      "/images/Ellipse 29.png",
+      "/images/Ellipse 30.png",
+    ],
+    price: 26.00,
+    sale: 52.00,
+    rating: [
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (8).png",
+      "/images/Vector (10).png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    vector: [
+      "/images/Group.png",
+      "/images/Vector (5).png",
+      "/images/Vector (6).png",
+    ],
   },
 ];
 const getById = (pid) => shopgrid_product.find((e) => e.pid === pid);

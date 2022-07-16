@@ -4,7 +4,22 @@
 }
 .contentsingle {
   display: flex;
-
-  
-  
 }
+
+@media screen and ( max-width:495px ) {
+  .contentsingle{
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    width: 100%;
+  }
+}
+@media screen and (min-width:495px ) and ( max-width:800px ) {
+  .contentsingle{
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+

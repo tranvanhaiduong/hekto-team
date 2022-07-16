@@ -1,59 +1,36 @@
 import Slider from "react-slick";
 import ShopexOffer from "../homehekto/ShopexOffer";
-import AboutInfo from "./AboutInfo";
 
-var settings = {
-  dots: false,
-  infinite: false,
-  arrows: false,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        rows: 2,
-      },
-    },
-  ],
-};
 const listImages = [
-  "./images/free-delivery 1.png",
-  "./images/cashback 1.png",
-  "./images/premium-quality 1.png",
-  "./images/24-hours-support 1.png",
-  "./images/free-delivery 1.png",
-  "./images/cashback 1.png",
-  "./images/premium-quality 1.png",
-  "./images/24-hours-support 1.png",
+  {
+    title: "Free Delivery",
+    image: "./images/free-delivery 1.png",
+  },
+  {
+    title: "100% Cash Back",
+    image: "./images/cashback 1.png",
+  },
+  {
+    title: "Quality Product",
+    image: "./images/premium-quality 1.png",
+  },
+  {
+    title: "24/7 Support",
+    image: "./images/24-hours-support 1.png",
+  },
 ];
+const settings = {
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+};
 function AboutContent() {
-  var settings1 = {
-    dots: false,
-    infinite: false,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          rows: 2,
-        },
-      },
-    ],
-  };
   return (
     <div className="aboutcontent">
       <div className="aboutcontent__top">
         <div className="aboutcontent__top__image">
-          <img src="./images/Rectangle 56.png" alt=""></img>
+          <img src="./images/Group 73.png" alt=""></img>
         </div>
         <div className="aboutcontent__top__info">
           <div className="aboutcontent__top__info__title">
@@ -70,36 +47,80 @@ function AboutContent() {
       </div>
       <div className="aboutcontent__center">
         <h1>Our Features</h1>
-        <div className="content__shopex__support">
-          <div id="shopex__mobile">
+
+        <div id="about__mobile">
+          <div className="aboutcontent__center__offers">
             <Slider {...settings}>
-              {listImages.map((image) => (
-                <ShopexOffer image={image} />
+              {listImages.map((list) => (
+                <div className="aboutcontent__center__offers__1" style={{display:"flex"}}>
+                  <div className="aboutcontent__center__offers__1__offer">
+                  <div className="aboutcontent__center__offers__1__offer__image">
+                    <img src={list.image} alt=""></img>
+                  </div>
+                  <div className="aboutcontent__center__offers__1__offer__title">
+                    {list.title}
+                  </div>
+                  <div className="aboutcontent__center__offers__1__offer__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Massa purus gravida.
+                  </div>
+                </div>
+                </div>
               ))}
             </Slider>
           </div>
         </div>
+        <div id="about__pc">
+          <div className="aboutcontent__center__offers">
+            {listImages.map((list) => (
+              <div className="aboutcontent__center__offers__1">
+                <div className="aboutcontent__center__offers__1__offer">
+                <div className="aboutcontent__center__offers__1__offer__image">
+                  <img src={list.image} alt=""></img>
+                </div>
+                <div className="aboutcontent__center__offers__1__offer__title">
+                  {list.title}
+                </div>
+                <div className="aboutcontent__center__offers__1__offer__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                  purus gravida.
+                </div>
+              </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
       <div className="aboutcontent__bot">
         <h1>Our Client Say!</h1>
-        <div className="aboutcontent__bot">
-          <Slider {...settings1}>
-            <AboutInfo
-              image="./images/OhKElOkQ3RE.png"
-              name="Selina Gomez"
-              office="Ceo At Webecy Digital"
-            ></AboutInfo>
-            <AboutInfo
-              image="./images/GH-mSApoKO0.png"
-              name="Selina Gomez"
-              office="Ceo At Webecy Digital"
-            ></AboutInfo>
-            <AboutInfo
-              image="./images/RukI4qZGlQs.png"
-              name="Selina Gomez"
-              office="Ceo At Webecy Digital"
-            ></AboutInfo>
-          </Slider>
+        <div className="aboutcontent__bot__content">
+          <div className="aboutcontent__bot__content__image">
+            <div className="aboutcontent__bot__content__image__1">
+              <img src="./images/OhKElOkQ3RE.png" alt=""></img>
+            </div>
+            <div className="aboutcontent__bot__content__image__2">
+              <img src="./images/GH-mSApoKO0.png" alt=""></img>
+            </div>
+            <div className="aboutcontent__bot__content__image__3">
+              <img src="./images/RukI4qZGlQs.png" alt=""></img>
+            </div>
+          </div>
+          <div className="aboutcontent__bot__content__name">
+            <p>Selina Gomez</p>
+            <span>Ceo At Webecy Digital</span>
+          </div>
+          <div className="aboutcontent__bot__content__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non duis
+            ultrices quam vel dui sollicitudin aliquet id arcu. Nam vitae a enim
+            nunc, sed sapien egestas ac nam. Tristique ultrices dolor aliquam
+            lacus volutpat praesent.
+          </div>
+        </div>
+        <div className="aboutcontent__bot__footer">
+          <img src="./images/Rectangle 94.png" alt=""></img>
+          <img src="./images/Rectangle 104.png" alt=""></img>
+          <img src="./images/Rectangle 94.png" alt=""></img>
         </div>
       </div>
     </div>

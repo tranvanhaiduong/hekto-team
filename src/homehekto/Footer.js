@@ -8,7 +8,7 @@ function Footer() {
             <div className="footer__top__logo__search__email">
               <input type="text" placeholder="Enter Email Address"></input>
               <div className="footer__top__logo__search__email__button">
-                <button>Sign Up</button>
+                <button className="btn">Sign Up</button>
               </div>
             </div>
           </div>
