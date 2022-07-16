@@ -1,8 +1,10 @@
+import ShopLeft from "../page/ShopLeft";
+
 export const shopleft = [
   {
     pid: "s1",
     image: "/images/Rectangle 32 (7).png",
-    title: "Accumsan tincidunt",
+    title: "Dictum morbi",
     color: [
       "/images/Ellipse 28.png",
       "/images/Ellipse 29.png",
@@ -28,7 +30,7 @@ export const shopleft = [
   {
     pid: "s2",
     image: "/images/Rectangle 32 (8).png",
-    title: "Accumsan tincidunt",
+    title: "Sodales sit",
     color: [
       "/images/Ellipse 28.png",
       "/images/Ellipse 29.png",
@@ -54,7 +56,7 @@ export const shopleft = [
   {
     pid: "s3",
     image: "/images/Rectangle 32 (9).png",
-    title: "Accumsan tincidunt",
+    title: "Nibh varius",
     color: [
       "./images/Ellipse 28.png",
       "./images/Ellipse 29.png",
@@ -80,7 +82,7 @@ export const shopleft = [
   {
     pid: "s4",
     image: "/images/Rectangle 32 (10).png",
-    title: "Accumsan tincidunt",
+    title: "Mauris quis",
     color: [
       "./images/Ellipse 28.png",
       "./images/Ellipse 29.png",
@@ -106,7 +108,7 @@ export const shopleft = [
   {
     pid: "s5",
     image: "/images/Rectangle 32 (11).png",
-    title: "Accumsan tincidunt",
+    title: "Morbi sagittis",
     color: [
       "./images/Ellipse 28.png",
       "./images/Ellipse 29.png",
@@ -132,7 +134,7 @@ export const shopleft = [
   {
     pid: "s6",
     image: "/images/Rectangle 32 (12).png",
-    title: "Accumsan tincidunt",
+    title: "Ultricies venenatis",
     color: [
       "./images/Ellipse 28.png",
       "./images/Ellipse 29.png",
@@ -158,7 +160,7 @@ export const shopleft = [
   {
     pid: "s7",
     image: "/images/Rectangle 32 (13).png",
-    title: "Accumsan tincidunt",
+    title: "Scelerisque dignissim",
     color: [
       "./images/Ellipse 28.png",
       "./images/Ellipse 29.png",

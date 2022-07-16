@@ -9,11 +9,8 @@ import "slick-carousel/slick/slick-theme.css";
 function Home() {
   return (
     <div className="Home_hekto">
-      <Header />
-      <Navbar />
       <Slide />
       <Content />
-      <Footer />
     </div>
   );
 }
