@@ -25,7 +25,7 @@
         }
       }
       &__shopping {
-        display: none;
+        display: block;
         &__shop {
           display: flex;
           align-items: center;
@@ -36,6 +36,21 @@
           transform: translateY(-50%);
           margin-left: 19px;
           row-gap: 13px;
+          &__add {
+            &__cart {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              background: white;
+              position: relative;
+              img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
         }
       }
 
@@ -77,10 +92,7 @@
 #shopgrid__mobile {
   display: none;
 }
-.slick-track {
-  display: flex;
-  gap: 15px;
-}
+
 .contentShop__shopgrid__listitem__product:hover {
   .contentShop__shopgrid__listitem__product__img {
     background: #ebf4f3;

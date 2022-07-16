@@ -28,7 +28,7 @@ export const shoplist = [
   {
     pid: "sl2",
     image: "/images/Rectangle 32 (1).png",
-    title: "Accumsan tincidunt",
+    title: "In nulla",
     color: [
       "/images/Ellipse 28.png",
       "/images/Ellipse 29.png",
@@ -54,7 +54,7 @@ export const shoplist = [
   {
     pid: "sl3",
     image: "/images/Rectangle 32 (2).png",
-    title: "Accumsan tincidunt",
+    title: "Vel sem",
     color: [
       "/images/Ellipse 28.png",
       "/images/Ellipse 29.png",
@@ -80,7 +80,7 @@ export const shoplist = [
   {
     pid: "sl4",
     image: "/images/Rectangle 32 (3).png",
-    title: "Accumsan tincidunt",
+    title: "Porttitor cum",
     color: [
       "/images/Ellipse 28.png",
       "/images/Ellipse 29.png",
@@ -106,7 +106,7 @@ export const shoplist = [
   {
     pid: "sl5",
     image: "/images/Rectangle 32 (4).png",
-    title: "Accumsan tincidunt",
+    title: "Nunc in",
     color: [
       "/images/Ellipse 28.png",
       "/images/Ellipse 29.png",
@@ -132,7 +132,7 @@ export const shoplist = [
   {
     pid: "sl6",
     image: "/images/Rectangle 32 (5).png",
-    title: "Accumsan tincidunt",
+    title: "Vitae facilisis",
     color: [
       "/images/Ellipse 28.png",
       "/images/Ellipse 29.png",
@@ -158,7 +158,7 @@ export const shoplist = [
   {
     pid: "sl7",
     image: "/images/Rectangle 32 (6).png",
-    title: "Accumsan tincidunt",
+    title: "Curabitur lectus",
     color: [
       "/images/Ellipse 28.png",
       "/images/Ellipse 29.png",

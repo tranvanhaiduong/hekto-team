@@ -1,7 +1,6 @@
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 import GridProduct from "./GridProduct";
 import Slider from "react-slick";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 function ShopGridProduct() {
   var settings = {

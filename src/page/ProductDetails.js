@@ -20,8 +20,6 @@ function ProductDetails() {
     : shopleftdata.getById(pid);
   return (
     <div className="Product__Deatails">
-      <Header />
-      <Navbar />
       <Navigation title="Product Details" name="Product Details" />
       <PlayWood
         image={product.image}
@@ -32,7 +30,6 @@ function ProductDetails() {
       <Description />
       <Related />
       <Logo />
-      <Footer />
     </div>
   );
 }

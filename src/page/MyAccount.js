@@ -7,15 +7,12 @@ import Logo from "../homehekto/Logo";
 
 import "../scss/login.scss";
 
-export default function MyAccount(){
-    return(
-        <div>
-            <Header/>
-            <Navbar/>
-            <Navigation title="My Account" name="My Account"></Navigation>
-            <Login/>
-            <Logo/>
-            <Footer/>
-        </div>
-    );
+export default function MyAccount() {
+  return (
+    <div>
+      <Navigation title="My Account" name="My Account"></Navigation>
+      <Login />
+      <Logo />
+    </div>
+  );
 }

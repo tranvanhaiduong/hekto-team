@@ -165,7 +165,12 @@
 #slider {
   display: block;
 }
-
+#slider {
+  .slick-track {
+    display: flex;
+    gap: 37px;
+  }
+}
 .content__leatest__slide__chairone:hover {
   .content__leatest__slide__chairone__img__sale {
     display: block;

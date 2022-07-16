@@ -4,15 +4,12 @@ import Header from "../homehekto/Header";
 import Navbar from "../homehekto/Navbar";
 import Navigation from "../homehekto/Navigation";
 
-function Contact(){
-    return(
-        <>
-        <Header/>
-        <Navbar/>
-        <Navigation title="Contact Us" name="Contact Us"/>
-        <ContentContact/>
-        <Footer/>
-        </>
-    )
+function Contact() {
+  return (
+    <>
+      <Navigation title="Contact Us" name="Contact Us" />
+      <ContentContact />
+    </>
+  );
 }
 export default Contact;
