@@ -1,3 +1,13 @@
+.slides{
+  .slick-dots {
+    bottom: 53.47px;
+  }
+  li.slick-active {
+    div{
+      background: #fb2e86;
+    }
+  }
+}
 .slide {
   width: 100%;
   height: 700px;

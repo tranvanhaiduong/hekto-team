@@ -8,12 +8,33 @@ class Slide extends React.Component {
       dots: true,
       arrows: false,
       autoplaySpeed: 1000,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      // autoplay: true,
+      // autoplaySpeed: 3000,
+      appendDots: (dots) => (
+        <div
+          style={{
+            borderRadius: "10px",
+            padding: "10px",
+          }}
+        >
+          <ul style={{ marginTop: "0px" }}> {dots} </ul>
+        </div>
+      ),
+      customPaging: () => (
+        <div
+          style={{
+            width: "10px",
+            height: "10px",
+            transform: "rotate(-45deg)",
+            border:"1px solid #FB2E86"
+          }}
+        ></div>
+      ),
     };
 
     return (
-      <Slider {...settings}>
+      <div className="slides">
+        <Slider {...settings}>
         <div className="slide">
           <div className="slide__img">
             <img alt="" src="./images/img1.png"></img>
@@ -71,6 +92,7 @@ class Slide extends React.Component {
           </div>
         </div>
       </Slider>
+      </div>
     );
   }
 }
