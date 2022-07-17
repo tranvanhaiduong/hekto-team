@@ -7,6 +7,9 @@
   justify-content: center;
   box-sizing: border-box;
   max-width: 1920px;
+  // @include tablet {
+  //   display: none;
+  // }
   &__bars {
     line-height: 44px;
     position: absolute;
