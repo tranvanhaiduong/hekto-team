@@ -5,7 +5,7 @@ import Slider from "react-slick";
 class Shopex extends React.Component {
   render() {
     var settings = {
-      dots: true,
+      dots: false,
       infinite: false,
       arrows: false,
       slidesToShow: 4,

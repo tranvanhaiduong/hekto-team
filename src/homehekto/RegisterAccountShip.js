@@ -60,12 +60,11 @@ export default function RegisterAccountShip() {
           <RegisterAccountContact />
         </div>
         <div className="RegisterAccountShip__ship__right">
-
           <div className="RegisterAccountShip__ship__right__product">
-          <Slider {...settings}>
-            {ListProduct.map((product) => (
-              <RegisterAccountProduct image={product.image} />
-            ))}
+            <Slider {...settings}>
+              {ListProduct.map((product) => (
+                <RegisterAccountProduct image={product.image} />
+              ))}
             </Slider>
           </div>
           <div className="RegisterAccountShip__ship__right__checkout">

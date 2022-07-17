@@ -1,4 +1,3 @@
-import { shoplist } from "../fake -data/fakedata-shoplist";
 import ListProduct from "./ListProduct";
 import Slider from "react-slick";
 import productData, { shopgrid_product } from "../fake -data/fakedata-shopgrid";
@@ -38,27 +37,10 @@ function ShopListProduct() {
   return (
     <div className="contentShop__shoplist">
       <div id="shoplist__pc">
-        {shopgrid_product.map((list) => (
-          list.pid.includes("sl")?
-          <ListProduct
-            pid={list.pid}
-            image={list.image}
-            title={list.title}
-            colors={list.color}
-            price={list.price}
-            sale={list.sale}
-            ratings={list.rating}
-            description={list.description}
-            vectors={list.vector}
-          />
-          :null
-        ))}
-      </div>
-      <div id="shoplist__mobile">
-        <Slider {...settings}>
-          {shopgrid_product.map((list) => (
-            list.pid.includes("sl")?
+        {shopgrid_product.map((list) =>
+          list.pid.includes("sl") ? (
             <ListProduct
+              pid={list.pid}
               image={list.image}
               title={list.title}
               colors={list.color}
@@ -68,8 +50,25 @@ function ShopListProduct() {
               description={list.description}
               vectors={list.vector}
             />
-            :null
-          ))}
+          ) : null
+        )}
+      </div>
+      <div id="shoplist__mobile">
+        <Slider {...settings}>
+          {shopgrid_product.map((list) =>
+            list.pid.includes("sl") ? (
+              <ListProduct
+                image={list.image}
+                title={list.title}
+                colors={list.color}
+                price={list.price}
+                sale={list.sale}
+                ratings={list.rating}
+                description={list.description}
+                vectors={list.vector}
+              />
+            ) : null
+          )}
         </Slider>
       </div>
     </div>

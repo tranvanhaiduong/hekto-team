@@ -1,8 +1,13 @@
-function Sidebar({ image, check, rating }) {
+function Sidebar({ check, rating, key }) {
+  console.log(typeof key);
   return (
     <div className="contentShop__shopleft__sidebar__brand__listbrand">
       <div className="contentShop__shopleft__sidebar__brand__listbrand__check">
-        <img alt="" src={image}></img>
+        {/* <img alt="" src={image}></img> */}
+        <div class="squaredcheck">
+          <input type="checkbox" id={`squaredcheck ${key}`} />
+          <label htmlFor="squaredcheck"></label>
+        </div>
       </div>
 
       {rating === null ? (

@@ -1,5 +1,4 @@
 import Sidebar from "./Sidebar";
-import { shopleft } from "../fake -data/fakedata-shopleft";
 import LeftProduct from "./LeftProduct";
 import Slider from "react-slick";
 import productData, { shopgrid_product } from "../fake -data/fakedata-shopgrid";
@@ -122,8 +121,8 @@ function ShopLeftSidebar() {
             <div className="contentShop__shopleft__sidebar__brand__title">
               <h1>Product Brand</h1>
             </div>
-            {checks.map((check) => (
-              <Sidebar image="./images/check.png" check={check} />
+            {checks.map((check, index) => (
+              <Sidebar check={check} key={index} />
             ))}
           </div>
           <div className="contentShop__shopleft__sidebar__discount">
@@ -207,21 +206,21 @@ function ShopLeftSidebar() {
           </div>
         </div>
         <div className="contentShop__shopleft__listproduct">
-          {shopgrid_product.map((list) => (
-             list.pid.includes("sp")?
-            <LeftProduct
-              pid={list.pid}
-              image={list.image}
-              title={list.title}
-              colors={list.color}
-              price={list.price}
-              sale={list.sale}
-              ratings={list.rating}
-              description={list.description}
-              vectors={list.vector}
-            />
-            :null
-          ))}
+          {shopgrid_product.map((list) =>
+            list.pid.includes("sp") ? (
+              <LeftProduct
+                pid={list.pid}
+                image={list.image}
+                title={list.title}
+                colors={list.color}
+                price={list.price}
+                sale={list.sale}
+                ratings={list.rating}
+                description={list.description}
+                vectors={list.vector}
+              />
+            ) : null
+          )}
         </div>
       </div>
       <div id="shopleft__mobile">
@@ -318,19 +317,21 @@ function ShopLeftSidebar() {
         </div>
         <div className="contentShop__shopleft__listproduct">
           <Slider {...settings}>
-            {shopleft.map((list) => (
-              <LeftProduct
-                pid={list.pid}
-                image={list.image}
-                title={list.title}
-                colors={list.color}
-                price={list.price}
-                sale={list.sale}
-                ratings={list.rating}
-                description={list.description}
-                vectors={list.vector}
-              />
-            ))}
+            {shopgrid_product.map((list) =>
+              list.pid.includes("sp") ? (
+                <LeftProduct
+                  pid={list.pid}
+                  image={list.image}
+                  title={list.title}
+                  colors={list.color}
+                  price={list.price}
+                  sale={list.sale}
+                  ratings={list.rating}
+                  description={list.description}
+                  vectors={list.vector}
+                />
+              ) : null
+            )}
           </Slider>
         </div>
       </div>
