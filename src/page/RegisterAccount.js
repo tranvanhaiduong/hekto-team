@@ -9,12 +9,7 @@ import "../scss/RegisterAccountShip.scss";
 import "../scss/RegisterAccountContact.scss";
 import "../scss/RegisterAccountProduct.scss";
 
-export default function RegisterAccount() {
-  return (
 
-import "../scss/RegisterAccountShip.scss"
-import "../scss/RegisterAccountContact.scss"
-import "../scss/RegisterAccountProduct.scss"
 
 export default function RegisterAccount(){
     return(
