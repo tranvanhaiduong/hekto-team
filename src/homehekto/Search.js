@@ -1,4 +1,6 @@
-function Search() {
+import { useState } from "react";
+
+function Search({toggleViewMode,setToggleViewMode}) {
   return (
     <div className="contentShop__search">
       <div className="contentShop__search__left">
@@ -22,10 +24,11 @@ function Search() {
           </div>
         </div>
         <div className="contentShop__search__right__view">
-          <div className="contentShop__search__right__view__img">
+          <div className="contentShop__search__right__view__img" >
+            
             <p>View:</p>
-            <img alt="" src="/images/clarity.png"></img>
-            <img alt="" src="/images/Vector (7).png"></img>
+            <img alt="" src="/images/clarity.png" onClick={() => setToggleViewMode(!toggleViewMode)}></img>
+            <img alt="" src="/images/Vector (7).png" onClick={() => setToggleViewMode(!toggleViewMode)}></img>
           </div>
           <div className="contentShop__search__right__view__input">
             <input></input>
