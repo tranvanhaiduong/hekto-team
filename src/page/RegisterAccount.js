@@ -10,9 +10,14 @@ import "../scss/RegisterAccountContact.scss";
 import "../scss/RegisterAccountProduct.scss";
 
 
+export default function RegisterAccount() {
+  return (
+
+
 
 export default function RegisterAccount(){
     return(
+
 
     <div className="Home_hekto">
       <Navigation title="Hekto Demo" name="Hekto Demo"></Navigation>

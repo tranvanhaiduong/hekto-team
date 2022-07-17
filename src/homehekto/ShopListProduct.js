@@ -39,6 +39,10 @@ function ShopListProduct({toggleViewMode}) {
   return (
     <div className="contentShop__shoplist" id="shoplist">
       <div id="shoplist__pc">
+
+        {shopgrid_product.map((list) =>
+          list.pid.includes("sl") ? (
+
         {toggleViewMode===true?
         <div id="shoplist__list">
         {shopgrid_product.map((list) => (
@@ -80,7 +84,9 @@ function ShopListProduct({toggleViewMode}) {
         <Slider {...settings}>
           {shopgrid_product.map((list) => (
             list.pid.includes("sl")?
+
             <ListProduct
+              pid={list.pid}
               image={list.image}
               title={list.title}
               colors={list.color}
@@ -90,8 +96,25 @@ function ShopListProduct({toggleViewMode}) {
               description={list.description}
               vectors={list.vector}
             />
-            :null
-          ))}
+          ) : null
+        )}
+      </div>
+      <div id="shoplist__mobile">
+        <Slider {...settings}>
+          {shopgrid_product.map((list) =>
+            list.pid.includes("sl") ? (
+              <ListProduct
+                image={list.image}
+                title={list.title}
+                colors={list.color}
+                price={list.price}
+                sale={list.sale}
+                ratings={list.rating}
+                description={list.description}
+                vectors={list.vector}
+              />
+            ) : null
+          )}
         </Slider>
         
       </div>

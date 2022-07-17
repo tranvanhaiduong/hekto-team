@@ -123,8 +123,8 @@ function ShopLeftSidebar({toggleViewMode}) {
             <div className="contentShop__shopleft__sidebar__brand__title">
               <h1>Product Brand</h1>
             </div>
-            {checks.map((check) => (
-              <Sidebar image="./images/check.png" check={check} />
+            {checks.map((check, index) => (
+              <Sidebar check={check} key={index} />
             ))}
           </div>
           <div className="contentShop__shopleft__sidebar__discount">
@@ -230,21 +230,21 @@ function ShopLeftSidebar({toggleViewMode}) {
         :
         <div id="shopleft__grid">
         <div className="contentShop__shopleft__listproduct">
-          {shopgrid_product.map((list) => (
-             list.pid.includes("sp")?
-            <LeftProduct
-              pid={list.pid}
-              image={list.image}
-              title={list.title}
-              colors={list.color}
-              price={list.price}
-              sale={list.sale}
-              ratings={list.rating}
-              description={list.description}
-              vectors={list.vector}
-            />
-            :null
-          ))}
+          {shopgrid_product.map((list) =>
+            list.pid.includes("sp") ? (
+              <LeftProduct
+                pid={list.pid}
+                image={list.image}
+                title={list.title}
+                colors={list.color}
+                price={list.price}
+                sale={list.sale}
+                ratings={list.rating}
+                description={list.description}
+                vectors={list.vector}
+              />
+            ) : null
+          )}
         </div>
         </div>}
       </div>
@@ -342,6 +342,23 @@ function ShopLeftSidebar({toggleViewMode}) {
         </div>
         <div className="contentShop__shopleft__listproduct">
           <Slider {...settings}>
+
+            {shopgrid_product.map((list) =>
+              list.pid.includes("sp") ? (
+                <LeftProduct
+                  pid={list.pid}
+                  image={list.image}
+                  title={list.title}
+                  colors={list.color}
+                  price={list.price}
+                  sale={list.sale}
+                  ratings={list.rating}
+                  description={list.description}
+                  vectors={list.vector}
+                />
+              ) : null
+            )}
+
             {shopgrid_product.map((list) => (
               list.pid.includes("sp")?
               <LeftProduct
@@ -357,6 +374,7 @@ function ShopLeftSidebar({toggleViewMode}) {
               />
               :null
             ))}
+
           </Slider>
         </div>
       </div>

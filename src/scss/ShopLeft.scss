@@ -216,6 +216,42 @@
         gap: 9px;
         margin-bottom: 10px;
         &__check {
+          .squaredcheck {
+            position: relative;
+            width: 16px;
+            height: 16px;
+            label {
+              width: 16px;
+              height: 16px;
+              cursor: pointer;
+              position: absolute;
+              left: 0;
+              background: #e5e0fc;
+              &:after {
+                content: "";
+                width: 10px;
+                height: 5px;
+                position: absolute;
+                top: 4px;
+                left: 3px;
+                border: 2px solid #603eff;
+                border-top: none;
+                border-right: none;
+                transform: rotate(-45deg);
+              }
+            }
+            input {
+              position: absolute;
+              top: -3px;
+              background: #e5e0fc;
+              &:checked + label {
+                visibility: hidden;
+                &:checked + label {
+                  background: #603eff;
+                }
+              }
+            }
+          }
           &__checklist {
             a {
               color: #7e81a2;
