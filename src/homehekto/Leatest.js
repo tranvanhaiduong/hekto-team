@@ -3,15 +3,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
 import FeaturedProduct from "./FeaturedProdcuts";
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Leatest extends React.Component {
   render() {
     var settings = {
-      dots: true,
+      dots: false,
       infinite: false,
       arrows: false,
       speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      rows:2,
       initialSlide: 0,
       responsive: [
         {
@@ -32,14 +34,7 @@ class Leatest extends React.Component {
         },
       ],
     };
-    const listImages = [
-      "./images/image 1166.png",
-      "./images/image 15.png",
-      "./images/image 1168.png",
-      "./images/image 23.png",
-      "./images/image 32.png",
-      "./images/image 3 (1).png",
-    ];
+    
     return (
       <div className="content__leatest">
         <div className="content__leatest__products">
@@ -56,9 +51,15 @@ class Leatest extends React.Component {
         <div className="content__leatest__slide">
           <div id="slider">
             <Slider {...settings}>
-              {listImages.map((image) => (
-                <LeatestProducts image={image} />
-              ))}
+              {Array(2).fill().map(()=>
+              
+              shopgrid_product.map((list) => (
+                list.pid.includes("lt")?
+                <LeatestProducts image={list.image} pid={list.pid} title={list.title} price={list.price} sale={list.sale}/>
+                :null
+              ))
+              
+              )}
             </Slider>
           </div>
         </div>

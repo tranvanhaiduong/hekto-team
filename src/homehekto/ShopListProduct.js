@@ -40,8 +40,7 @@ function ShopListProduct({toggleViewMode}) {
     <div className="contentShop__shoplist" id="shoplist">
       <div id="shoplist__pc">
 
-        {shopgrid_product.map((list) =>
-          list.pid.includes("sl") ? (
+        
 
         {toggleViewMode===true?
         <div id="shoplist__list">
@@ -96,8 +95,9 @@ function ShopListProduct({toggleViewMode}) {
               description={list.description}
               vectors={list.vector}
             />
-          ) : null
+           : null)
         )}
+        </Slider>
       </div>
       <div id="shoplist__mobile">
         <Slider {...settings}>

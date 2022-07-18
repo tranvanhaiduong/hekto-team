@@ -168,7 +168,12 @@
 #slider {
   .slick-track {
     display: flex;
-    gap: 37px;
+    column-gap: 37px;
+  }
+  .slick-slide {
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
   }
 }
 .content__leatest__slide__chairone:hover {
@@ -224,18 +229,13 @@
     }
   }
   #slider {
-    display: none;
+    display: block;
   }
-  #leatest__pc {
-    display: none;
-  }
+  
   .content__leatest__slide {
     display: grid;
     grid-template-columns: 90%;
     height: auto;
-    #leatest__tablet {
-      display: block;
-    }
     img {
       max-width: 100%;
     }
@@ -255,12 +255,7 @@
     }
   }
   #slider {
-    display: none;
-  }
-  #leatest__tablet {
-    display: none;
-  }
-  #leatest__pc {
     display: block;
   }
+  
 }
