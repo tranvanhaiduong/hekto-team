@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import FeaturedProduct from "./FeaturedProdcuts";
 class Leatest extends React.Component {
   render() {
-    var settings = {
+    const settings = {
       dots: true,
       infinite: false,
       arrows: false,

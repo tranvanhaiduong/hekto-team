@@ -10,8 +10,7 @@ import "../scss/RegisterAccountContact.scss";
 import "../scss/RegisterAccountProduct.scss";
 
 
-export default function RegisterAccount() {
-  return (
+
 
 
 

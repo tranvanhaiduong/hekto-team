@@ -5,7 +5,7 @@ import Slider from "react-slick";
 
 class Featured extends React.Component {
   render() {
-    var settings = {
+     const settings = {
       dots: true,
       infinite: false,
       arrows: false,

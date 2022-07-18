@@ -1,9 +1,8 @@
 import Sidebar from "./Sidebar";
-
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 import LeftProduct from "./LeftProduct";
 import Slider from "react-slick";
-import productData, { shopgrid_product } from "../fake -data/fakedata-shopgrid";
-var settings = {
+const settings = {
   dots: false,
   infinite: false,
   arrows: false,

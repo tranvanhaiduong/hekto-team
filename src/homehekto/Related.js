@@ -51,7 +51,7 @@ function Related() {
       ],
     },
   ];
-  var settings = {
+  const settings = {
     dots: false,
     infinite: false,
     arrows: false,

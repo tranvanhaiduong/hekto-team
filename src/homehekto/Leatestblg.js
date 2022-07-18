@@ -13,7 +13,7 @@ class Leatestblg extends React.Component {
       "./images/2dc.png",
       "./images/3dc.png",
     ];
-    var settings = {
+    const settings = {
       dots: true,
       infinite: false,
       arrows: false,
