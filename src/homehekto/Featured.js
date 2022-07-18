@@ -2,6 +2,7 @@ import FeaturedProduct from "./FeaturedProdcuts";
 import React from "react";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 
 class Featured extends React.Component {
   render() {
@@ -21,17 +22,29 @@ class Featured extends React.Component {
           },
         },
       ],
+      appendDots: (dots) => (
+        <div
+          style={{
+            borderRadius: "10px",
+            padding: "10px",
+          }}
+        >
+          <ul style={{ marginTop: "0px" }}> {dots} </ul>
+        </div>
+      ),
+      customPaging: () => (
+        <div
+          style={{
+            width: "24px",
+            height: "4px",
+            borderRadius: "10px",
+            background: "#FEBAD7",
+            marginTop:"53px"
+          }}
+        ></div>
+      ),
     };
-    const listImages = [
-      "/images/image 1168.png",
-      "/images/image 3.png",
-      "/images/image 1169.png",
-      "/images/image 1.png",
-      "/images/image 1168.png",
-      "/images/image 3.png",
-      "/images/image 1169.png",
-      "/images/image 1.png",
-    ];
+    
     return (
       <div className="content__featured">
         <div className="content__featured__products">
@@ -39,15 +52,21 @@ class Featured extends React.Component {
           <div className="content__featured__slide">
             <div id="featured__mobile">
               <Slider {...settings}>
-                {listImages.map((image) => (
-                  <FeaturedProduct image={image} />
-                ))}
+                {Array(4).fill().map(()=>
+                shopgrid_product.map((list) => (
+                  list.pid.includes("f")?
+                  <FeaturedProduct image={list.image} pid={list.pid}/>
+                  :null
+                ))
+                )}
               </Slider>
             </div>
             <div id="featured__ipad">
               <Slider {...settings}>
-                {listImages.map((image) => (
-                  <FeaturedProduct image={image} />
+              {shopgrid_product.map((list) => (
+                  list.pid.includes("f")?
+                  <FeaturedProduct image={list.image} />
+                  :null
                 ))}
               </Slider>
             </div>

@@ -41,8 +41,8 @@ function ListProduct({
           </div>
         </div>
         <div className="contentShop__shoplist__product__title__price">
-          <p>{price}</p>
-          <p className="sale">{sale}</p>
+          <p>${price}.00</p>
+          <p className="sale">${sale}.00</p>
           <div className="contentShop__shoplist__product__title__price__rating">
             {ratings.map((rating) => (
               <img alt="" src={rating}></img>

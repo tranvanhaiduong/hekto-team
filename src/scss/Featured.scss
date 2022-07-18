@@ -10,6 +10,11 @@
       margin-bottom: 48px;
     }
   }
+  li.slick-active {
+    div{
+      background: #fb2e86 !important;
+    }
+  }
   &__slide {
     display: grid;
     grid-template-columns: 1080px;
@@ -18,7 +23,6 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 53px;
-
     p.code {
       color: #151875;
       font: "Josefin Sans";
@@ -252,6 +256,10 @@
   .content__featured {
     #featured__ipad {
       display: block;
+      .slick-track {
+        display: flex;
+        gap: 15px;
+      }
     }
     &__slide {
       grid-template-columns: 90%;
