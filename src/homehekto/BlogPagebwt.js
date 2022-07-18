@@ -76,7 +76,7 @@ export default function BlogPagebwt() {
           <div className="contentsingle__right__search">
             <div className="contentsingle__right__search__title">Search</div>
             <div className="contentsingle__right__search__content">
-              <input type="text" placeholder="Search For Posts"></input>
+              <input id="seachtext" type="text" placeholder="Search For Posts"></input>
             </div>
           </div>
           <div className="contentsingle__right__categories">
