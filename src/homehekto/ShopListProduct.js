@@ -99,25 +99,6 @@ function ShopListProduct({toggleViewMode}) {
         )}
         </Slider>
       </div>
-      <div id="shoplist__mobile">
-        <Slider {...settings}>
-          {shopgrid_product.map((list) =>
-            list.pid.includes("sl") ? (
-              <ListProduct
-                image={list.image}
-                title={list.title}
-                colors={list.color}
-                price={list.price}
-                sale={list.sale}
-                ratings={list.rating}
-                description={list.description}
-                vectors={list.vector}
-              />
-            ) : null
-          )}
-        </Slider>
-        
-      </div>
     </div>
   );
 }

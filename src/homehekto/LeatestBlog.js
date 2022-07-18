@@ -1,7 +1,7 @@
 function LeatestBlog({ image }) {
   return (
     <div className="content__leatestblg__top__esssential">
-      <img className="img1" alt="" src={image}></img>
+      <img className="content__leatestblg__top__esssential__img1" alt="" src={image}></img>
       <div className="content__leatestblg__top__esssential__saber">
         <div className="content__leatestblg__top__esssential__saber__ali">
           <img alt="" src="./images/Vector (3).png"></img>

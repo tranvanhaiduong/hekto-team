@@ -1,7 +1,7 @@
 .OrderComp{
     max-width: 1920px;
     width: 100%;
-    height: 600px;
+    height: 675px;
     margin: auto;
     text-align: center;
     &__Tb{
@@ -43,18 +43,31 @@
             // margin: auto;
             &__clock{
                 position: relative;
-                right: 380px;
-                bottom: 280px;
+                bottom: 420px;
+                left: 60px;
             }
             &__check{
                 position: relative;
-                left: 480px;
-                bottom: 0px;
+                left: 896px;
+                bottom: 123px;
             }
             &__tich{
                 position: relative;
-                right: 90px;
-                bottom: 380px;
+                bottom: 495px;
+                left: 375px;
+            }
+            &__ngang{
+                position: relative;
+                bottom: 130px;
+                right: 164px;
+                width: 900px;
+            }
+            &__doc{
+                position: relative;
+                bottom: 149px;
+                /* left: -27px; */
+                right: 1065px;
+                height: 270px;
             }
         }
     }
@@ -79,11 +92,17 @@
                 &__clock{
                     width: 40px;
                     bottom: 285px;
-                    right: 65px;
+                    left: -70px;
                 }
                 &__tich {
-                    right: 50px;
-                    bottom: 375px;
+                    bottom: 360px;
+                    left: -60px;
+                }
+                &__ngang{
+                    display: none;
+                }
+                &__doc{
+                    display: none;
                 }
             }
         }
@@ -108,12 +127,18 @@
                 }
                 &__clock{
                     width: 60px;
-                    bottom: 285px;
-                    right: 130px;
+                    bottom: 280px;
+                    left: -145px;
                 }
                 &__tich {
-                    right: 50px;
-                    bottom: 375px;
+                    bottom: 340px;
+                    left: -75px;
+                }
+                &__ngang{
+                    display: none;
+                }
+                &__doc{
+                    display: none;
                 }
             }
         }
@@ -137,12 +162,18 @@
                 }
                 &__clock{
                     width: 60px;
-                    right: 360px;
                     bottom: 280px;
+                    left: -310px;
                 }
                 &__tich {
-                    right: 50px;
-                    bottom: 375px;
+                    bottom: 325px;
+                    left: -60px;
+                }
+                &__ngang{
+                    display: none;
+                }
+                &__doc{
+                    display: none;
                 }
             }
         }

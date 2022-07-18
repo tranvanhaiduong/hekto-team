@@ -6,7 +6,7 @@ import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 
 class Featured extends React.Component {
   render() {
-    var settings = {
+     const settings = {
       dots: true,
       infinite: false,
       arrows: false,

@@ -11,7 +11,7 @@ function Trending() {
     "./images/box for image (2).png",
     "./images/box for image (3).png",
   ];
-  var settings = {
+  const settings = {
     dots: false,
     arrows: false,
     slidesToScroll: 4,
@@ -39,7 +39,7 @@ function Trending() {
       },
     ],
   };
-  var settings1 = {
+  const settings1 = {
     dots: false,
     arrows: false,
     autoplay: false,

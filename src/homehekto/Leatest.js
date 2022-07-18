@@ -6,8 +6,10 @@ import FeaturedProduct from "./FeaturedProdcuts";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Leatest extends React.Component {
   render() {
-    var settings = {
-      dots: false,
+
+    const settings = {
+      dots: true,
+
       infinite: false,
       arrows: false,
       speed: 500,
