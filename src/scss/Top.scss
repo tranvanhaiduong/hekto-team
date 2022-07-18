@@ -24,8 +24,30 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         img {
           object-fit: cover;
+        }
+        &__btn{
+          position: absolute;
+          left: 125px;
+          top: 220px;
+          display: none;
+          button{
+            background: #08D15F;
+            border-radius: 2px;
+            width: 94px;
+            height: 30px; 
+            border: #08D15F;
+            color: white;
+            font-family: 'Josefin Sans';
+            font-size: 12px;
+            line-height: 14px;
+            transform: translateX(-50%);
+          }
+          button:hover{
+            background: #06ad4e;
+          }
         }
       }
       &__chairone {
@@ -62,6 +84,9 @@
   }
   .content__top__mini__LCW__chair {
     box-shadow: -0.25em 0.25em 0 0 #9877e7;
+  }
+  .content__top__mini__LCW__chair__btn{
+    display: block;
   }
 }
 @media only screen and(max-width:495px) {

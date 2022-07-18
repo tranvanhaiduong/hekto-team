@@ -2,7 +2,7 @@ import Sidebar from "./Sidebar";
 import { shopleft } from "../fake -data/fakedata-shopleft";
 import LeftProduct from "./LeftProduct";
 import Slider from "react-slick";
-var settings = {
+const settings = {
   dots: false,
   infinite: false,
   arrows: false,

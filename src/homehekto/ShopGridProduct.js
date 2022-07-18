@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 function ShopGridProduct() {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: false,
     arrows: false,

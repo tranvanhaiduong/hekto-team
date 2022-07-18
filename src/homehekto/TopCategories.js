@@ -3,6 +3,9 @@ function TopCategories({ image }) {
     <div className="content__top__mini__LCW">
       <div className="content__top__mini__LCW__chair">
         <img alt="" src={image}></img>
+        <div className="content__top__mini__LCW__chair__btn ">
+          <button >View Shop</button>
+        </div>
       </div>
       <div className="content__top__mini__LCW__price">
         <h3>Mini LCW Chair</h3>

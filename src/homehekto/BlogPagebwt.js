@@ -36,7 +36,7 @@ export default function BlogPagebwt() {
     "./images/Rectangle 126 (2).png",
     "./images/Rectangle 129.png"
   ];
-  var settings = {
+  const settings = {
     dots: false,
     arrows: false,
     autoplay: true,

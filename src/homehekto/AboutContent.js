@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import ShopexOffer from "../homehekto/ShopexOffer";
 import AboutInfo from "./AboutInfo";
 
-var settings = {
+const settings = {
   dots: false,
   infinite: false,
   arrows: false,

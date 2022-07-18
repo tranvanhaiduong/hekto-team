@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import Slider from "react-slick";
 class Shopex extends React.Component {
   render() {
-    var settings = {
+    const settings = {
       dots: true,
       infinite: false,
       arrows: false,

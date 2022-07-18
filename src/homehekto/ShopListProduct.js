@@ -2,7 +2,7 @@ import { shoplist } from "../fake -data/fakedata-shoplist";
 import ListProduct from "./ListProduct";
 import Slider from "react-slick";
 function ShopListProduct() {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: false,
     arrows: false,

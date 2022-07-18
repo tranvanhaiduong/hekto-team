@@ -20,7 +20,7 @@ export default function RegisterAccountShip() {
       image: "../images/RectangleAc5.png",
     },
   ];
-  var settings = {
+  const settings = {
     dots: false,
     arrows: false,
     autoplay: true,
