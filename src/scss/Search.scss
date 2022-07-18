@@ -1,10 +1,22 @@
 .contentShop {
   width: 100%;
+  .buttons {
+    display: flex;
+    div {
+      margin: 0px 10px;
+      color: #FFFFFA;
+      cursor: pointer;
+      > * {
+        pointer-events: none;
+      }
+    }
+  }
   &__search {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 124px;
     &__left {
       margin-right: 150px;
       h1 {

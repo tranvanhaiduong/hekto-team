@@ -8,20 +8,15 @@ import Logo from "../homehekto/Logo";
 import Footer from "../homehekto/Footer";
 import { useParams } from "react-router-dom";
 import productData from "../fake -data/fakedata-shopgrid";
-import shopleftdata from "../fake -data/fakedata-shopleft";
-import shoplistdata from "../fake -data/fakedata-shoplist";
+
 function ProductDetails() {
   const { pid } = useParams();
   console.log(pid);
-  const product = pid.includes("sg")
-    ? productData.getById(pid)
-    : pid.includes("sl")
-    ? shoplistdata.getById(pid)
-    : shopleftdata.getById(pid);
+  const product = 
+    productData.getById(pid)
+   
   return (
     <div className="Product__Deatails">
-      <Header />
-      <Navbar />
       <Navigation title="Product Details" name="Product Details" />
       <PlayWood
         image={product.image}
@@ -32,7 +27,6 @@ function ProductDetails() {
       <Description />
       <Related />
       <Logo />
-      <Footer />
     </div>
   );
 }

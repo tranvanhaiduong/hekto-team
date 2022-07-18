@@ -16,7 +16,7 @@ function Trending() {
     arrows: false,
     slidesToScroll: 4,
     slidesToShow: 4,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     rows: 1,
     responsive: [
@@ -42,7 +42,7 @@ function Trending() {
   const settings1 = {
     dots: false,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     slidesPerRow: 1,
     slideToSroll: 1,
     slidesToShow: 2,

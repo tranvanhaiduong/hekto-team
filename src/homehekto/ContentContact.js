@@ -13,9 +13,9 @@ function ContentContact() {
             vitae lobortis quis bibendum quam.
           </div>
           <div className="contentcontact__top__left__vector">
-            <img src="./images/Ellipse 41.png" alt=""></img>
-            <img src="./images/Ellipse 42.png" alt=""></img>
-            <img src="./images/Ellipse 43.png" alt=""></img>
+            <img src="./images/Group 2021.png" alt=""></img>
+            <img src="./images/Group 2031.png" alt=""></img>
+            <img src="./images/Group 2041.png" alt=""></img>
           </div>
         </div>
         <div className="contentcontact__top__right">
@@ -23,7 +23,7 @@ function ContentContact() {
           <div className="contentcontact__top__right__info">
             <div className="contentcontact__top__right__info__1">
               <div className="contentcontact__top__right__info__1__image">
-                <img src="./images/Ellipse 44.png" alt=""></img>
+                <img src="./images/Group 206.png" alt=""></img>
               </div>
               <div className="contentcontact__top__right__info__1__text">
                 <p>Tel: 877-67-88-99</p>
@@ -32,7 +32,7 @@ function ContentContact() {
             </div>
             <div className="contentcontact__top__right__info__2">
               <div className="contentcontact__top__right__info__2__image">
-                <img src="./images/Ellipse 45.png" alt=""></img>
+                <img src="./images/Group 207.png" alt=""></img>
               </div>
               <div className="contentcontact__top__right__info__2__text">
                 <p>Support Forum</p>
@@ -41,7 +41,7 @@ function ContentContact() {
             </div>
             <div className="contentcontact__top__right__info__3">
               <div className="contentcontact__top__right__info__3__image">
-                <img src="./images/Ellipse 46.png" alt=""></img>
+                <img src="./images/Group 209.png" alt=""></img>
               </div>
               <div className="contentcontact__top__right__info__3__text">
                 <p>20 Margaret st, London</p>
@@ -50,7 +50,7 @@ function ContentContact() {
             </div>
             <div className="contentcontact__top__right__info__4">
               <div className="contentcontact__top__right__info__4__image">
-                <img src="./images/Ellipse 47.png" alt=""></img>
+                <img src="./images/Group 208.png" alt=""></img>
               </div>
               <div className="contentcontact__top__right__info__4__text">
                 <p>Free standard shipping</p>

@@ -53,19 +53,21 @@ function CurtProduct(props) {
       </div>
       <p className="CurtProduct__price">${item.price}.00</p>
       <div className="CurtProduct__quantity">
+        <div className="CurtProduct__quantity__number">
         <button
-          className="CurtProduct__quantity__b"
+          className="CurtProduct__quantity__number__b"
           onClick={() => updateQuantity("-")}
         >
           -
         </button>
-        <label className="CurtProduct__quantity_l">{item.quantity}</label>
+        <label className="CurtProduct__quantity__number__l">{item.quantity}</label>
         <button
-          className="CurtProduct__quantity__b"
+          className="CurtProduct__quantity__number__b"
           onClick={() => updateQuantity("+")}
         >
           +
         </button>
+        </div>
       </div>
       <p className="CurtProduct__total">£{item.quantity * item.price}.00</p>
     </div>

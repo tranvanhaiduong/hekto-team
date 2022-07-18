@@ -36,6 +36,18 @@
           transform: translateY(-50%);
           margin-left: 19px;
           row-gap: 13px;
+          &__cart {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: relative;
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
         }
       }
 
@@ -77,9 +89,9 @@
 #shopgrid__mobile {
   display: none;
 }
-.slick-track {
-  display: flex;
-  gap: 15px;
+
+.contentShop__shopgrid__listitem__product__shopping__shop__cart:hover {
+  background: white;
 }
 .contentShop__shopgrid__listitem__product:hover {
   .contentShop__shopgrid__listitem__product__img {
@@ -89,6 +101,7 @@
     display: block;
   }
 }
+
 @media only screen and(max-width:495px) {
   .navigation__title {
     font-size: 30px;

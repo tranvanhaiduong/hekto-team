@@ -1,5 +1,5 @@
 import Sidebar from "./Sidebar";
-import { shopleft } from "../fake -data/fakedata-shopleft";
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 import LeftProduct from "./LeftProduct";
 import Slider from "react-slick";
 const settings = {
@@ -112,7 +112,8 @@ const prices = [
   "$150.00 - $504.00",
   "$450.00 +",
 ];
-function ShopLeftSidebar() {
+function ShopLeftSidebar({toggleViewMode}) {
+  console.log(toggleViewMode);
   return (
     <div className="contentShop__shopleft">
       <div id="shopleft__pc">
@@ -121,8 +122,8 @@ function ShopLeftSidebar() {
             <div className="contentShop__shopleft__sidebar__brand__title">
               <h1>Product Brand</h1>
             </div>
-            {checks.map((check) => (
-              <Sidebar image="./images/check.png" check={check} />
+            {checks.map((check, index) => (
+              <Sidebar check={check} key={index} />
             ))}
           </div>
           <div className="contentShop__shopleft__sidebar__discount">
@@ -205,8 +206,11 @@ function ShopLeftSidebar() {
             </div>
           </div>
         </div>
+        {toggleViewMode?
+        <div id="shopleft__list">
         <div className="contentShop__shopleft__listproduct">
-          {shopleft.map((list) => (
+          {shopgrid_product.map((list) => (
+             list.pid.includes("sp")?
             <LeftProduct
               pid={list.pid}
               image={list.image}
@@ -218,8 +222,30 @@ function ShopLeftSidebar() {
               description={list.description}
               vectors={list.vector}
             />
+            :null
           ))}
         </div>
+        </div>
+        :
+        <div id="shopleft__grid">
+        <div className="contentShop__shopleft__listproduct">
+          {shopgrid_product.map((list) =>
+            list.pid.includes("sp") ? (
+              <LeftProduct
+                pid={list.pid}
+                image={list.image}
+                title={list.title}
+                colors={list.color}
+                price={list.price}
+                sale={list.sale}
+                ratings={list.rating}
+                description={list.description}
+                vectors={list.vector}
+              />
+            ) : null
+          )}
+        </div>
+        </div>}
       </div>
       <div id="shopleft__mobile">
         <div className="contentShop__shopleft__sidebar">
@@ -315,7 +341,25 @@ function ShopLeftSidebar() {
         </div>
         <div className="contentShop__shopleft__listproduct">
           <Slider {...settings}>
-            {shopleft.map((list) => (
+
+            {shopgrid_product.map((list) =>
+              list.pid.includes("sp") ? (
+                <LeftProduct
+                  pid={list.pid}
+                  image={list.image}
+                  title={list.title}
+                  colors={list.color}
+                  price={list.price}
+                  sale={list.sale}
+                  ratings={list.rating}
+                  description={list.description}
+                  vectors={list.vector}
+                />
+              ) : null
+            )}
+
+            {shopgrid_product.map((list) => (
+              list.pid.includes("sp")?
               <LeftProduct
                 pid={list.pid}
                 image={list.image}
@@ -327,7 +371,9 @@ function ShopLeftSidebar() {
                 description={list.description}
                 vectors={list.vector}
               />
+              :null
             ))}
+
           </Slider>
         </div>
       </div>

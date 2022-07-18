@@ -1,21 +1,17 @@
-import Header from "../homehekto/Header";
-import Navbar from "../homehekto/Navbar";
 import Navigation from "../homehekto/Navigation";
 import Search from "../homehekto/Search";
 import ShopLeftSidebar from "../homehekto/ShopLeftSidebar";
 import Logo from "../homehekto/Logo";
-import Footer from "../homehekto/Footer";
+import { Fragment, useState } from "react";
 function ShopLeft() {
+  const [toggleViewMode, setToggleViewMode] = useState(false);
   return (
-    <div className="Shop_Left">
-      <Header />
-      <Navbar />
+    <Fragment>
       <Navigation title="Shop Left Sidebar" name="Shop Left Sidebar" />
-      <Search />
-      <ShopLeftSidebar />
+      <Search toggleViewMode={toggleViewMode} setToggleViewMode={setToggleViewMode}/>
+      <ShopLeftSidebar toggleViewMode={toggleViewMode}/>
       <Logo />
-      <Footer />
-    </div>
+    </Fragment>
   );
 }
 export default ShopLeft;

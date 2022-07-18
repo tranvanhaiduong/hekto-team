@@ -24,15 +24,22 @@ function GridProduct({ image, price, title, pid }) {
       </div>
       <div className="contentShop__shopgrid__listitem__product__shopping">
         <div className="contentShop__shopgrid__listitem__product__shopping__shop">
-          <div onClick={addCart}>
+          <div
+            className="contentShop__shopgrid__listitem__product__shopping__shop__cart"
+            onClick={addCart}
+          >
             <img alt="" src="/images/Group.png"></img>
           </div>
-          <a href="/">
-            <img alt="" src="/images/Vector (5).png"></img>
-          </a>
-          <a href={`/product/${pid}`}>
-            <img alt="" src="/images/Vector (6).png"></img>
-          </a>
+          <div className="contentShop__shopgrid__listitem__product__shopping__shop__cart">
+            <a href="/">
+              <img alt="" src="/images/Vector (5).png"></img>
+            </a>
+          </div>
+          <div className="contentShop__shopgrid__listitem__product__shopping__shop__cart">
+            <a href={`/product/${pid}`}>
+              <img alt="" src="/images/Vector (6).png"></img>
+            </a>
+          </div>
         </div>
       </div>
 

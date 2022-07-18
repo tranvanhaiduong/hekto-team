@@ -127,10 +127,16 @@
 #featured__ipad {
   display: none;
 }
-.slick-track {
-  display: flex;
-  gap: 15px;
+
+
+
+#featured__mobile{
+  .slick-track {
+    display: flex;
+    gap: 15px;
+  }
 }
+
 @media only screen and(max-width:495px) {
   #featured__mobile {
     display: block;
