@@ -527,7 +527,7 @@ export const shopgrid_product = [
   },
   {
     pid: "so1",
-    image: "/images/free-delivery.png",
+    image: "/images/free-delivery 1.png",
     title: "24/7 Support",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
@@ -541,14 +541,14 @@ export const shopgrid_product = [
   },
   {
     pid: "so3",
-    image: "/images/24-support.png",
+    image: "/images/premium-quality 1.png",
     title: "24/7 Support",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
   {
     pid: "so4",
-    image: "/images/premium-quality.png",
+    image: "/images/24-support.png",
     title: "24/7 Support",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
@@ -582,32 +582,6 @@ export const shopgrid_product = [
     sale: 42.0,
   },
   {
-    pid: "td5",
-    image: "/images/image 1162.png",
-    title: "23% off in all products",
-    shop: "Shop Now",
-  },
-  {
-    pid: "td6",
-    image: "/images/image 1161.png",
-    title: "23% off in all products",
-    shop: "View Collection",
-  },
-  {
-    pid: "td7",
-    image: [
-      "/images/image 30.png",
-      "/images/image 19.png",
-      "/images/image 28.png",
-    ],
-    title: [
-      "Executive Seat chair",
-      "Executive Seat chair",
-      "Executive Seat chair",
-    ],
-    price: [32.0, 32.0, 32.0],
-  },
-  {
     pid: "top1",
     image: "/images/image 20.png",
     title: "Mini LCW Chair",
@@ -617,7 +591,7 @@ export const shopgrid_product = [
     pid: "top2",
     image: "/images/image 1168.png",
     title: "Mini LCW Chair",
-   price: 42.0,
+    price: 42.0,
   },
   {
     pid: "top3",

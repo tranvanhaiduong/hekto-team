@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 import TrendingProducts from "./TrendingProducts";
 function Trending() {
   const listImages = [
@@ -25,7 +26,7 @@ function Trending() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          rows: 2,
+          rows: 1,
         },
       },
       {
@@ -45,12 +46,12 @@ function Trending() {
     autoplay: false,
     slidesPerRow: 1,
     slideToSroll: 1,
-    slidesToShow: 2,
+    slidesToShow: 3,
     rows: 1,
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
           arrows: false,
           slidesToShow: 2,
@@ -62,7 +63,7 @@ function Trending() {
         },
       },
       {
-        breakpoint: 494,
+        breakpoint: 495,
         settings: {
           arrows: false,
           slidesToShow: 1,
@@ -85,9 +86,17 @@ function Trending() {
         <div id="trending__mobile">
           <div className="content__trending__productitems__item1">
             <Slider {...settings}>
-              {listImages.map((images) => (
-                <TrendingProducts image={images} />
-              ))}
+              {shopgrid_product.map((list) =>
+                list.pid.includes("td") ? (
+                  <TrendingProducts
+                    pid={list.pid}
+                    image={list.image}
+                    title={list.title}
+                    price={list.price}
+                    sale={list.sale}
+                  />
+                ) : null
+              )}
             </Slider>
           </div>
           <div className="content__trending__productitems__item2">

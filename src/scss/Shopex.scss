@@ -1,4 +1,9 @@
 .content__shopex {
+  .slick-initialized .slick-slide {
+    display: flex;
+    height: 400px;
+    align-items: center;
+  }
   &__offer {
     margin-top: 62px;
     text-align: center;
@@ -13,7 +18,7 @@
   &__support {
     display: grid;
     grid-column-gap: 28px;
-    grid-template-columns: 1080px;
+    grid-template-columns: 1200px;
     justify-content: center;
     align-items: center;
     p {
@@ -110,7 +115,7 @@
     grid-column-gap: 2%;
     grid-template-columns: 95%;
     #shopex__mobile {
-      display: none;
+      display: block;
     }
   }
 }

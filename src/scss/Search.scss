@@ -56,7 +56,7 @@
           input {
             width: 100%;
             border: none;
-            border: none;
+            outline: none;
           }
         }
       }
@@ -111,6 +111,8 @@
           input {
             width: 100%;
             border: none;
+            outline: none;
+            height: 28px;
           }
         }
         &__img {
