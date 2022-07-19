@@ -1,7 +1,7 @@
 import ShopexOffer from "./ShopexOffer";
 import React from "react";
-import ReactDOM from "react-dom";
 import Slider from "react-slick";
+import productData, { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Shopex extends React.Component {
   render() {
     var settings = {
@@ -13,25 +13,15 @@ class Shopex extends React.Component {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 767,
+          breakpoint: 650,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            rows: 2,
+            rows: 1,
           },
         },
       ],
     };
-    const listImages = [
-      "./images/free-delivery 1.png",
-      "./images/cashback 1.png",
-      "./images/premium-quality 1.png",
-      "./images/24-hours-support 1.png",
-      "./images/free-delivery 1.png",
-      "./images/cashback 1.png",
-      "./images/premium-quality 1.png",
-      "./images/24-hours-support 1.png",
-    ];
     return (
       <div className="content__shopex">
         <div className="content__shopex__offer">
@@ -40,9 +30,16 @@ class Shopex extends React.Component {
         <div className="content__shopex__support">
           <div id="shopex__mobile">
             <Slider {...settings}>
-              {listImages.map((image) => (
-                <ShopexOffer image={image} />
-              ))}
+              {shopgrid_product.map((list) =>
+                list.pid.includes("so") ? (
+                  <ShopexOffer
+                    pid={list.pid}
+                    image={list.image}
+                    title={list.title}
+                    description={list.description}
+                  />
+                ) : null
+              )}
             </Slider>
           </div>
         </div>

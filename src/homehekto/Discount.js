@@ -34,7 +34,7 @@ function Discount() {
           <button>Shop Now</button>
         </div>
         <div className="content__discount__product__tortuga">
-          <img alt="" src="./images/tortuga.png"></img>
+          <img alt="" src="./images/Group 154.png"></img>
         </div>
       </div>
     </div>
