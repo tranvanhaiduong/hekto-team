@@ -17,6 +17,8 @@ export default function OrderComp(){
                     <img className="OrderComp__Tb__img__clock" src="../images/clock 1.png"></img>
                     <img className="OrderComp__Tb__img__check" src="../images/checklist 1.png"></img>
                     <img className="OrderComp__Tb__img__tich" src="../images/vectortich.png"></img>
+                    <img className="OrderComp__Tb__img__ngang" src="../images/ngangimg.png"></img>
+                    <img className="OrderComp__Tb__img__doc" src="../images/docimg.png"></img>
                 </div>
             </div>
         </div>

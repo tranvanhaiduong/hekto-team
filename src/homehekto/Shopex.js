@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import productData, { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Shopex extends React.Component {
   render() {
-    var settings = {
-      dots: false,
+    const settings = {
+      dots: true,
       infinite: false,
       arrows: false,
       slidesToShow: 4,

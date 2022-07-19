@@ -3,7 +3,7 @@ import GridProduct from "./GridProduct";
 import Slider from "react-slick";
 import "react-toastify/dist/ReactToastify.css";
 function ShopGridProduct() {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: false,
     arrows: false,

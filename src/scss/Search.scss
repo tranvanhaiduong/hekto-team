@@ -1,5 +1,16 @@
 .contentShop {
   width: 100%;
+  .buttons {
+    display: flex;
+    div {
+      margin: 0px 10px;
+      color: #fffffa;
+      cursor: pointer;
+      > * {
+        pointer-events: none;
+      }
+    }
+  }
   &__search {
     display: flex;
     width: 100%;
@@ -63,11 +74,21 @@
           border: 1px solid #e7e6ef;
           align-items: center;
           justify-content: center;
-          input {
+          select {
             width: 100%;
             border: none;
             outline: none;
-            padding-left: 11px;
+            width: 100%;
+            border: none;
+            outline: none;
+
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #8a8fb9;
+            
           }
           ::placeholder {
             color: #8a8fb9;
@@ -77,9 +98,7 @@
             font-size: 12px;
             text-align: center;
           }
-          &__icon {
-            padding-right: 10px;
-          }
+          
         }
       }
       &__view {

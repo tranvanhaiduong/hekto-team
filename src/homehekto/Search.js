@@ -1,4 +1,8 @@
-function Search() {
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+function Search({toggleViewMode,setToggleViewMode}) {
+  const navigate= useNavigate();
   return (
     <div className="contentShop__search">
       <div className="contentShop__search__left">
@@ -15,17 +19,20 @@ function Search() {
         <div className="contentShop__search__right__sort">
           <p>Sort By:</p>
           <div className="contentShop__search__right__sort__input">
-            <input placeholder="Best Match"></input>
-            <div className="contentShop__search__right__sort__input__icon">
-              <img alt="" src="/images/Vector (2).png"></img>
-            </div>
+            <select onChange={()=>navigate("/")}>
+              <option>Best Match</option>
+              <option>Price</option>
+              
+            </select>
+            
           </div>
         </div>
         <div className="contentShop__search__right__view">
-          <div className="contentShop__search__right__view__img">
+          <div className="contentShop__search__right__view__img" >
+            
             <p>View:</p>
-            <img alt="" src="/images/clarity.png"></img>
-            <img alt="" src="/images/Vector (7).png"></img>
+            <img alt="" src="/images/clarity.png" onClick={() => setToggleViewMode(!toggleViewMode)}></img>
+            <img alt="" src="/images/Vector (7).png" onClick={() => setToggleViewMode(!toggleViewMode)}></img>
           </div>
           <div className="contentShop__search__right__view__input">
             <input></input>

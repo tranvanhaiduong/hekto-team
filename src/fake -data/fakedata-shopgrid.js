@@ -437,7 +437,7 @@ export const shopgrid_product = [
   },
   {
     pid: "f1",
-    imgage: "/images/image 1168.png",
+    image: "/images/image 1168.png",
     title: "Cantilever chair",
     color: [
       "/images/Rectangle 93.png",
@@ -445,7 +445,7 @@ export const shopgrid_product = [
       "/images/Rectangle 95.png",
     ],
     code: "Code - Y523201",
-    rice: 42.0,
+    price: 42.0,
   },
   {
     pid: "f2",
@@ -457,7 +457,7 @@ export const shopgrid_product = [
       "/images/Rectangle 95.png",
     ],
     code: "Code - Y523201",
-    rice: 42.0,
+    price: 42.0,
   },
   {
     pid: "f3",
@@ -469,7 +469,7 @@ export const shopgrid_product = [
       "/images/Rectangle 95.png",
     ],
     code: "Code - Y523201",
-    rice: 42.0,
+    price: 42.0,
   },
   {
     pid: "f4",
@@ -481,48 +481,48 @@ export const shopgrid_product = [
       "/images/Rectangle 95.png",
     ],
     code: "Code - Y523201",
-    rice: 42.0,
+    price: 42.0,
   },
   {
     pid: "lt1",
     image: "/images/image 1166.png",
     title: "Comfort Handy Craft",
-    rice: 42.0,
+    price: 42.0,
     sale: 65.0,
   },
   {
     pid: "lt2",
     image: "/images/image 15.png",
     title: "Comfort Handy Craft",
-    rice: 42.0,
+    price: 42.0,
     sale: 65.0,
   },
   {
     pid: "lt3",
     image: "/images/image 1168.png",
     title: "Comfort Handy Craft",
-    rice: 42.0,
+    price: 42.0,
     sale: 65.0,
   },
   {
     pid: "lt4",
     image: "/images/image 23.png",
     title: "Comfort Handy Craft",
-    rice: 42.0,
+    price: 42.0,
     sale: 65.0,
   },
   {
     pid: "lt5",
     image: "/images/image 32.png",
     title: "Comfort Handy Craft",
-    rice: 42.0,
+    price: 42.0,
     sale: 65.0,
   },
   {
     pid: "lt6",
     image: "/images/image 3.png",
     title: "Comfort Handy Craft",
-    rice: 42.0,
+    price: 42.0,
     sale: 65.0,
   },
   {
@@ -548,7 +548,7 @@ export const shopgrid_product = [
   },
   {
     pid: "so4",
-    image: "/images/cashback 1.png",
+    image: "/images/24-support.png",
     title: "24/7 Support",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
@@ -585,25 +585,25 @@ export const shopgrid_product = [
     pid: "top1",
     image: "/images/image 20.png",
     title: "Mini LCW Chair",
-    rice: 42.0,
+    price: 42.0,
   },
   {
     pid: "top2",
     image: "/images/image 1168.png",
     title: "Mini LCW Chair",
-    rice: 42.0,
+    price: 42.0,
   },
   {
     pid: "top3",
     image: "/images/image 1171.png",
     title: "Mini LCW Chair",
-    rice: 42.0,
+    price: 42.0,
   },
   {
     pid: "top4",
     image: "/images/image 20.png",
     title: "Mini LCW Chair",
-    rice: 42.0,
+    price: 42.0,
   },
 ];
 const getById = (pid) => shopgrid_product.find((e) => e.pid === pid);
