@@ -4,6 +4,9 @@
     width: 100%;
     margin: auto;
     justify-content: center;
+    // @include mobile{
+    //     display: block;
+    // }
     &__left{
         // margin-left: 8.33333%;;
         // font-weight: 700;
