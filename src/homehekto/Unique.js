@@ -1,4 +1,4 @@
-function Unique() {
+function Unique(pid, image, title, listImage, description, name, price) {
   return (
     <div className="content__unique">
       <div className="content__unique__featuresofa">
