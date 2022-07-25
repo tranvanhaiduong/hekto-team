@@ -606,7 +606,7 @@ export const shopgrid_product = [
     price: 42.0,
   },
   {
-    pid: "u1",
+    pid: "unique1",
     image: "/images/Group 153.png",
     title: "Unique Features Of leatest & Trending Poducts",
     listImage: [
@@ -623,7 +623,7 @@ export const shopgrid_product = [
     price: 32.0,
   },
   {
-    pid: "d1",
+    pid: "discount1",
     image: "/images/Group 154.png",
     title: "20% Discount Of All Products",
     listImage: [
@@ -640,7 +640,7 @@ export const shopgrid_product = [
       "Clear lines and geomatric figures",
       "Material expose like metals",
     ],
-    name: "Eams Sofa Compact",
+    nameProduct: "Eams Sofa Compact",
     price: 32.0,
   },
 ];

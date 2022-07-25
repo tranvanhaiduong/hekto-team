@@ -1,12 +1,28 @@
-function Unique(pid, image, title, listImage, description, name, price) {
+import { useDispatch } from "react-redux";
+import { addItem } from "../redux/CartItemsSlice";
+import { toast } from "react-toastify";
+function Unique({pid, image, title, listImage, description, nameProduct, price}) {
+  const dispatch = useDispatch();
+  const addToCart = () => {
+    dispatch(
+      addItem({
+        pid: pid,
+        image: image,
+        title: title,
+        price: price,
+        quantity: 1,
+      })
+    );
+    toast.success("Add to cart");
+  };
   return (
     <div className="content__unique">
       <div className="content__unique__featuresofa">
-        <img alt="" src="./images/Group 153.png"></img>
+        <img alt="" src={image}></img>
       </div>
       <div className="content__unique__slidetrending">
         <div className="content__unique__slidetrending__product">
-          <h1>Unique Features Of leatest & Trending Poducts</h1>
+          <h1>{title}</h1>
         </div>
         <div className="content__unique__slidetrending__one">
           <img alt="" src="./images/Ellipse 65.png"></img>
@@ -24,10 +40,10 @@ function Unique(pid, image, title, listImage, description, name, price) {
           <p>Arms, backs and seats are structurally reinforced</p>
         </div>
         <div className="content__unique__slidetrending__addcart">
-          <button>Add To Cart</button>
+          <button onClick={addToCart}>Add To Cart</button>
           <div className="content__unique__slidetrending__addcart__price">
-            <h3>B&B Italian Sofa </h3>
-            <p>$32.00</p>
+            <h3>{nameProduct} </h3>
+            <p>${price}.00</p>
           </div>
         </div>
       </div>
