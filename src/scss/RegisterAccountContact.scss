@@ -3,10 +3,32 @@
     margin: auto;
     background-color: rgba(248, 248, 253, 1);
     height: 1000px;
+    @include mobile {
+        padding-right: 10px;
+        height: 915px;
+    }
+    @include tablet-mini {
+        padding-right: 10px;
+        height: 915px;  
+    }
+    @include tablet-port {
+        padding-right: 10px;
+        height: 915px;  
+    }
     &__contact{
         &__cnp{
             padding-top: 90px;
             display: flex;
+            @include mobile {
+                padding-top: 40px;
+                display: block;
+            }
+            @include tablet-mini {
+                padding-top: 40px;
+            }
+            @include tablet-port {
+                padding-top: 40px;
+            }
         &__cof{
             margin-left: 40px;
             font-family: 'Josefin Sans';
@@ -24,6 +46,15 @@
             line-height: 17px;
             letter-spacing: 0.01em;
             color: #C1C8E1;
+            @include mobile {
+                margin-left: 40px;
+            }
+            @include tablet-mini {
+                margin-left: auto;
+            }
+            @include tablet-port {
+                margin-left: auto;
+            }
             }
         &__login{
             margin-left: 5px;
@@ -34,6 +65,15 @@
             line-height: 17px;
             letter-spacing: 0.01em;
             color: #C1C8E1;
+            @include mobile {
+                margin-left: 40px;
+            }
+            @include tablet-mini {
+                margin-right: 50px;
+            }
+            @include tablet-port {
+                margin-right: 50px;
+                }
             }
         }
         &__coi{
@@ -60,35 +100,83 @@
             font-weight: 700;
             margin-left: 40px;
             margin-top: 100px;
+            @include mobile {
+                margin-top: 40px;
+            }
+            @include tablet-mini {
+                margin-top: 40px;
+            }
+            @include tablet-port {
+                margin-top: 40px;
+            }
         }
         &__flname{
             display: grid;
-            gap: 60px;
+            gap: 30px;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "items adjustments";
             margin-top: 20px;
+            @include mobile {
+                display: block;
+            }
+            @include tablet-mini {
+                display: block;
+            }
+            @include tablet-port {
+                isplay: block;
+            }
             &__fname{
                 margin-left: 40px;
                 width: 340px;
+                @include mobile {
+                    width: auto;
+                }
+                @include tablet-mini {
+                    width: 85%;
+                }
+                @include tablet-port {
+                    width: 85%;
+                }
             }
             &__lname{
                 width: 340px;
+                @include mobile {
+                    margin-left: 40px;
+                    width: auto;
+                }
+                @include tablet-mini {
+                    margin-left: 40px;
+                    width: 85%;
+                }
+                @include tablet-port {
+                    width: 85%;
+                    margin-left: -40px;
+                }
             }
         }
         &__address{
             width: 85%;
             margin-left: 40px;
             margin-top: 20px;
+            @include tablet-mini {
+                width: 85%;
+            }
         }
         &__appaetnentment{
             width: 85%;
             margin-left: 40px;
             margin-top: 20px;
+            @include tablet-mini {
+                width: 85%;
+            }
         }
         &__city{
             width: 85%;
             margin-left: 40px;
             margin-top: 20px;
+            @include tablet-mini {
+                width: 85%;
+            }
         }
         &__bp{
             display: grid;
@@ -96,12 +184,39 @@
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "items adjustments";
             margin-top: 20px;
+            @include mobile {
+                display: block;
+            }
+            @include tablet-mini {
+                display: block;
+            }
+            @include tablet-port{
+                gap: 100px;
+            }
             &__ba{
                 width: 340px;
                 margin-left: 40px;
+                @include mobile {
+                    width: auto;
+                    margin-top: 20px;
+                }
+                @include tablet-mini {
+                    width: 85%;
+                    margin-top: 20px;
+                }
             }
             &__pc{
                 width: 340px;
+                @include mobile {
+                    margin-left: 40px;
+                    width: auto;
+                    margin-top: 20px;
+                }
+                @include tablet-mini {
+                    margin-left: 40px;
+                    width: 85%;
+                    margin-top: 20px;
+                }
             }
         }
     }
@@ -115,167 +230,172 @@
         font-weight: 500;
         margin-left: 40px;
         margin-top: 130px;
+        @include mobile {
+            margin-top: 50px;  
+        }
+        @include tablet-mini {
+            margin-top: 50px;
+        }
     }
 }
 
-
-@media only screen and (max-width: 495px) {
-    .RegisterAccountContact{
-        padding-right: 10px;
-        height: 915px;
-        &__contact{
-            &__cnp{
-                padding-top: 40px;
-                display: block;
-                &__alr{
-                    margin-left: 40px;
-                 }
-                &__login{
-                    margin-left: 40px;
-                }
-            }
-        }
-        &__shipping{
-            &__n{
-                margin-top: 40px;
-            }
-            &__flname{
-                display: block;
-                &__fname{
-                    width: auto;
-                }
-                &__lname{
-                    margin-left: 40px;
-                    width: auto;
-                }
-            }
-            &__bp{
-                display: block;
-                &__ba{
-                    width: auto;
-                    margin-top: 20px;
-                }
-                &__pc{
-                    margin-left: 40px;
-                    width: auto;
-                    margin-top: 20px;
-                }
-            }
-        }
-        &__btn{
-            margin-top: 50px;   
-        }
-    }
-}
-@media only screen and (min-width: 495px) and (max-width: 799px) {
-    .RegisterAccountContact{
-        padding-right: 10px;
-        height: 915px;  
-        &__contact{
-            &__cnp{
-                padding-top: 40px;
-                &__alr{
-                    margin-left: auto;
-                 }
-                &__login{
-                    margin-right: 50px;
-                }
-            }
-        }
-        &__shipping{
-            &__n{
-                margin-top: 40px;
-            }
-            &__flname{
-                display: block;
-                &__fname{
-                    width: 85%;
-                }
-                &__lname{
-                    margin-left: 40px;
-                    width: 85%;
-                }
-            }
-            &__address{
-                width: 85%;
-            }
-            &__city{
-                width: 85%;
-            }
-            &__appaetnentment{
-                width: 85%;
-            }
-            &__bp{
-                display: block;
-                &__ba{
-                    width: 85%;
-                    margin-top: 20px;
-                }
-                &__pc{
-                    margin-left: 40px;
-                    width: 85%;
-                    margin-top: 20px;
-                }
-            }
-        }
-        &__btn{
-            margin-top: 50px;   
-        }
-    }
-}
-@media screen  and (min-width: 799px) and (max-width: 1023px){
-    .RegisterAccountContact{
-        padding-right: 10px;
-        height: 915px;  
-        &__contact{
-            &__cnp{
-                padding-top: 40px;
-                &__alr{
-                    margin-left: auto;
-                 }
-                &__login{
-                    margin-right: 50px;
-                }
-            }
-        }
-        &__shipping{
-            &__n{
-                margin-top: 40px;
-            }
-            &__flname{
-                display: block;
-                &__fname{
-                    width: 85%;
-                }
-                &__lname{
-                    margin-left: 40px;
-                    width: 85%;
-                }
-            }
-            &__address{
-                width: 85%;
-            }
-            &__city{
-                width: 85%;
-            }
-            &__appaetnentment{
-                width: 85%;
-            }
-            &__bp{
-                display: block;
-                &__ba{
-                    width: 85%;
-                    margin-top: 20px;
-                }
-                &__pc{
-                    margin-left: 40px;
-                    width: 85%;
-                    margin-top: 20px;
-                }
-            }
-        }
-        &__btn{
-            margin-top: 50px;   
-        }
-    }
-}   
+// @media only screen and (max-width: 495px) {
+//     .RegisterAccountContact{
+//         padding-right: 10px;
+//         height: 915px;
+//         &__contact{
+//             &__cnp{
+//                 padding-top: 40px;
+//                 display: block;
+//                 &__alr{
+//                     margin-left: 40px;
+//                  }
+//                 &__login{
+//                     margin-left: 40px;
+//                 }
+//             }
+//         }
+//         &__shipping{
+//             &__n{
+//                 margin-top: 40px;
+//             }
+//             &__flname{
+//                 display: block;
+//                 &__fname{
+//                     width: auto;
+//                 }
+//                 &__lname{
+//                     margin-left: 40px;
+//                     width: auto;
+//                 }
+//             }
+//             &__bp{
+//                 display: block;
+//                 &__ba{
+//                     width: auto;
+//                     margin-top: 20px;
+//                 }
+//                 &__pc{
+//                     margin-left: 40px;
+//                     width: auto;
+//                     margin-top: 20px;
+//                 }
+//             }
+//         }
+//         &__btn{
+//             margin-top: 50px;   
+//         }
+//     }
+// }
+// @media only screen and (min-width: 495px) and (max-width: 799px) {
+//     .RegisterAccountContact{
+//         padding-right: 10px;
+//         height: 915px;  
+//         &__contact{
+//             &__cnp{
+//                 padding-top: 40px;
+//                 &__alr{
+//                     margin-left: auto;
+//                  }
+//                 &__login{
+//                     margin-right: 50px;
+//                 }
+//             }
+//         }
+//         &__shipping{
+//             &__n{
+//                 margin-top: 40px;
+//             }
+//             &__flname{
+//                 display: block;
+//                 &__fname{
+//                     width: 85%;
+//                 }
+//                 &__lname{
+//                     margin-left: 40px;
+//                     width: 85%;
+//                 }
+//             }
+//             &__address{
+//                 width: 85%;
+//             }
+//             &__city{
+//                 width: 85%;
+//             }
+//             &__appaetnentment{
+//                 width: 85%;
+//             }
+//             &__bp{
+//                 display: block;
+//                 &__ba{
+//                     width: 85%;
+//                     margin-top: 20px;
+//                 }
+//                 &__pc{
+//                     margin-left: 40px;
+//                     width: 85%;
+//                     margin-top: 20px;
+//                 }
+//             }
+//         }
+//         &__btn{
+//             margin-top: 50px;   
+//         }
+//     }
+// }
+// @media screen  and (min-width: 799px) and (max-width: 1023px){
+//     .RegisterAccountContact{
+//         padding-right: 10px;
+//         height: 915px;  
+//         &__contact{
+//             &__cnp{
+//                 padding-top: 40px;
+//                 &__alr{
+//                     margin-left: auto;
+//                  }
+//                 &__login{
+//                     margin-right: 50px;
+//                 }
+//             }
+//         }
+//         &__shipping{
+//             &__n{
+//                 margin-top: 40px;
+//             }
+//             &__flname{
+//                 display: block;
+//                 &__fname{
+//                     width: 85%;
+//                 }
+//                 &__lname{
+//                     margin-left: 40px;
+//                     width: 85%;
+//                 }
+//             }
+//             &__address{
+//                 width: 85%;
+//             }
+//             &__city{
+//                 width: 85%;
+//             }
+//             &__appaetnentment{
+//                 width: 85%;
+//             }
+//             &__bp{
+//                 display: block;
+//                 &__ba{
+//                     width: 85%;
+//                     margin-top: 20px;
+//                 }
+//                 &__pc{
+//                     margin-left: 40px;
+//                     width: 85%;
+//                     margin-top: 20px;
+//                 }
+//             }
+//         }
+//         &__btn{
+//             margin-top: 50px;   
+//         }
+//     }
+// }   

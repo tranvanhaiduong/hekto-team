@@ -5,13 +5,38 @@
   justify-content: center;
   text-align: left;
   align-items: center;
+  @include mobileN {
+    max-width: 98%;
+  }
+  @include tablet-portN {
+    max-width: 90%;
+    margin: 0 auto;
+  }
   &__top {
     display: flex;
     margin: 120px 0px;
+    @include mobileN {
+      display: flex;
+      flex-direction: column;
+      max-width: 95%;
+      margin: 0 auto;
+    }
 
+    @include tablet-portN {
+      max-width: 100%;
+      gap:60px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     &__left {
       display: flex;
       flex-direction: column;
+      @include mobileN {
+        max-width: 100%;
+      }
+      @include tablet-portN {
+        max-width: 50%;
+      }
       &__title {
         width: 522px;
         height: 44px;
@@ -24,6 +49,14 @@
         /* Text */
 
         color: #151875;
+        @include mobileN {
+          max-width: 100%;
+          height: auto;
+        }
+        @include tablet-portN {
+          max-width: 100%;
+          height: auto;
+        }
       }
       &__description {
         width: 550px;
@@ -34,6 +67,14 @@
         font-size: 16px;
         line-height: 26px;
         color: #8a8fb9;
+        @include mobileN {
+          max-width: 100%;
+          height: auto;
+        } 
+        @include tablet-portN {
+          max-width: 100%;
+          height: auto;
+        }
       }
       &__vector {
         display: flex;
@@ -44,6 +85,16 @@
     }
     &__right {
       margin-left: 117px;
+      @include mobileN {
+        max-width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      @include tablet-portN {
+        max-width: 43%;
+        margin-left: 0;
+      }
       &__title {
         width: 522px;
         height: 44px;
@@ -52,6 +103,12 @@
         line-height: 48px;
         color: #151875;
         font-weight: 700;
+        @include mobileN {
+          max-width: 100%;
+        }
+        @include tablet-portN {
+          max-width: 100%;
+        }
       }
       &__info {
         display: flex;
@@ -59,6 +116,17 @@
         width: 500px;
         margin-top: 26px;
         gap: 30px;
+        @include mobileN {
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        @include tablet-portN {
+          width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+        }
         p {
           font-family: "Lato";
           font-style: normal;
@@ -97,10 +165,28 @@
   &__bot {
     display: flex;
     margin-bottom: 248px;
+    @include mobileN {
+      flex-direction: column-reverse;
+      max-width: 100%;
+    }
+    @include tablet-portN{
+      max-width: 100%;
+      flex-direction: column-reverse;
+    }
     &__left {
       display: flex;
       flex-wrap: wrap;
       max-width: 550px;
+      @include mobileN {
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      @include tablet-portN {
+        row-gap: 20px;
+      }
       &__title {
         width: 522px;
         height: 44px;
@@ -109,6 +195,10 @@
         line-height: 48px;
         color: #151875;
         font-weight: 700;
+        @include mobileN {
+          max-width: 100%;
+          height: auto;
+        }
       }
       &__description {
         width: 550px;
@@ -119,6 +209,10 @@
         font-size: 16px;
         line-height: 26px;
         color: #8a8fb9;
+        @include mobileN {
+          max-width: 100%;
+          height: auto;
+        }
       }
       .input__name {
         width: 255px;
@@ -132,14 +226,23 @@
         border: 1px solid rgba(164, 182, 200, 0.7);
         border-radius: 3px;
         margin-left: 24px;
+        @include mobileN{
+          margin-left: 0px  ;
+        }
       }
       .input__subject {
         width: 534px;
         height: 45px;
+        @include mobileN {
+          max-width: 100%;
+        }
       }
       .input__mess {
         width: 534px;
         height: 166px;
+        @include mobileN {
+          max-width: 100%;
+        }
       }
       button {
         width: 157px;
@@ -156,135 +259,148 @@
     }
     &__right {
       margin-left: 56px;
+      @include mobileN {
+        margin-bottom: 0;
+        .contentcontact__bot__right__image {
+              img{
+                max-width: 100%;
+              height: 100%;
+              }
+            }
+        .contentcontact__bot__left .input__email {
+              margin-left: 0;
+            }
+      }
+      @include tablet-portN {
+        margin-left: 0;
+      }
     }
   }
 }
-@media screen and (max-width:600px) {
-  .contentcontact{
-    max-width: 98%;
-    &__top{
-      display: flex;
-      flex-direction: column;
-      max-width: 95%;
-      margin: 0 auto;
-      &__left{
-        max-width: 100%;
-        &__title{
-          max-width: 100%;
-          height: auto;
-        }
-        &__description{
-          max-width: 100%;
-          height: auto;
-        }
-      }
-      &__right{
-        max-width: 100%;
-        margin-left: 0;
-        display: flex;
-        flex-direction: column;
-        &__title{
-          max-width: 100%;
-        }
-        &__info{
-          max-width: 100%;
-          display: flex;
-          flex-direction: column;
-        }
-      }
-    }
-    &__bot{
-      display: flex;
-      flex-direction: column-reverse;
-      max-width: 100%;
-      &__left{
-        max-width: 95%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        &__title{
-          max-width: 100%;
-          height: auto;
-        }
-        &__description{
-          max-width: 100%;
-          height: auto;
-        }
-        input{
-          max-width: 100%;
-        }
-        textarea{
-          max-width: 100%;
-        }
+// @media screen and (max-width:600px) {
+//       .contentcontact{
+//     max-width: 98%;
+//     &__top{
+//       display: flex;
+//       flex-direction: column;
+//       max-width: 95%;
+//       margin: 0 auto;
+//       &__left{
+//         max-width: 100%;
+//         &__title{
+//           max-width: 100%;
+//           height: auto;
+//         }
+//         &__description{
+//           max-width: 100%;
+//           height: auto;
+//         }
+//       }
+//       &__right{
+//         max-width: 100%;
+//         margin-left: 0;
+//         display: flex;
+//         flex-direction: column;
+//         &__title{
+//           max-width: 100%;
+//         }
+//         &__info{
+//           max-width: 100%;
+//           display: flex;
+//           flex-direction: column;
+//         }
+//       }
+//     }
+//     &__bot{
+//       display: flex;
+//       flex-direction: column-reverse;
+//       max-width: 100%;
+//       &__left{
+//         max-width: 95%;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         row-gap: 10px;
+//         &__title{
+//           max-width: 100%;
+//           height: auto;
+//         }
+//         &__description{
+//           max-width: 100%;
+//           height: auto;
+//         }
+//         input{
+//           max-width: 100%;
+//         }
+//         textarea{
+//           max-width: 100%;
+//         }
         
-      }
-      &__right{
-        margin-left: 0;
-      }
-    }
-  }
-  .contentcontact__bot__left .input__email {
-    margin-left: 0;
-  }
-  .contentcontact__bot__right__image {
-    img{
-      max-width: 100%;
-    height: 100%;
-    }
-  }
-}
+//       }
+//       &__right{
+//         margin-left: 0;
+//       }
+//     }
+//   }
+//   .contentcontact__bot__left .input__email {
+//     margin-left: 0;
+//   }
+//   .contentcontact__bot__right__image {
+//     img{
+//       max-width: 100%;
+//     height: 100%;
+//     }
+//   }
+// }
 @media screen and (min-width:601px) and (max-width:1420px){
-  .contentcontact{
-    max-width: 95%;
-    margin: 0 auto;
-    &__top{
-      max-width: 100%;
-      gap:30px;
-      &__left{
-        max-width: 50%;
-        &__title{
-          max-width: 100%;
-          height: auto;
-        }
-        &__description{
-          max-width: 100%;
-          height: auto;
-        }
-      }
-      &__right{
-        max-width: 50%;
-        margin-left: 0;
+  // .contentcontact{
+  //   max-width: 95%;
+  //   margin: 0 auto;
+  //   &__top{
+  //     max-width: 100%;
+  //     gap:30px;
+  //     &__left{
+  //       max-width: 50%;
+  //       &__title{
+  //         max-width: 100%;
+  //         height: auto;
+  //       }
+  //       &__description{
+  //         max-width: 100%;
+  //         height: auto;
+  //       }
+  //     }
+  //     &__right{
+  //       max-width: 50%;
+  //       margin-left: 0;
    
-        &__title{
-          max-width: 100%;
-        }
-        &__info{
-          width: 100%;
-          display: flex;
-          flex-wrap: nowrap;
-          flex-direction: column;
-        }
-      }
-    }
-    &__bot{
-      max-width: 100%;
-      flex-direction: column-reverse;
-      &__right{
-        margin-left: 0;
-      }
-      &__left{
-        row-gap: 20px;
-      }
+  //       &__title{
+  //         max-width: 100%;
+  //       }
+  //       &__info{
+  //         width: 100%;
+  //         display: flex;
+  //         flex-wrap: nowrap;
+  //         flex-direction: column;
+  //       }
+  //     }
+  //   }
+  //   &__bot{
+  //     max-width: 100%;
+  //     flex-direction: column-reverse;
+  //     &__right{
+  //       margin-left: 0;
+  //     }
+  //     &__left{
+  //       row-gap: 20px;
+  //     }
       
-    }
-  }
+  //   }
+  // }
   .contentcontact__bot__right__image {
     img{
       max-width: 100%;
       height: 100%;
     }
   }
-  
-
 }
