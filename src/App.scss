@@ -1,7 +1,6 @@
 @import "./scss/variables.scss";
 
-
-@import "./scss/mixin.scss";
+@import "./scss/mixin";
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 @import "./scss/base.scss";
@@ -39,4 +38,6 @@
 @import "./scss/RegisterAccountContact.scss";
 @import "./scss/RegisterAccountProduct.scss";
 @import "./scss/RegisterAccountShip.scss";
+@import "./scss/BlogPagebwt.scss";
+@import "./scss/BlogPageSingle.scss";
 
