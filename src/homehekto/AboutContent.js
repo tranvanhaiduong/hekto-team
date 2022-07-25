@@ -10,11 +10,19 @@ const settings = {
   initialSlide: 0,
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 820,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        rows: 2,
+        rows: 1,
+      },
+    },
+      {
+      breakpoint: 599,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        rows: 1,
       },
     },
   ],
@@ -34,7 +42,7 @@ const listImages = [
   },
   {
     title: "24/7 Support",
-    image: "./images/24-hours-support 1.png",
+    image: "./images/24-support.png",
   },
 ];
 

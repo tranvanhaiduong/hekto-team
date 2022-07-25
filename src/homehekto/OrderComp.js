@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-export default function OrderComp(){
+function OrderComp(){
     const navigate = useNavigate();
     return(
         <div className="OrderComp">
@@ -24,3 +24,4 @@ export default function OrderComp(){
         </div>
     );
 }
+export default OrderComp;

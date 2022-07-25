@@ -28,7 +28,16 @@ export default function RegisterAccountShip() {
     rows: 5,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slideToSroll: 1,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+      {
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
           slideToSroll: 1,

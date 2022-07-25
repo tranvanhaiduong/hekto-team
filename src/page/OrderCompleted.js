@@ -5,9 +5,9 @@ import Logo from "../homehekto/Logo";
 import Navigation from "../homehekto/Navigation";
 import OrderComp from "../homehekto/OrderComp";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "../scss/OrderComp.scss";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import "../scss/OrderComp.scss";
 
 export default function OrderCompleted() {
   return (
