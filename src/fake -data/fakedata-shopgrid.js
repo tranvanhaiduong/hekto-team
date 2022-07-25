@@ -605,6 +605,44 @@ export const shopgrid_product = [
     title: "Mini LCW Chair",
     price: 42.0,
   },
+  {
+    pid: "u1",
+    image: "/images/Group 153.png",
+    title: "Unique Features Of leatest & Trending Poducts",
+    listImage: [
+      "/images/Ellipse 65.png",
+      "/images/Ellipse 66.png",
+      "/images/Ellipse 67.png",
+    ],
+    description: [
+      "All frames constructed with hardwood solids and laminates",
+      "Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails",
+      "Arms, backs and seats are structurally reinforced",
+    ],
+    name: "B&B Italian Sofa ",
+    price: 32.0,
+  },
+  {
+    pid: "d1",
+    image: "/images/Group 154.png",
+    title: "20% Discount Of All Products",
+    listImage: [
+      "/images/tick.png",
+      "/images/tick.png",
+      "/images/tick.png",
+      "/images/tick.png",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.",
+    list: [
+      "Material expose like metals",
+      "Simple neutral colours.",
+      "Clear lines and geomatric figures",
+      "Material expose like metals",
+    ],
+    name: "Eams Sofa Compact",
+    price: 32.0,
+  },
 ];
 const getById = (pid) => shopgrid_product.find((e) => e.pid === pid);
 const getCartDetail = (cartItems) => {
