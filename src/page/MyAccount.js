@@ -6,9 +6,9 @@ import Login from "../homehekto/Login";
 import Logo from "../homehekto/Logo";
 
 
-import "../scss/login.scss";
-import "../scss/variables.scss";
-import "../scss/mixin.scss"
+// import "../scss/login.scss";
+// import "../scss/variables.scss";
+// import "../scss/mixin.scss"
 
 export default function MyAccount() {
   return (

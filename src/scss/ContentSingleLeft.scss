@@ -23,6 +23,8 @@
           font-size: 14px;
           line-height: 23px;
           color: #151875;
+          font-style: normal;
+          font-weight: 600;
         }
       }
       &__time {
@@ -391,6 +393,13 @@
     &__post {
       display: block;
       width: 100%;
+      &__timeactor{
+        &__actor{
+          &__text{
+            width: 120px;
+          }
+        }
+      }
       &__banner{
         width: 100%;
         &__img {
@@ -483,6 +492,13 @@
     &__post {
       display: block;
       width: 100%;
+      &__timeactor{
+        &__actor{
+          &__text{
+            width: 120px;
+          }
+        }
+      }
       &__banner{
         width: 100%;
         &__img {
