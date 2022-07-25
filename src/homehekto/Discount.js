@@ -1,4 +1,7 @@
-function Discount() {
+import { useNavigate } from "react-router-dom";
+
+function Discount({pid, image, title, listImage, description, nameProduct, price}) {
+  const navigate = useNavigate();
   return (
     <div className="content__discount">
       <div className="content__discount__item">
@@ -13,11 +16,10 @@ function Discount() {
           </li>
         </div>
         <div className="content__discount__product__discountoff">
-          <h1>20% Discount Of All Products</h1>
-          <p className="p1">Eams Sofa Compact</p>
+          <h1>{title}</h1>
+          <p className="p1">{nameProduct}</p>
           <p className="p2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget
-            feugiat habitasse nec, bibendum condimentum.
+            {description}
           </p>
           <div className="content__discount__product__discountoff__item">
             <div className="content__discount__product__discountoff__item__simple">
@@ -31,10 +33,10 @@ function Discount() {
               </ul>
             </div>
           </div>
-          <button>Shop Now</button>
+          <button onClick={()=>navigate(`/product/${pid}`)}>Shop Now</button>
         </div>
         <div className="content__discount__product__tortuga">
-          <img alt="" src="./images/Group 154.png"></img>
+          <img alt="" src={image}></img>
         </div>
       </div>
     </div>
