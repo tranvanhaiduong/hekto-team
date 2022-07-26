@@ -264,7 +264,7 @@
     display: none;
   }
 }
-@media only screen and(max-width:495px) {
+@media only screen and (max-width:495px) {
   .contentShop__shoplist {
     #shoplist__mobile {
       display: block;
@@ -288,7 +288,7 @@
     }
   }
 }
-@media only screen and(min-width:495px) and(max-width:768px) {
+@media only screen and (min-width:495px) and (max-width:768px) {
   .contentShop__shoplist {
     margin: 100px 10px;
     #shoplist__mobile {
@@ -318,7 +318,7 @@
     }
   }
 }
-@media only screen and(min-width:769px) and(max-width:1275px) {
+@media only screen and (min-width:769px) and (max-width:1275px) {
   .contentShop__shoplist {
     margin: 100px 10px;
   }

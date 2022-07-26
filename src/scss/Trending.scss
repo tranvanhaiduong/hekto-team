@@ -196,7 +196,7 @@
     gap: 29px;
   }
 }
-@media only screen and(max-width:495px) {
+@media only screen and (max-width:495px) {
   .content__trending {
     margin-top: 55px;
     &__products {
@@ -258,7 +258,7 @@
     }
   }
 }
-@media only screen and(min-width:495px) and(max-width:768px) {
+@media only screen and (min-width:495px) and (max-width:768px) {
   .content__trending {
     margin-top: 55px;
     &__products {
@@ -322,7 +322,7 @@
     }
   }
 }
-@media only screen and(min-width:769px) and(max-width:1275px) {
+@media only screen and (min-width:769px) and (max-width:1275px) {
   .content__trending__productitems {
     #trending__mobile {
       display: block;
