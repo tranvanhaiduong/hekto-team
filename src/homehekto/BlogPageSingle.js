@@ -1,7 +1,7 @@
 export default function BlogPageSingle({ image, Name }) {
   return (
     <div className="BlogPageSingle">
-      <img className="BlogPageSingle__img" src={image}></img>
+      <img className="BlogPageSingle__img" src={image} alt=""></img>
       <div className="BlogPageSingle__text">
         <div className="contentsingle__left__post__timeactor">
           <div className="contentsingle__left__post__timeactor__actor">
@@ -29,7 +29,7 @@ export default function BlogPageSingle({ image, Name }) {
           malesuada vitae ultrices in in neque, porta dignissim. Adipiscing
           purus, cursus vulputate id id dictum at.
         </p>
-        <a className="BlogPageSingle__text__rmore">Read More</a>
+        <a href={{href:""}} className="BlogPageSingle__text__rmore">Read More</a>
       </div>
     </div>
   );

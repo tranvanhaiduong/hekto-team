@@ -1,7 +1,7 @@
 
 import ListProduct from "./ListProduct";
 import Slider from "react-slick";
-import productData, { shopgrid_product } from "../fake -data/fakedata-shopgrid";
+import  { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 function ShopListProduct({toggleViewMode}) {
 
   var settings = {
