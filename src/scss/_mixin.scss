@@ -17,10 +17,11 @@
   }
   
   @mixin tablet-port {
-    @media only screen and(min-width: $tabletmini-width) and ( max-width: $tabletport-width) {
+    @media only screen and (min-width: $tabletmini-width) and ( max-width: $tabletport-width) {
       @content;
     }
   }
+  
   @mixin mobileN {
     @media only screen and (max-width: $mobileN-width) {
       @content;
