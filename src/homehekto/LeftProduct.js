@@ -54,7 +54,7 @@ function LeftProduct({
         <div className="contentShop__shopleft__listproduct__product__title__vector">
           <div className="contentShop__shopleft__listproduct__product__title__vector__img" >
             <a onClick={addCart}>
-              <img alt="" src="/images/Group.png"> </img>
+              <img alt="" src="/images/Group.png"></img>
             </a>
           </div>
           <div className="contentShop__shopleft__listproduct__product__title__vector__img">
