@@ -1,7 +1,7 @@
 import TopCategories from "./TopCategories";
 
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import Slider from "react-slick";
 class Top extends React.Component {
   render() {

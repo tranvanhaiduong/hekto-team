@@ -1,7 +1,7 @@
 import LeatestBlog from "./LeatestBlog";
 
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import Slider from "react-slick";
 class Leatestblg extends React.Component {
   render() {

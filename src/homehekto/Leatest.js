@@ -1,8 +1,8 @@
 import LeatestProducts from "./LeatestProducts";
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import Slider from "react-slick";
-import FeaturedProduct from "./FeaturedProdcuts";
+// import FeaturedProduct from "./FeaturedProdcuts";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Leatest extends React.Component {
   render() {
