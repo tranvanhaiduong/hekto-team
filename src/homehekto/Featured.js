@@ -1,6 +1,5 @@
 import FeaturedProduct from "./FeaturedProdcuts";
 import React from "react";
-import ReactDOM from "react-dom";
 import Slider from "react-slick";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 

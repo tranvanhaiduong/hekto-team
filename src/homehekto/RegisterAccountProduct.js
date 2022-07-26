@@ -1,7 +1,7 @@
 export default function RegisterAccountProduct({ image }) {
   return (
         <div className="RegisterAccountProduct">
-        <img className="RegisterAccountProduct__img" src={image}></img>
+        <img className="RegisterAccountProduct__img" src={image} alt=""></img>
         <div className="RegisterAccountProduct__l">
             <p className="RegisterAccountProduct__l__name">Ut diam consequat</p>
             <p className="RegisterAccountProduct__l__color">Color:Brown</p>

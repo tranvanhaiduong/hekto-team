@@ -14,11 +14,11 @@ function OrderComp(){
                 </div>
                 <button className="OrderComp__Tb__btn" onClick={()=>navigate("/product")}>Continue Shopping</button>
                 <div className="OrderComp__Tb__img" >
-                    <img className="OrderComp__Tb__img__clock" src="../images/clock 1.png"></img>
-                    <img className="OrderComp__Tb__img__check" src="../images/checklist 1.png"></img>
-                    <img className="OrderComp__Tb__img__tich" src="../images/vectortich.png"></img>
-                    <img className="OrderComp__Tb__img__ngang" src="../images/ngangimg.png"></img>
-                    <img className="OrderComp__Tb__img__doc" src="../images/docimg.png"></img>
+                    <img className="OrderComp__Tb__img__clock" src="../images/clock 1.png" alt=""></img>
+                    <img className="OrderComp__Tb__img__check" src="../images/checklist 1.png" alt=""></img>
+                    <img className="OrderComp__Tb__img__tich" src="../images/vectortich.png" alt=""></img>
+                    <img className="OrderComp__Tb__img__ngang" src="../images/ngangimg.png" alt=""></img>
+                    <img className="OrderComp__Tb__img__doc" src="../images/docimg.png" alt=""></img>
                 </div>
             </div>
         </div>

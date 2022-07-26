@@ -1,7 +1,7 @@
 import ShopexOffer from "./ShopexOffer";
 import React from "react";
 import Slider from "react-slick";
-import productData, { shopgrid_product } from "../fake -data/fakedata-shopgrid";
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Shopex extends React.Component {
   render() {
     const settings = {

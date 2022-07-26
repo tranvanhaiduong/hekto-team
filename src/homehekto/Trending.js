@@ -2,16 +2,16 @@ import Slider from "react-slick";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 import TrendingProducts from "./TrendingProducts";
 function Trending() {
-  const listImages = [
-    "./images/box for image.png",
-    "./images/box for image (1).png",
-    "./images/box for image (2).png",
-    "./images/box for image (3).png",
-    "./images/box for image.png",
-    "./images/box for image (1).png",
-    "./images/box for image (2).png",
-    "./images/box for image (3).png",
-  ];
+  // const listImages = [
+  //   "./images/box for image.png",
+  //   "./images/box for image (1).png",
+  //   "./images/box for image (2).png",
+  //   "./images/box for image (3).png",
+  //   "./images/box for image.png",
+  //   "./images/box for image (1).png",
+  //   "./images/box for image (2).png",
+  //   "./images/box for image (3).png",
+  // ];
   const settings = {
     dots: false,
     arrows: false,
