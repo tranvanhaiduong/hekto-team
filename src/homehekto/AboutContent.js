@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import ShopexOffer from "../homehekto/ShopexOffer";
+// import ShopexOffer from "../homehekto/ShopexOffer";
 
 const settings = {
   dots: false,

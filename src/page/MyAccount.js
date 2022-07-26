@@ -1,6 +1,6 @@
-import Header from "../homehekto/Header";
-import Navbar from "../homehekto/Navbar";
-import Footer from "../homehekto/Footer";
+// import Header from "../homehekto/Header";
+// import Navbar from "../homehekto/Navbar";
+// import Footer from "../homehekto/Footer";
 import Navigation from "../homehekto/Navigation";
 import Login from "../homehekto/Login";
 import Logo from "../homehekto/Logo";

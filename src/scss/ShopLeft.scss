@@ -199,6 +199,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 44px;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
     &__brand {
       &__title {
         h1 {
