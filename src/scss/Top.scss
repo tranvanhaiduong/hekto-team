@@ -11,11 +11,12 @@
   }
   &__mini {
     display: grid;
-    grid-template-columns: 1080px;
+    grid-template-columns: 1180px;
     align-items: center;
     justify-content: center;
-    grid-column-gap: 39px;
+    grid-gap: 40px;
     &__LCW {
+      padding: 10px;
       &__chair {
         height: 269px;
         width: 100%;

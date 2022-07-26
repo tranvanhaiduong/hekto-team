@@ -36,6 +36,13 @@
           transform: translateY(-50%);
           margin-left: 19px;
           row-gap: 13px;
+          // @include mobile {
+          //   top: 50%;
+          //   left: 50%;
+          //   transform: translate(-50%, -50%);
+          //   width: 100%;
+          //   max-width: 260px;
+          // }
           &__cart {
             width: 30px;
             height: 30px;
@@ -57,6 +64,14 @@
         justify-content: center;
         align-items: center;
         margin-top: 13px;
+        @include mobile {
+          font-size: 30px;
+          top: 30%;
+          width: 100%;
+          max-width: 269px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
         h1 {
           color: #151875;
           font-family: "Josefin Sans";
