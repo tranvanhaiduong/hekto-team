@@ -102,7 +102,7 @@
   }
 }
 
-@media only screen and(max-width:495px) {
+@media only screen and (max-width:495px) {
   .navigation__title {
     font-size: 30px;
     top: 30%;
@@ -130,7 +130,7 @@
     width: 100%;
   }
 }
-@media only screen and(min-width:495px) and(max-width:767px) {
+@media only screen and (min-width:495px) and (max-width:767px) {
   .contentShop__shopgrid__listitem {
     #shopgrid__pc {
       display: none;
@@ -144,7 +144,7 @@
   }
 }
 
-@media only screen and(min-width:768px) and(max-width:1257px) {
+@media only screen and (min-width:768px) and (max-width:1257px) {
   .contentShop__shopgrid__listitem {
     &__product {
       &__title {

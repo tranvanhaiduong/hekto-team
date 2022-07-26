@@ -90,7 +90,7 @@
     display: block;
   }
 }
-@media only screen and(max-width:495px) {
+@media only screen and (max-width:495px) {
   .content__top__mini {
     display: grid;
     grid-template-columns: 90%;
@@ -108,7 +108,7 @@
     display: block;
   }
 }
-@media only screen and(min-width:496px) and(max-width:767px) {
+@media only screen and (min-width:496px) and (max-width:767px) {
   .content__top__mini {
     display: grid;
     grid-template-columns: 90%;
@@ -121,7 +121,7 @@
     display: block;
   }
 }
-@media only screen and(min-width:768px) and(max-width:1275px) {
+@media only screen and (min-width:768px) and (max-width:1275px) {
   .content__top {
     #mobile {
       display: block;

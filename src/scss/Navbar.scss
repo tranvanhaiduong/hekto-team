@@ -75,17 +75,17 @@
     }
   }
 }
-@media only screen and(max-width:495px) {
+@media only screen and (max-width:495px) {
   .navbar {
     display: none;
   }
 }
-@media only screen and(max-width:767px) {
+@media only screen and (max-width:767px) {
   .navbar {
     display: none;
   }
 }
-@media only screen and(min-width:768px) and(max-width:1275px) {
+@media only screen and (min-width:768px) and (max-width:1275px) {
   .navbar {
     &__search {
       display: none;
