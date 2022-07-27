@@ -1,7 +1,7 @@
-export default function BlogPageSingle({ image, Name, index }) {
+export default function BlogPageSingle({ image, Name}) {
   return (
     <div className="BlogPageSingle">
-      <img className="BlogPageSingle__img" src={image} key={index} alt=""></img>
+      <img className="BlogPageSingle__img" src={image} alt=""></img>
       <div className="BlogPageSingle__text">
         <div className="contentsingle__left__post__timeactor">
           <div className="contentsingle__left__post__timeactor__actor">
@@ -22,7 +22,7 @@ export default function BlogPageSingle({ image, Name, index }) {
             </div>
           </div>
         </div>
-        <p className="BlogPageSingle__text__name">{Name} key={index} </p>
+        <p className="BlogPageSingle__text__name">{Name}</p>
         <p className="BlogPageSingle__text__nd">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
           facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu

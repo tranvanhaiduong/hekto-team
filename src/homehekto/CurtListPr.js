@@ -52,7 +52,7 @@ function CurtListPr() {
       </div>
       <div className="ProductCurt__right">
         <div className="ProductCurt__right__cartTT">
-          <h className="ProductCurt__right__cartTT__na">Cart Totals</h>
+          <div className="ProductCurt__right__cartTT__na">Cart Totals</div>
           <div className="ProductCurt__right__cartTT__btn">
             <div className="ProductCurt__right__cartTT__btn__sub">
               <p className="ProductCurt__right__cartTT__btn__sub__i">
@@ -84,7 +84,7 @@ function CurtListPr() {
           </div>
         </div>
         <div className="ProductCurt__right__calS">
-          <h className="ProductCurt__right__calS__name">Calculate Shopping</h>
+          <div className="ProductCurt__right__calS__name">Calculate Shopping</div>
           <div className="ProductCurt__right__calS__btn">
             <Label />
             <button className="ProductCurt__right__calS__btn__btcl">
