@@ -64,7 +64,7 @@ class Featured extends React.Component {
               <Slider {...settings}>
               {shopgrid_product.map((list, index) => (
                   list.pid.includes("f")?
-                  <FeaturedProduct image={list.image} key={index} />
+                  <FeaturedProduct image={list.image} key={index} pid={list.pid} />
                   :null
                 ))}
               </Slider>
