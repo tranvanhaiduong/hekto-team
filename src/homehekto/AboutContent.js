@@ -83,6 +83,7 @@ function AboutContent() {
 
                   </div>
                 </div>
+                </div>
               ))}
             </Slider>
           </div>
@@ -104,6 +105,7 @@ function AboutContent() {
                   purus gravida.
 
                 </div>
+              </div>
               </div>
             ))}
           </div>
