@@ -44,7 +44,9 @@ function Content() {
       price={list.price}/>
       :null
       ))}
+       
       <Top />
+      
       <Newslater />
       <Logo />
       <Leatestblg />

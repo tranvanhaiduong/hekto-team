@@ -3,6 +3,7 @@ import TopCategories from "./TopCategories";
 import React from "react";
 // import ReactDOM from "react-dom";
 import Slider from "react-slick";
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Top extends React.Component {
   render() {
     const settings = {
@@ -31,16 +32,7 @@ class Top extends React.Component {
         },
       ],
     };
-    const listImages = [
-      "./images/image 20.png",
-      "./images/image 1168.png",
-      "./images/image 1171.png",
-      "./images/image 20.png",
-      "./images/image 20.png",
-      "./images/image 1168.png",
-      "./images/image 1171.png",
-      "./images/image 20.png",
-    ];
+    
     return (
       <div className="content__top">
         <div className="content__top__categories">
