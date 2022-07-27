@@ -1,5 +1,14 @@
 .content__discount {
   margin-top: 128px;
+  @include mobile {
+
+  }
+  @include tablet {
+
+  }
+  @include pc {
+
+  }
   &__item {
     margin-bottom: 33px;
     h1 {
@@ -23,6 +32,15 @@
       position: absolute;
       display: flex;
       top: 0px;
+      @include mobile {
+
+      }
+      @include tablet {
+
+      }
+      @include pc {
+
+      }
       a {
         color: #fb2e86;
         font-family: "Lato";
@@ -47,6 +65,15 @@
     }
     &__discountoff {
       line-height: 2;
+      @include mobile {
+
+      }
+      @include tablet {
+
+      }
+      @include pc {
+
+      }
       h1 {
         color: #151875;
         font-family: "Josefin Sans";
@@ -80,9 +107,27 @@
       &__item {
         display: flex;
         gap: 48px;
+        @include mobile {
+
+        }
+        @include tablet {
+
+        }
+        @include pc {
+
+        }
         &__simple {
           display: flex;
           gap: 20px;
+          @include mobile{
+
+          }
+          @include tablet{
+
+          }
+          @include pc {
+
+          }
           ul {
             padding-left: 26px;
           }
@@ -90,6 +135,15 @@
       }
     }
     &__tortuga {
+      @include mobile {
+
+      }
+      @include tablet {
+
+      }
+      @include pc {
+        
+      }
       img {
         right: 0;
       }

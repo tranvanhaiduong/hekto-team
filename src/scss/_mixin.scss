@@ -10,25 +10,28 @@
     }
   }
   
-  @mixin tablet-mini {
-    @media only screen and (min-width: $mobile-width) and (max-width: $tabletmini-width) {
+  @mixin tablet {
+    @media only screen and (min-width: $mobile-width) and (max-width: $tablet-width) {
       @content;
     }
   }
   
-  @mixin tablet-port {
-    @media only screen and (min-width: $tabletmini-width) and ( max-width: $tabletport-width) {
+  @mixin pc {
+    @media only screen and (min-width: $tablet-width) and ( max-width: $PC-width) {
       @content;
     }
   }
   
-  @mixin mobileN {
-    @media only screen and (max-width: $mobileN-width) {
-      @content;
-    }
-  }
-  @mixin tablet-portN {
-    @media only screen and (min-width: $mobileN-width) and ( max-width: $tabletportN-width) {
-      @content;
-    }
-  }
+  // @mixin breakpoint {
+    
+  // }
+  // @mixin mobileN {
+  //   @media only screen and (max-width: $mobileN-width) {
+  //     @content;
+  //   }
+  // }
+  // @mixin tablet-portN {
+  //   @media only screen and (min-width: $mobileN-width) and ( max-width: $tabletportN-width) {
+  //     @content;
+  //   }
+  // }
