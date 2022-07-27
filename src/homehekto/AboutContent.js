@@ -1,6 +1,4 @@
 import Slider from "react-slick";
-import ShopexOffer from "../homehekto/ShopexOffer";
-
 const settings = {
   dots: false,
   infinite: false,
@@ -17,7 +15,7 @@ const settings = {
         rows: 1,
       },
     },
-      {
+    {
       breakpoint: 599,
       settings: {
         slidesToShow: 1,
@@ -73,8 +71,32 @@ function AboutContent() {
           <div className="aboutcontent__center__offers">
             <Slider {...settings}>
               {listImages.map((list) => (
-                <div className="aboutcontent__center__offers__1" style={{display:"flex"}}>
+                <div
+                  className="aboutcontent__center__offers__1"
+                  style={{ display: "flex" }}
+                >
                   <div className="aboutcontent__center__offers__1__offer">
+                    <div className="aboutcontent__center__offers__1__offer__image">
+                      <img src={list.image} alt=""></img>
+                    </div>
+                    <div className="aboutcontent__center__offers__1__offer__title">
+                      {list.title}
+                    </div>
+                    <div className="aboutcontent__center__offers__1__offer__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Massa purus gravida.
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+        <div id="about__pc">
+          <div className="aboutcontent__center__offers">
+            {listImages.map((list) => (
+              <div className="aboutcontent__center__offers__1">
+                <div className="aboutcontent__center__offers__1__offer">
                   <div className="aboutcontent__center__offers__1__offer__image">
                     <img src={list.image} alt=""></img>
                   </div>
@@ -86,27 +108,6 @@ function AboutContent() {
                     Massa purus gravida.
                   </div>
                 </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-        <div id="about__pc">
-          <div className="aboutcontent__center__offers">
-            {listImages.map((list) => (
-              <div className="aboutcontent__center__offers__1">
-                <div className="aboutcontent__center__offers__1__offer">
-                <div className="aboutcontent__center__offers__1__offer__image">
-                  <img src={list.image} alt=""></img>
-                </div>
-                <div className="aboutcontent__center__offers__1__offer__title">
-                  {list.title}
-                </div>
-                <div className="aboutcontent__center__offers__1__offer__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
-                  purus gravida.
-                </div>
-              </div>
               </div>
             ))}
           </div>

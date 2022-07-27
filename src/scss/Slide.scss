@@ -1,12 +1,15 @@
-.slides{
+.slides {
   .slick-dots {
     bottom: 53.47px;
   }
   li.slick-active {
-    div{
+    div {
       background: #fb2e86;
     }
   }
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .slide {
   width: 100%;
