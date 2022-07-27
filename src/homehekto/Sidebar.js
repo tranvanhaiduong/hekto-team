@@ -1,4 +1,4 @@
-function Sidebar({ check, rating }) {
+function Sidebar({ checkking, rating }) {
 
   return (
     <div className="contentShop__shopleft__sidebar__brand__listbrand">
@@ -18,7 +18,7 @@ function Sidebar({ check, rating }) {
         </div>
       )}
       <div className="contentShop__shopleft__sidebar__brand__listbrand__checklist">
-        <a href="/">{check}</a>
+        <a href="/">{checkking}</a>
       </div>
     </div>
   );
