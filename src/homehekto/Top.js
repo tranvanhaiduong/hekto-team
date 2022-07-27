@@ -41,9 +41,15 @@ class Top extends React.Component {
         <div className="content__top__mini">
           <div id="mobile">
             <Slider {...settings}>
-              {listImages.map((image, index) => (
-                <TopCategories image={image} key={index} />
-              ))}
+              {
+                Array(2).fill().map(()=>
+                shopgrid_product.map((list, index) => (
+                  list.pid.includes("top")?
+                  <TopCategories image={list.image} key={index} pid={list.pid} title={list.title} price={list.price}/>
+                  :null
+                ))
+                )
+              }
             </Slider>
           </div>
         </div>
