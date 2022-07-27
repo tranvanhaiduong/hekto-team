@@ -1,5 +1,4 @@
 import Slider from "react-slick";
-// import ShopexOffer from "../homehekto/ShopexOffer";
 
 const settings = {
   dots: false,
@@ -17,7 +16,7 @@ const settings = {
         rows: 1,
       },
     },
-      {
+    {
       breakpoint: 599,
       settings: {
         slidesToShow: 1,
@@ -72,6 +71,7 @@ function AboutContent() {
         <div id="about__mobile">
           <div className="aboutcontent__center__offers">
             <Slider {...settings}>
+
               {listImages.map((list,index) => (
                 <div className="aboutcontent__center__offers__1" style={{display:"flex"}}>
                   <div className="aboutcontent__center__offers__1__offer">
@@ -80,12 +80,8 @@ function AboutContent() {
                   </div>
                   <div className="aboutcontent__center__offers__1__offer__title">
                     {list.title}
+
                   </div>
-                  <div className="aboutcontent__center__offers__1__offer__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Massa purus gravida.
-                  </div>
-                </div>
                 </div>
               ))}
             </Slider>
@@ -96,6 +92,7 @@ function AboutContent() {
             {listImages.map((list, index) => (
               <div className="aboutcontent__center__offers__1">
                 <div className="aboutcontent__center__offers__1__offer">
+
                 <div className="aboutcontent__center__offers__1__offer__image">
                   <img src={list.image} key={index} alt=""></img>
                 </div>
@@ -105,8 +102,8 @@ function AboutContent() {
                 <div className="aboutcontent__center__offers__1__offer__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
                   purus gravida.
+
                 </div>
-              </div>
               </div>
             ))}
           </div>
