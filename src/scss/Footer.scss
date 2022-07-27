@@ -14,6 +14,9 @@
     box-sizing: border-box;
     padding-top: 94px;
     gap: 72px;
+    @include mobile {
+
+    }
     p {
       font-family: "Lato";
       font-style: normal;
@@ -41,6 +44,9 @@
           flex: 1 1;
           align-items: center;
           border: 1px solid #ffffff;
+          @include mobile {
+
+          }
           input {
             border: none;
             width: 100%;
@@ -104,12 +110,21 @@
     justify-content: center;
     height: 53px;
     width: 100%;
+    @include mobile {
+
+    }
     &__all {
       justify-content: space-between;
       display: flex;
       align-items: center;
       width: 52%;
+      @include mobile {
+
+      }
       &__content {
+        @include mobile {
+
+        }
         p {
           color: #9da0ae;
           font-family: "Lato";
@@ -121,6 +136,9 @@
       &__img {
         display: flex;
         gap: 10px;
+        @include mobile {
+          
+        }
       }
     }
   }
