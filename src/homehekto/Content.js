@@ -16,7 +16,7 @@ function Content() {
       <Featured />
       <Leatest />
       <Shopex />
-      {shopgrid_product.map((list) => (
+      {shopgrid_product.map((list,index) => (
         list.pid.includes("unique")?
         <Unique
           pid={list.pid}
@@ -26,15 +26,17 @@ function Content() {
           description={list.description}
           nameProduct={list.name}
           price={list.price}
+          key={index}
         />
         :null
       ))}
       <Trending />
-      {shopgrid_product.map((list) => (
+      {shopgrid_product.map((list,index) => (
         list.pid.includes("discount")?
       <Discount 
       pid={list.pid}
       image={list.image}
+      key={index}
       title={list.title}
       listImage={list.listImage}
       description={list.description}

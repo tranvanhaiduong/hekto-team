@@ -5,9 +5,9 @@ export default function Login(){
             <p className="login__pl">Please login using account detail bellow.</p>
             <input className="login__email" type="email" placeholder="Email Address"></input><br></br>
             <input className="login__pass" type="password" placeholder="Password"></input>
-            <a href="" className="login__fyo">Forgot your password?</a>
+            <a href={{href:""}} className="login__fyo">Forgot your password?</a>
             <button className="login__signin">Sign In</button><br></br>
-            <a href="" className="login__cra">Don’t have an Account?Create account</a>
+            <a href={{href:""}} className="login__cra">Don’t have an Account?Create account</a>
         </div>
     );
 }

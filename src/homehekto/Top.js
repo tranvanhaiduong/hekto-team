@@ -49,8 +49,8 @@ class Top extends React.Component {
         <div className="content__top__mini">
           <div id="mobile">
             <Slider {...settings}>
-              {listImages.map((image) => (
-                <TopCategories image={image} />
+              {listImages.map((image, index) => (
+                <TopCategories image={image} key={index} />
               ))}
             </Slider>
           </div>

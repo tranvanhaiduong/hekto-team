@@ -1,4 +1,4 @@
-function ShopexOffer({ pid, image, title, description }) {
+function ShopexOffer({ image, title, description }) {
   return (
     <div className="content__shopex__support__one">
       <img alt="" src={image}></img>

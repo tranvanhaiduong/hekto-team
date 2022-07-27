@@ -28,7 +28,6 @@ function CurtListPr() {
   const handleCheckOut = () => (
     navigate("/ordercompleted"), dispatch(clearCart())
   );
-
   return (
     <div className="ProductCurt">
       <div className="ProductCurt__left">

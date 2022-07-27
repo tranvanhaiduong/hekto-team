@@ -30,13 +30,14 @@ class Shopex extends React.Component {
         <div className="content__shopex__support">
           <div id="shopex__mobile">
             <Slider {...settings}>
-              {shopgrid_product.map((list) =>
+              {shopgrid_product.map((list, index) =>
                 list.pid.includes("so") ? (
                   <ShopexOffer
                     pid={list.pid}
                     image={list.image}
                     title={list.title}
                     description={list.description}
+                    key={index}
                   />
                 ) : null
               )}

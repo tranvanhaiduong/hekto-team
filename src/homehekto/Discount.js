@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function Discount({pid, image, title, listImage, description, nameProduct, price}) {
+function Discount({pid, image, title, description, nameProduct}) {
   const navigate = useNavigate();
   return (
     <div className="content__discount">

@@ -130,35 +130,36 @@ function ShopLeftSidebar({toggleViewMode}) {
             <div className="contentShop__shopleft__sidebar__discount__title">
               <h1>Discount Offer</h1>
             </div>
-            {offers.map((offer) => (
-              <Sidebar image="./images/check_offer.png" check={offer} />
+            {offers.map((offer, index) => (
+              <Sidebar image="./images/check_offer.png" check={offer} key={index} />
             ))}
           </div>
           <div className="contentShop__shopleft__sidebar__rating">
             <div className="contentShop__shopleft__sidebar__rating__title">
               <h1>Rating Item</h1>
             </div>
-            {rates.map((rate) => (
+            {rates.map((rate, index) => (
               <Sidebar
                 image="./images/check_rating.png"
                 check={rate.numbercount}
                 rating={rate.rating}
+                key = {index}
               />
             ))}
           </div>
           <div className="contentShop__shopleft__sidebar__categories">
             <div className="contentShop__shopleft__sidebar__categories__title">
               <h1>Categories</h1>
-              {categories.map((category) => (
-                <Sidebar image="./images/check_offer.png" check={category} />
+              {categories.map((category, index) => (
+                <Sidebar image="./images/check_offer.png" check={category} key={index} />
               ))}
             </div>
           </div>
           <div className="contentShop__shopleft__sidebar__price">
             <div className="contentShop__shopleft__sidebar__price__title">
               <h1>Price Filter</h1>
-              {prices.map((price) => (
-                <Sidebar image="./images/check_offer.png" check={price} />
+              {prices.map((price, index) => (
+                <Sidebar image="./images/check_offer.png" check={price} key={index} />
               ))}
             </div>
             <div className="contentShop__shopleft__sidebar__search">
@@ -209,10 +210,11 @@ function ShopLeftSidebar({toggleViewMode}) {
         {toggleViewMode?
         <div id="shopleft__list">
         <div className="contentShop__shopleft__listproduct">
-          {shopgrid_product.map((list) => (
+          {shopgrid_product.map((list, index) => (
              list.pid.includes("sp")?
             <LeftProduct
               pid={list.pid}
+              key={index}
               image={list.image}
               title={list.title}
               colors={list.color}
@@ -229,10 +231,11 @@ function ShopLeftSidebar({toggleViewMode}) {
         :
         <div id="shopleft__grid">
         <div className="contentShop__shopleft__listproduct">
-          {shopgrid_product.map((list) =>
+          {shopgrid_product.map((list,index) =>
             list.pid.includes("sp") ? (
               <LeftProduct
                 pid={list.pid}
+                key={index}
                 image={list.image}
                 title={list.title}
                 colors={list.color}
@@ -253,27 +256,28 @@ function ShopLeftSidebar({toggleViewMode}) {
             <div className="contentShop__shopleft__sidebar__brand">
               <div className="contentShop__shopleft__sidebar__brand__title">
                 <h1>Product Brand</h1>
-                {checks.map((check) => (
-                  <Sidebar image="./images/check.png" check={check} />
+                {checks.map((check, index) => (
+                  <Sidebar image="./images/check.png" check={check} key={index} />
                 ))}
               </div>
             </div>
             <div className="contentShop__shopleft__sidebar__discount">
               <div className="contentShop__shopleft__sidebar__discount__title">
                 <h1>Discount Offer</h1>
-                {offers.map((offer) => (
-                  <Sidebar image="./images/check_offer.png" check={offer} />
+                {offers.map((offer, index) => (
+                  <Sidebar image="./images/check_offer.png" check={offer} key={index} />
                 ))}
               </div>
             </div>
             <div className="contentShop__shopleft__sidebar__rating">
               <div className="contentShop__shopleft__sidebar__rating__title">
                 <h1>Rating Item</h1>
-                {rates.map((rate) => (
+                {rates.map((rate, index) => (
                   <Sidebar
                     image="./images/check_rating.png"
                     check={rate.numbercount}
                     rating={rate.rating}
+                    key={index}
                   />
                 ))}
               </div>
@@ -281,16 +285,16 @@ function ShopLeftSidebar({toggleViewMode}) {
             <div className="contentShop__shopleft__sidebar__categories">
               <div className="contentShop__shopleft__sidebar__categories__title">
                 <h1>Categories</h1>
-                {categories.map((category) => (
-                  <Sidebar image="./images/check_offer.png" check={category} />
+                {categories.map((category, index) => (
+                  <Sidebar image="./images/check_offer.png" check={category} key={index} />
                 ))}
               </div>
             </div>
             <div className="contentShop__shopleft__sidebar__price">
               <div className="contentShop__shopleft__sidebar__price__title">
                 <h1>Price Filter</h1>
-                {prices.map((price) => (
-                  <Sidebar image="./images/check_offer.png" check={price} />
+                {prices.map((price, index) => (
+                  <Sidebar image="./images/check_offer.png" check={price} key={index} />
                 ))}
               </div>
               <div className="contentShop__shopleft__sidebar__search">
@@ -342,7 +346,7 @@ function ShopLeftSidebar({toggleViewMode}) {
         <div className="contentShop__shopleft__listproduct">
           <Slider {...settings}>
 
-            {shopgrid_product.map((list) =>
+            {shopgrid_product.map((list, index) =>
               list.pid.includes("sp") ? (
                 <LeftProduct
                   pid={list.pid}
@@ -354,11 +358,12 @@ function ShopLeftSidebar({toggleViewMode}) {
                   ratings={list.rating}
                   description={list.description}
                   vectors={list.vector}
+                  key={index}
                 />
               ) : null
             )}
 
-            {shopgrid_product.map((list) => (
+            {shopgrid_product.map((list,index) => (
               list.pid.includes("sp")?
               <LeftProduct
                 pid={list.pid}
@@ -370,6 +375,7 @@ function ShopLeftSidebar({toggleViewMode}) {
                 ratings={list.rating}
                 description={list.description}
                 vectors={list.vector}
+                key={index}
               />
               :null
             ))}
