@@ -67,8 +67,8 @@ export default function BlogPagebwt() {
     <div className="BlogPagebwt">
       <div className="BlogPagebwt__left">
         <Slider {...settings}>
-        {ListBlogPage.map((blogpage) => (
-          <BlogPageSingle image={blogpage.image} Name={blogpage.Name} />
+        {ListBlogPage.map((blogpage, index) => (
+          <BlogPageSingle image={blogpage.image} Name={blogpage.Name} key={index} />
         ))}
         </Slider>
       </div>
@@ -89,8 +89,8 @@ export default function BlogPagebwt() {
               </div>
               {Array(5)
                 .fill()
-                .map(() => (
-                  <div className="contentsingle__right__categories__content__option">
+                .map((index) => (
+                  <div key={index} className="contentsingle__right__categories__content__option">
                     Women (21)
                   </div>
                 ))}
@@ -104,7 +104,7 @@ export default function BlogPagebwt() {
               <div className="contentsingle__right__recentpost__content">
                 <div className="contentsingle__right__recentpost__content__post">
                   <div className="contentsingle__right__recentpost__content__post__image">
-                    <img src={image} alt="" key={index} ></img>
+                    <img src={image} alt="" key={index}></img>
                   </div>
                   <div className="contentsingle__right__recentpost__content__post__text">
                     <p>It is a long established fact</p>
@@ -125,7 +125,7 @@ export default function BlogPagebwt() {
                     <img src={product.image} alt="" key={index}></img>
                   </div>
                   <div className="contentsingle__right__saleproduct__content__product__text">
-                    <p>{product.title} key={index} </p>
+                    <p>{product.title}</p>
                     <span>Aug 09 2020</span>
                   </div>
                 </div>

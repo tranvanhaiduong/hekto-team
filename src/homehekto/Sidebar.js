@@ -1,11 +1,11 @@
-function Sidebar({ check, rating, key }) {
-  console.log(typeof key);
+function Sidebar({ check, rating }) {
+
   return (
     <div className="contentShop__shopleft__sidebar__brand__listbrand">
       <div className="contentShop__shopleft__sidebar__brand__listbrand__check">
         {/* <img alt="" src={image}></img> */}
         <div className="squaredcheck">
-          <input type="checkbox" id={`squaredcheck ${key}`} />
+          <input type="checkbox" id={`squaredcheck`} />
           <label htmlFor="squaredcheck"></label>
         </div>
       </div>

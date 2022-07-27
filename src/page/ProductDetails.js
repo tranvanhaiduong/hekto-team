@@ -10,19 +10,20 @@ import { useParams } from "react-router-dom";
 import productData from "../fake -data/fakedata-shopgrid";
 
 function ProductDetails() {
+
   const { pid } = useParams();
-  console.log(pid);
   const product = 
     productData.getById(pid)
+  
    
   return (
     <div className="Product__Deatails">
       <Navigation title="Product Details" name="Product Details" />
       <PlayWood
-        image={product.image}
-        title={product.title}
-        pid={product.pid}
-        price={product.price}
+        image={product?.image}
+        title={product?.title}
+        pid={product?.pid}
+        price={product?.price}
       />
       <Description />
       <Related />

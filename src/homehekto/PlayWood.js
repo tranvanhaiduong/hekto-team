@@ -4,14 +4,16 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../redux/CartItemsSlice";
 import { toast } from "react-toastify";
 function PlayWood(props) {
+
+  const {pid="", image="", title="", price=""} = props
   const dispatch = useDispatch();
   const addToCart = () => {
     dispatch(
       addItem({
-        pid: props.pid,
-        image: props.image,
-        title: props.title,
-        price: props.price,
+        pid: pid,
+        image: image,
+        title: title,
+        price: price,
         quantity: 1,
       })
     );
@@ -26,16 +28,14 @@ function PlayWood(props) {
           <img alt="" src="/images/Rectangle 137.png"></img>
         </div>
         <div className="contentShop__playwood__chair__center">
-          <img alt="" src={props.image}></img>
+          <img alt="" src={image}></img>
         </div>
         <div className="contentShop__playwood__chair__right">
-          <h1>{props.title}</h1>
+          <h1>{title}</h1>
           <div className="contentShop__playwood__chair__right__img">
-            <img alt="" src="/images/Vector (8).png"></img>
-            <img alt="" src="/images/Vector (8).png"></img>
-            <img alt="" src="/images/Vector (8).png"></img>
-            <img alt="" src="/images/Vector (8).png"></img>
-            <img alt="" src="/images/Vector (8).png"></img>
+          {new Array(5).fill(1).map((item,index) => (
+              <img key={index} alt="" src="/images/Vector (8).png"></img>
+            ))}
             <span>(22)</span>
           </div>
           <div className="contentShop__playwood__chair__right__price">
