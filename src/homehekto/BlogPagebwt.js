@@ -67,8 +67,8 @@ export default function BlogPagebwt() {
     <div className="BlogPagebwt">
       <div className="BlogPagebwt__left">
         <Slider {...settings}>
-        {ListBlogPage.map((blogpage, index) => (
-          <BlogPageSingle image={blogpage.image} Name={blogpage.Name} key={index} />
+        {ListBlogPage.map((blogpage, index ) => (
+          <BlogPageSingle key={index} image={blogpage.image} Name={blogpage.Name}  />
         ))}
         </Slider>
       </div>
@@ -89,7 +89,7 @@ export default function BlogPagebwt() {
               </div>
               {Array(5)
                 .fill()
-                .map((index) => (
+                .map((mang,index) => (
                   <div key={index} className="contentsingle__right__categories__content__option">
                     Women (21)
                   </div>
@@ -101,10 +101,10 @@ export default function BlogPagebwt() {
               Recent Post
             </div>
             {recentpost.map((image, index) => (
-              <div className="contentsingle__right__recentpost__content">
+              <div key={index} className="contentsingle__right__recentpost__content">
                 <div className="contentsingle__right__recentpost__content__post">
                   <div className="contentsingle__right__recentpost__content__post__image">
-                    <img src={image} alt="" key={index}></img>
+                    <img src={image} alt="" ></img>
                   </div>
                   <div className="contentsingle__right__recentpost__content__post__text">
                     <p>It is a long established fact</p>
@@ -120,9 +120,9 @@ export default function BlogPagebwt() {
             </div>
             <div className="contentsingle__right__saleproduct__content">
               {saleproduct.map((product, index) => (
-                <div className="contentsingle__right__saleproduct__content__product">
+                <div key={index} className="contentsingle__right__saleproduct__content__product">
                   <div className="contentsingle__right__saleproduct__content__product__image">
-                    <img src={product.image} alt="" key={index}></img>
+                    <img src={product.image} alt="" ></img>
                   </div>
                   <div className="contentsingle__right__saleproduct__content__product__text">
                     <p>{product.title}</p>
