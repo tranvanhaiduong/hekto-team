@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 function CurtListPr() {
   const cartItems = useSelector((state) => state.cartItems.value);
+  const navigate = useNavigate();
   console.log(cartItems);
   const dispatch = useDispatch();
   const [cartProducts, setCartProducts] = useState([]);
@@ -23,11 +24,10 @@ function CurtListPr() {
     dispatch(clearCart());
     toast.warning("Delete");
   };
-  const navigate = useNavigate();
+  
   const handleCheckOut = () => (
     navigate("/ordercompleted"), dispatch(clearCart())
   );
-
   return (
     <div className="ProductCurt">
       <div className="ProductCurt__left">

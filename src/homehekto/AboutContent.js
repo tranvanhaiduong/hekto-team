@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+
 const settings = {
   dots: false,
   infinite: false,
@@ -70,22 +71,16 @@ function AboutContent() {
         <div id="about__mobile">
           <div className="aboutcontent__center__offers">
             <Slider {...settings}>
-              {listImages.map((list) => (
-                <div
-                  className="aboutcontent__center__offers__1"
-                  style={{ display: "flex" }}
-                >
+
+              {listImages.map((list,index) => (
+                <div className="aboutcontent__center__offers__1" style={{display:"flex"}}>
                   <div className="aboutcontent__center__offers__1__offer">
-                    <div className="aboutcontent__center__offers__1__offer__image">
-                      <img src={list.image} alt=""></img>
-                    </div>
-                    <div className="aboutcontent__center__offers__1__offer__title">
-                      {list.title}
-                    </div>
-                    <div className="aboutcontent__center__offers__1__offer__description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Massa purus gravida.
-                    </div>
+                  <div className="aboutcontent__center__offers__1__offer__image">
+                    <img src={list.image} key={index} alt=""></img>
+                  </div>
+                  <div className="aboutcontent__center__offers__1__offer__title">
+                    {list.title}
+
                   </div>
                 </div>
               ))}
@@ -94,19 +89,20 @@ function AboutContent() {
         </div>
         <div id="about__pc">
           <div className="aboutcontent__center__offers">
-            {listImages.map((list) => (
+            {listImages.map((list, index) => (
               <div className="aboutcontent__center__offers__1">
                 <div className="aboutcontent__center__offers__1__offer">
-                  <div className="aboutcontent__center__offers__1__offer__image">
-                    <img src={list.image} alt=""></img>
-                  </div>
-                  <div className="aboutcontent__center__offers__1__offer__title">
-                    {list.title}
-                  </div>
-                  <div className="aboutcontent__center__offers__1__offer__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Massa purus gravida.
-                  </div>
+
+                <div className="aboutcontent__center__offers__1__offer__image">
+                  <img src={list.image} key={index} alt=""></img>
+                </div>
+                <div className="aboutcontent__center__offers__1__offer__title">
+                  {list.title}
+                </div>
+                <div className="aboutcontent__center__offers__1__offer__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+                  purus gravida.
+
                 </div>
               </div>
             ))}

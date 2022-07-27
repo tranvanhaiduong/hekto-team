@@ -1,7 +1,7 @@
 
 import ListProduct from "./ListProduct";
 import Slider from "react-slick";
-import productData, { shopgrid_product } from "../fake -data/fakedata-shopgrid";
+import  { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 function ShopListProduct({toggleViewMode}) {
 
   var settings = {
@@ -44,7 +44,7 @@ function ShopListProduct({toggleViewMode}) {
 
         {toggleViewMode===true?
         <div id="shoplist__list">
-        {shopgrid_product.map((list) => (
+        {shopgrid_product.map((list, index) => (
           list.pid.includes("sl")?
           <ListProduct
             pid={list.pid}
@@ -56,12 +56,13 @@ function ShopListProduct({toggleViewMode}) {
             ratings={list.rating}
             description={list.description}
             vectors={list.vector}
+            key={index}
           />
           :null
         ))}
         </div>
         :<div id="shoplist__grid">
-        {shopgrid_product.map((list) => (
+        {shopgrid_product.map((list, index) => (
           list.pid.includes("sl")?
           <ListProduct
             pid={list.pid}
@@ -73,6 +74,7 @@ function ShopListProduct({toggleViewMode}) {
             ratings={list.rating}
             description={list.description}
             vectors={list.vector}
+            key={index}
           />
           :null
         ))}
@@ -81,7 +83,7 @@ function ShopListProduct({toggleViewMode}) {
       </div>
       <div id="shoplist__mobile">
         <Slider {...settings}>
-          {shopgrid_product.map((list) => (
+          {shopgrid_product.map((list,index) => (
             list.pid.includes("sl")?
 
             <ListProduct
@@ -94,6 +96,7 @@ function ShopListProduct({toggleViewMode}) {
               ratings={list.rating}
               description={list.description}
               vectors={list.vector}
+              key={index}
             />
            : null)
         )}

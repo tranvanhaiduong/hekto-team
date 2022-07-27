@@ -8,8 +8,8 @@ function RelatedProduct({ image, title, rating, price }) {
         <div className="contentShop__related__slide__shopfashion__men__fashion">
           <p>{title}</p>
           <div className="contentShop__related__slide__shopfashion__men__fashion__rating">
-            {rating.map((rate) => (
-              <img alt="" src={rate}></img>
+            {rating.map((rate, index) => (
+              <img alt="" src={rate} key={index}></img>
             ))}
           </div>
         </div>

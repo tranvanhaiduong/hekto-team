@@ -1,7 +1,7 @@
 import LeatestBlog from "./LeatestBlog";
 
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import Slider from "react-slick";
 class Leatestblg extends React.Component {
   render() {
@@ -39,8 +39,8 @@ class Leatestblg extends React.Component {
         <div className="content__leatestblg__top">
           <div id="leatestblg__mobile">
             <Slider {...settings}>
-              {listImages.map((image) => (
-                <LeatestBlog image={image} />
+              {listImages.map((image, index) => (
+                <LeatestBlog image={image} key={index} />
               ))}
             </Slider>
           </div>

@@ -1,7 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Slider from "react-slick";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 class Slide extends React.Component {
   render() {
     const settings = {

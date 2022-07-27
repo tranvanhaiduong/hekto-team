@@ -4,7 +4,7 @@ function Sidebar({ check, rating, key }) {
     <div className="contentShop__shopleft__sidebar__brand__listbrand">
       <div className="contentShop__shopleft__sidebar__brand__listbrand__check">
         {/* <img alt="" src={image}></img> */}
-        <div class="squaredcheck">
+        <div className="squaredcheck">
           <input type="checkbox" id={`squaredcheck ${key}`} />
           <label htmlFor="squaredcheck"></label>
         </div>

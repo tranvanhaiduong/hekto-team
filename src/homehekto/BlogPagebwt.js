@@ -100,11 +100,11 @@ export default function BlogPagebwt() {
             <div className="contentsingle__right__recentpost__title">
               Recent Post
             </div>
-            {recentpost.map((image) => (
+            {recentpost.map((image, index) => (
               <div className="contentsingle__right__recentpost__content">
                 <div className="contentsingle__right__recentpost__content__post">
                   <div className="contentsingle__right__recentpost__content__post__image">
-                    <img src={image} alt=""></img>
+                    <img src={image} alt="" key={index} ></img>
                   </div>
                   <div className="contentsingle__right__recentpost__content__post__text">
                     <p>It is a long established fact</p>
@@ -119,13 +119,13 @@ export default function BlogPagebwt() {
               Sale Product
             </div>
             <div className="contentsingle__right__saleproduct__content">
-              {saleproduct.map((product) => (
+              {saleproduct.map((product, index) => (
                 <div className="contentsingle__right__saleproduct__content__product">
                   <div className="contentsingle__right__saleproduct__content__product__image">
-                    <img src={product.image} alt=""></img>
+                    <img src={product.image} alt="" key={index}></img>
                   </div>
                   <div className="contentsingle__right__saleproduct__content__product__text">
-                    <p>{product.title}</p>
+                    <p>{product.title} key={index} </p>
                     <span>Aug 09 2020</span>
                   </div>
                 </div>

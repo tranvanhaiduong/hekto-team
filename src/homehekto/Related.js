@@ -96,8 +96,9 @@ function Related() {
         </div>
         <div className="contentShop__related__slide">
           <div id="related__pc">
-            {fakedata.map((fake) => (
+            {fakedata.map((fake, index) => (
               <RelatedProduct
+                key={index}
                 image={fake.image}
                 title={fake.title}
                 rating={fake.rating}
@@ -107,12 +108,13 @@ function Related() {
           </div>
           <div id="related__mobile">
             <Slider {...settings}>
-              {fakedata.map((fake) => (
+              {fakedata.map((fake, index) => (
                 <RelatedProduct
                   image={fake.image}
                   title={fake.title}
                   rating={fake.rating}
                   price={fake.price}
+                  key={index}
                 />
               ))}
             </Slider>

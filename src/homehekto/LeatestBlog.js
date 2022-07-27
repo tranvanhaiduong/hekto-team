@@ -17,7 +17,7 @@ function LeatestBlog({ image }) {
         More off this less hello samlande lied much over tightly circa horse
         taped mightly
       </p>
-      <a href="/#">Read More</a>
+      <a href="/blog">Read More</a>
     </div>
   );
 }

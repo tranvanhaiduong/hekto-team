@@ -4,17 +4,17 @@
   display: flex;
   margin-bottom: 96px;
 }
-@media only screen and(max-width:495px) {
+@media only screen and (max-width:495px) {
   .content__logo {
     display: none;
   }
 }
-@media only screen and(min-width:495px) and(max-width:767px) {
+@media only screen and (min-width:495px) and (max-width:767px) {
   .content__logo {
     display: none;
   }
 }
-@media only screen and(min-width:768px) and(max-width:1275px) {
+@media only screen and (min-width:768px) and (max-width:1275px) {
   .content__logo {
     width: 100%;
     img {

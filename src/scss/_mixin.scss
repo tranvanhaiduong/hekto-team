@@ -11,23 +11,24 @@
   }
   
   @mixin tablet-mini {
-    @media only screen and (min-width:496px) and (max-width: $tabletmini-width) {
+    @media only screen and (min-width: $mobile-width) and (max-width: $tabletmini-width) {
       @content;
     }
   }
   
   @mixin tablet-port {
-    @media only screen and(min-width:801px) and ( max-width: $tabletport-width) {
+    @media only screen and (min-width: $tabletmini-width) and ( max-width: $tabletport-width) {
       @content;
     }
   }
+  
   @mixin mobileN {
     @media only screen and (max-width: $mobileN-width) {
       @content;
     }
   }
   @mixin tablet-portN {
-    @media only screen and (min-width:601px) and ( max-width: $tabletportN-width) {
+    @media only screen and (min-width: $mobileN-width) and ( max-width: $tabletportN-width) {
       @content;
     }
   }

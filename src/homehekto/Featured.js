@@ -1,6 +1,5 @@
 import FeaturedProduct from "./FeaturedProdcuts";
 import React from "react";
-import ReactDOM from "react-dom";
 import Slider from "react-slick";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 
@@ -53,9 +52,9 @@ class Featured extends React.Component {
             <div id="featured__mobile">
               <Slider {...settings}>
                 {Array(4).fill().map(()=>
-                shopgrid_product.map((list) => (
+                shopgrid_product.map((list, index) => (
                   list.pid.includes("f")?
-                  <FeaturedProduct image={list.image} pid={list.pid}/>
+                  <FeaturedProduct image={list.image} pid={list.pid} key={index}/>
                   :null
                 ))
                 )}
@@ -63,9 +62,9 @@ class Featured extends React.Component {
             </div>
             <div id="featured__ipad">
               <Slider {...settings}>
-              {shopgrid_product.map((list) => (
+              {shopgrid_product.map((list, index) => (
                   list.pid.includes("f")?
-                  <FeaturedProduct image={list.image} />
+                  <FeaturedProduct image={list.image} key={index} />
                   :null
                 ))}
               </Slider>

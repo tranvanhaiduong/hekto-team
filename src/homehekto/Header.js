@@ -8,31 +8,31 @@ function Header() {
       <div className="header__bar">
         <div className="header__bar__left">
           <a href="/#" className="header__bar__left__icons">
-            <i class="fal fa-envelope"></i>
+            <i className="fal fa-envelope"></i>
             <p>mhhasanul@gmail.com</p>
           </a>
           <a href="/#" className="header__bar__left__iconright">
-            <i class="fal fa-phone-volume"></i>
+            <i className="fal fa-phone-volume"></i>
             <p>(12345)67890</p>
           </a>
         </div>
         <div className="header__bar__right">
           <div className="header__bar__right__list">
             <a href="/#">
-              English<i class="fal fa-chevron-down"></i>
+              English<i className="fal fa-chevron-down"></i>
             </a>
             <a href="/#">
-              USD<i class="fal fa-chevron-down"></i>
+              USD<i className="fal fa-chevron-down"></i>
             </a>
             <a href="/#">
-              Login<i class="fal fa-user"></i>
+              Login<i className="fal fa-user"></i>
             </a>
             <a href="/#">
-              Wishlist<i class="fal fa-heart"></i>
+              Wishlist<i className="fal fa-heart"></i>
             </a>
             <div className="header__bar__right__list__cart">
               <a href="/ShoppingCurt">
-                <i class="fal fa-shopping-cart"></i>
+                <i className="fal fa-shopping-cart"></i>
               </a>
               <span className="header__bar__right__list__cart__quantity">
                 {number}
@@ -41,13 +41,13 @@ function Header() {
           </div>
         </div>
       </div>
-      <label for="checkbar" className="header__bars">
-        <i class="fal fa-bars"></i>
+      <label htmlFor="checkbar" className="header__bars">
+        <i className="fal fa-bars"></i>
       </label>
       <input type="checkbox" className="headercheck" id="checkbar"></input>
       <div className="header__mobile">
-        <label for="checkbar" className="header__mobile__time">
-          <i class="far fa-window-close"></i>
+        <label htmlFor="checkbar" className="header__mobile__time">
+          <i className="far fa-window-close"></i>
         </label>
         <ul>
           <li>
@@ -75,14 +75,14 @@ function Header() {
         <div className="header__right__login">
           <div className="header__bar__right__list__cart">
             <a href="/ShoppingCurt">
-              <i class="fal fa-shopping-cart"></i>
+              <i className="fal fa-shopping-cart"></i>
             </a>
             <span className="header__bar__right__list__cart__quantity">
               {number}
             </span>
           </div>
           <a href="/#">
-            <i class="fal fa-user"></i>
+            <i className="fal fa-user"></i>
           </a>
         </div>
       </div>

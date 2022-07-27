@@ -1,8 +1,8 @@
 import LeatestProducts from "./LeatestProducts";
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import Slider from "react-slick";
-import FeaturedProduct from "./FeaturedProdcuts";
+// import FeaturedProduct from "./FeaturedProdcuts";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Leatest extends React.Component {
   render() {
@@ -55,9 +55,9 @@ class Leatest extends React.Component {
             <Slider {...settings}>
               {Array(2).fill().map(()=>
               
-              shopgrid_product.map((list) => (
+              shopgrid_product.map((list, index) => (
                 list.pid.includes("lt")?
-                <LeatestProducts image={list.image} pid={list.pid} title={list.title} price={list.price} sale={list.sale}/>
+                <LeatestProducts image={list.image} pid={list.pid} title={list.title} price={list.price} sale={list.sale} key={index}/>
                 :null
               ))
               

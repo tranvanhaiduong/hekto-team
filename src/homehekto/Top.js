@@ -1,8 +1,9 @@
 import TopCategories from "./TopCategories";
 
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import Slider from "react-slick";
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Top extends React.Component {
   render() {
     const settings = {
@@ -31,16 +32,7 @@ class Top extends React.Component {
         },
       ],
     };
-    const listImages = [
-      "./images/image 20.png",
-      "./images/image 1168.png",
-      "./images/image 1171.png",
-      "./images/image 20.png",
-      "./images/image 20.png",
-      "./images/image 1168.png",
-      "./images/image 1171.png",
-      "./images/image 20.png",
-    ];
+    
     return (
       <div className="content__top">
         <div className="content__top__categories">
@@ -49,9 +41,15 @@ class Top extends React.Component {
         <div className="content__top__mini">
           <div id="mobile">
             <Slider {...settings}>
-              {listImages.map((image) => (
-                <TopCategories image={image} />
-              ))}
+              {
+                Array(2).fill().map(()=>
+                shopgrid_product.map((list, index) => (
+                  list.pid.includes("top")?
+                  <TopCategories image={list.image} key={index} pid={list.pid} title={list.title} price={list.price}/>
+                  :null
+                ))
+                )
+              }
             </Slider>
           </div>
         </div>

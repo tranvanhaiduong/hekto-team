@@ -116,10 +116,10 @@ function ContentSingle() {
               amet, consectetur adipiscing elit. Velit dapibus est, nunc,
             </div>
             <div className="contentsingle__left__post__paragraph__products">
-              {fakeProduct.map((product) => (
+              {fakeProduct.map((product, index) => (
                 <div className="contentsingle__left__post__paragraph__products__product">
                   <div className="contentsingle__left__post__paragraph__products__product__image">
-                    <img src={product.image} alt=""></img>
+                    <img src={product.image} alt="" key={index} ></img>
                   </div>
                   <div className="contentsingle__left__post__paragraph__products__product__text">
                     <div className="contentsingle__left__post__paragraph__products__product__text__title">
@@ -264,11 +264,11 @@ function ContentSingle() {
           <div className="contentsingle__right__recentpost__title">
             Recent Post
           </div>
-          {recentpost.map(image=>(
+          {recentpost.map((image,index) =>(
             <div className="contentsingle__right__recentpost__content">
             <div className="contentsingle__right__recentpost__content__post">
               <div className="contentsingle__right__recentpost__content__post__image">
-                <img src={image} alt=""></img>
+                <img src={image} key={index} alt=""></img>
               </div>
               <div className="contentsingle__right__recentpost__content__post__text">
                 <p>It is a long established fact</p>
@@ -284,10 +284,10 @@ function ContentSingle() {
             Sale Product
           </div>
           <div className="contentsingle__right__saleproduct__content">
-            {saleproduct.map(product=>(
+            {saleproduct.map((product, index)=>(
               <div className="contentsingle__right__saleproduct__content__product">
               <div className="contentsingle__right__saleproduct__content__product__image">
-                <img src={product.image} alt=""></img>
+                <img src={product.image} key={index} alt=""></img>
               </div>
               <div className="contentsingle__right__saleproduct__content__product__text">
                 <p>{product.title}</p>
