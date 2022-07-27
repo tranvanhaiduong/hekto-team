@@ -55,9 +55,9 @@ class Leatest extends React.Component {
             <Slider {...settings}>
               {Array(2).fill().map(()=>
               
-              shopgrid_product.map((list) => (
+              shopgrid_product.map((list, index) => (
                 list.pid.includes("lt")?
-                <LeatestProducts image={list.image} pid={list.pid} title={list.title} price={list.price} sale={list.sale}/>
+                <LeatestProducts image={list.image} pid={list.pid} title={list.title} price={list.price} sale={list.sale} key={index}/>
                 :null
               ))
               

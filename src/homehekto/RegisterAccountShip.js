@@ -71,8 +71,8 @@ export default function RegisterAccountShip() {
         <div className="RegisterAccountShip__ship__right">
           <div className="RegisterAccountShip__ship__right__product">
             <Slider {...settings}>
-              {ListProduct.map((product) => (
-                <RegisterAccountProduct image={product.image} />
+              {ListProduct.map((product, index) => (
+                <RegisterAccountProduct image={product.image} key={index} />
               ))}
             </Slider>
           </div>

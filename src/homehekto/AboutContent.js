@@ -72,11 +72,11 @@ function AboutContent() {
         <div id="about__mobile">
           <div className="aboutcontent__center__offers">
             <Slider {...settings}>
-              {listImages.map((list) => (
+              {listImages.map((list,index) => (
                 <div className="aboutcontent__center__offers__1" style={{display:"flex"}}>
                   <div className="aboutcontent__center__offers__1__offer">
                   <div className="aboutcontent__center__offers__1__offer__image">
-                    <img src={list.image} alt=""></img>
+                    <img src={list.image} key={index} alt=""></img>
                   </div>
                   <div className="aboutcontent__center__offers__1__offer__title">
                     {list.title}
@@ -93,11 +93,11 @@ function AboutContent() {
         </div>
         <div id="about__pc">
           <div className="aboutcontent__center__offers">
-            {listImages.map((list) => (
+            {listImages.map((list, index) => (
               <div className="aboutcontent__center__offers__1">
                 <div className="aboutcontent__center__offers__1__offer">
                 <div className="aboutcontent__center__offers__1__offer__image">
-                  <img src={list.image} alt=""></img>
+                  <img src={list.image} key={index} alt=""></img>
                 </div>
                 <div className="aboutcontent__center__offers__1__offer__title">
                   {list.title}

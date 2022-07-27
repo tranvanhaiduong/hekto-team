@@ -1,4 +1,4 @@
-function TrendingProducts({ pid, image, title, price, sale }) {
+function TrendingProducts({ image, title, price, sale }) {
   return (
     <div className="content__trending__productitems__item1__cantilever">
       <div className="content__trending__productitems__item1__cantilever__chair">
