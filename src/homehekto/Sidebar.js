@@ -1,12 +1,11 @@
-function Sidebar({ checkking, rating }) {
-
+function Sidebar({ checkking, rating, id }) {
   return (
     <div className="contentShop__shopleft__sidebar__brand__listbrand">
       <div className="contentShop__shopleft__sidebar__brand__listbrand__check">
         {/* <img alt="" src={image}></img> */}
         <div className="squaredcheck">
-          <input type="checkbox" id={`squaredcheck`} />
-          <label htmlFor="squaredcheck"></label>
+          <input type="checkbox" id={id} />
+          <label htmlFor={id}></label>
         </div>
       </div>
 
