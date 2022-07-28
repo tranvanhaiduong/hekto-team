@@ -21,7 +21,15 @@ class Leatestblg extends React.Component {
       slidesToScroll: 3,
       responsive: [
         {
-          breakpoint: 767,
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            rows: 1,
+          },
+        },
+        {
+          breakpoint: 769,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

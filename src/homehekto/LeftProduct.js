@@ -52,9 +52,9 @@ function LeftProduct({
         </div>
         <div className="contentShop__shopleft__listproduct__product__title__vector">
           <div className="contentShop__shopleft__listproduct__product__title__vector__img" >
-            <a href={{href:""}} onClick={addCart}>
+            <p onClick={addCart}>
               <img alt="" src="/images/Group.png"></img>
-            </a>
+            </p>
           </div>
           <div className="contentShop__shopleft__listproduct__product__title__vector__img">
             <a href="/page">
