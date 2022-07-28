@@ -17,7 +17,7 @@
   }
   
   @mixin pc {
-    @media only screen and (min-width: $tablet-width) and ( max-width: $PC-width) {
+    @media only screen and (min-width: $tablet-width) and ( max-width: $pc-width) {
       @content;
     }
   }

@@ -7,14 +7,14 @@
         padding-right: 10px;
         height: 915px;
     }
-    @include tablet-mini {
+    @include tablet {
         padding-right: 10px;
         height: 915px;  
     }
-    @include tablet-port {
-        padding-right: 10px;
-        height: 915px;  
-    }
+    // @include tablet-port {
+    //     padding-right: 10px;
+    //     height: 915px;  
+    // }
     &__contact{
         &__cnp{
             padding-top: 90px;
@@ -23,12 +23,12 @@
                 padding-top: 40px;
                 display: block;
             }
-            @include tablet-mini {
+            @include tablet {
                 padding-top: 40px;
             }
-            @include tablet-port {
-                padding-top: 40px;
-            }
+            // @include tablet-port {
+            //     padding-top: 40px;
+            // }
         &__cof{
             margin-left: 40px;
             font-family: 'Josefin Sans';
@@ -49,12 +49,12 @@
             @include mobile {
                 margin-left: 40px;
             }
-            @include tablet-mini {
+            @include tablet {
                 margin-left: auto;
             }
-            @include tablet-port {
-                margin-left: auto;
-            }
+            // @include tablet-port {
+            //     margin-left: auto;
+            // }
             }
         &__login{
             margin-left: 5px;
@@ -68,12 +68,12 @@
             @include mobile {
                 margin-left: 40px;
             }
-            @include tablet-mini {
+            @include tablet {
                 margin-right: 50px;
             }
-            @include tablet-port {
-                margin-right: 50px;
-                }
+            // @include tablet-port {
+            //     margin-right: 50px;
+            //     }
             }
         }
         &__coi{
@@ -103,12 +103,12 @@
             @include mobile {
                 margin-top: 40px;
             }
-            @include tablet-mini {
+            @include tablet {
                 margin-top: 40px;
             }
-            @include tablet-port {
-                margin-top: 40px;
-            }
+            // @include tablet-port {
+            //     margin-top: 40px;
+            // }
         }
         &__flname{
             display: grid;
@@ -119,24 +119,24 @@
             @include mobile {
                 display: block;
             }
-            @include tablet-mini {
+            @include tablet {
                 display: block;
             }
-            @include tablet-port {
-                isplay: block;
-            }
+            // @include tablet-port {
+            //     isplay: block;
+            // }
             &__fname{
                 margin-left: 40px;
                 width: 340px;
                 @include mobile {
                     width: auto;
                 }
-                @include tablet-mini {
+                @include tablet {
                     width: 85%;
                 }
-                @include tablet-port {
-                    width: 85%;
-                }
+                // @include tablet-port {
+                //     width: 85%;
+                // }
             }
             &__lname{
                 width: 340px;
@@ -144,21 +144,21 @@
                     margin-left: 40px;
                     width: auto;
                 }
-                @include tablet-mini {
+                @include tablet {
                     margin-left: 40px;
                     width: 85%;
                 }
-                @include tablet-port {
-                    width: 85%;
-                    margin-left: -40px;
-                }
+                // @include tablet-port {
+                //     width: 85%;
+                //     margin-left: -40px;
+                // }
             }
         }
         &__address{
             width: 85%;
             margin-left: 40px;
             margin-top: 20px;
-            @include tablet-mini {
+            @include tablet {
                 width: 85%;
             }
         }
@@ -166,7 +166,7 @@
             width: 85%;
             margin-left: 40px;
             margin-top: 20px;
-            @include tablet-mini {
+            @include tablet{
                 width: 85%;
             }
         }
@@ -174,7 +174,7 @@
             width: 85%;
             margin-left: 40px;
             margin-top: 20px;
-            @include tablet-mini {
+            @include tablet {
                 width: 85%;
             }
         }
@@ -187,12 +187,12 @@
             @include mobile {
                 display: block;
             }
-            @include tablet-mini {
+            @include tablet{
                 display: block;
             }
-            @include tablet-port{
-                gap: 100px;
-            }
+            // @include tablet-port{
+            //     gap: 100px;
+            // }
             &__ba{
                 width: 340px;
                 margin-left: 40px;
@@ -200,7 +200,7 @@
                     width: auto;
                     margin-top: 20px;
                 }
-                @include tablet-mini {
+                @include tablet {
                     width: 85%;
                     margin-top: 20px;
                 }
@@ -212,7 +212,7 @@
                     width: auto;
                     margin-top: 20px;
                 }
-                @include tablet-mini {
+                @include tablet {
                     margin-left: 40px;
                     width: 85%;
                     margin-top: 20px;
@@ -233,7 +233,7 @@
         @include mobile {
             margin-top: 50px;  
         }
-        @include tablet-mini {
+        @include tablet{
             margin-top: 50px;
         }
     }

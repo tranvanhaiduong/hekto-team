@@ -9,24 +9,19 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    @include tablet-mini{
+    @include tablet{
         display: block;
         margin-top: 20px;
         margin-bottom: 20px;
         }
-    @include tablet-port{
-        max-width: 1024px;
-        margin: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+
     &__left{
         @include mobile {
             max-width: 460px;
             width: 90%;
             margin: auto;   
         }
-        @include tablet-mini {
+        @include tablet{
             max-width:600px;
             width: 90%;
             margin: auto;
@@ -51,7 +46,7 @@
             row-gap: 37px;
             height: auto;   
         }
-        @include tablet-mini {
+        @include tablet {
             width: 90%;
             margin-left: 8.33333%;
             height: 1500px;

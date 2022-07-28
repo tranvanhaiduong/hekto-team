@@ -7,7 +7,7 @@
     padding-top: 31px;
     justify-content: center;
     margin-bottom: 147px;
-    @include mobileN {
+    @include mobile {
         max-width: 98%;
         margin: 0 auto;
     }
@@ -15,7 +15,7 @@
         flex: 0 0 50%;
         max-width: 70%;
         font-weight: 700;
-        @include mobileN {
+        @include mobile {
             flex: 0 0 100%;
             max-width: 100%;
         }
@@ -26,7 +26,7 @@
             color: #1D3178;
             display: flex;
             margin-bottom: 48px;
-            @include mobileN {
+            @include mobile {
                 display: none;
             }
             &__prd{
@@ -52,7 +52,7 @@
         }
         &__bwn{
             margin-top: 10px;
-            @include mobileN {
+            @include mobile{
                 margin: 0;
                 display: flex;
                 flex-wrap: wrap;
@@ -64,7 +64,7 @@
             display: flex;
             margin-top: 50px;
             padding-bottom: 100px;
-            @include mobileN {
+            @include mobile {
                 display: none;
             }
             &__upd{
@@ -90,7 +90,7 @@
         flex: 0 0 25%;
         max-width: 35%;
         margin-left: 20px;
-        @include mobileN {
+        @include mobile {
             display: none;
         }
         &__cartTT{

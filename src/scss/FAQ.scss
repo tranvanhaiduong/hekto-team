@@ -1,11 +1,11 @@
-.contentfaq {
+  .contentfaq {
   display: flex;
   justify-content: center;
   text-align: left;
   align-items: left;
   margin-bottom: 92px;
   margin-top: 23px;
-  @include mobileN {
+  @include mobile {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -13,7 +13,7 @@
     margin: 0 auto;
     padding-top: 10px;
   }
-  @include tablet-portN {
+  @include tablet {
     max-width: 95%;
     margin: 0 auto;
     column-gap: 5%;
@@ -21,11 +21,11 @@
   &__infomations {
     display: flex;
     flex-direction: column;
-    @include mobileN {
+    @include mobile {
       max-width: 98%;
       margin: 0 auto;
     }
-    @include tablet-portN {
+    @include tablet {
       max-width: 50%;
     }
     h1 {
@@ -35,10 +35,10 @@
       text-align: center;
       color: #1d3178;
       font-weight: bold;
-      @include mobileN {
+      @include mobile{
         margin-top: 0;
       }
-      @include tablet-portN{
+      @include tablet{
         margin-top: 0;
       }
     }
@@ -60,11 +60,11 @@
           font-weight: bold;
           /* identical to box height, or 176% */
           color: #1d3178;
-          @include mobileN {
+          @include mobile {
             max-width: 100%;
             height: auto;
           }
-          @include tablet-portN {
+          @include tablet {
             max-width: 100%;
             height: auto;
           }
@@ -77,11 +77,11 @@
           line-height: 30px;
           /* or 188% */
           color: #a1abcc;
-          @include mobileN {
+          @include mobile {
             max-width: 100%;
             height: auto;
           }
-          @include tablet-portN {
+          @include tablet {
             max-width: 100%;
             height: auto;
           }
@@ -97,7 +97,7 @@
     flex-direction: column;
     position: relative;
     margin-left: 106px;
-    @include mobileN {
+    @include mobile {
       margin: 0 auto;
       max-width: 98%;
       textarea{
@@ -105,14 +105,14 @@
         margin-left: 0px ;
       }
     }
-    @include tablet-portN {
-      margin: 0 auto;
-      max-width: 50%;
-      textarea{
-        max-width: 90%;
-        margin-left: 0px ;
-      }
-    }
+    // @include tablet-port {
+    //   margin: 0 auto;
+    //   max-width: 50%;
+    //   textarea{
+    //     max-width: 90%;
+    //     margin-left: 0px ;
+    //   }
+    // }
     h1 {
       position: absolute;
       top: 66px;
@@ -132,14 +132,14 @@
       border: 1px solid #cdcedc;
       border-radius: 5px;
       //   vertical-align: top;
-      @include mobileN {
+      @include mobile {
         max-width: 90%;
         margin: 0 auto;
       } 
-      @include tablet-portN {
-        max-width: 90%;
-        margin: 0 auto;
-      }
+      // @include tablet-port {
+      //   max-width: 90%;
+      //   margin: 0 auto;
+      // }
     }
     input[type="text"]::placeholder {
       text-align: left;
@@ -163,12 +163,12 @@
       background: #ffffff;
       border: 1px solid #cdcedc;
       border-radius: 5px;
-      @include mobileN {
+      @include mobile {
         margin-left: 0;
       }
-      @include tablet-portN {
-        margin-left: 0;
-      }
+      // @include tablet-port {
+      //   margin-left: 0;
+      // }
     }
     button {
       width: 156px;
