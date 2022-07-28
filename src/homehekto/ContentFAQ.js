@@ -1,45 +1,21 @@
+import faq_data from "../fake -data/fake-faq";
+
 function ContentFAQ() {
   return (
     <div className="contentfaq">
       <div className="contentfaq__infomations">
         <h1>Generel Information</h1>
         <div className="contentfaq__infomations__all">
-        <div className="contentfaq__infomations__all__infomation">
+        {faq_data.map((data,index)=>(
+          <div className="contentfaq__infomations__all__infomation">
           <div className="contentfaq__infomations__all__infomation__title">
-            Eu dictumst cum at sed euismood condimentum?
+            {data.title}
           </div>
           <div className="contentfaq__infomations__all__infomation__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-            sed tristique mollis vitae, consequat gravida sagittis.
+            {data.description}
           </div>
         </div>
-        <div className="contentfaq__infomations__all__infomation">
-          <div className="contentfaq__infomations__all__infomation__title">
-            Magna bibendum est fermentum eros.
-          </div>
-          <div className="contentfaq__infomations__all__infomation__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-            sed tristique mollis vitae, consequat gravida sagittis.
-          </div>
-        </div>
-        <div className="contentfaq__infomations__all__infomation">
-          <div className="contentfaq__infomations__all__infomation__title">
-            Odio muskana hak eris conseekin sceleton?
-          </div>
-          <div className="contentfaq__infomations__all__infomation__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-            sed tristique mollis vitae, consequat gravida sagittis.
-          </div>
-        </div>
-        <div className="contentfaq__infomations__all__infomation">
-          <div className="contentfaq__infomations__all__infomation__title">
-            Elit id blandit sabara boi velit gua mara?
-          </div>
-          <div className="contentfaq__infomations__all__infomation__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-            sed tristique mollis vitae, consequat gravida sagittis.
-          </div>
-        </div>
+        ))}
         </div>
       </div>
       <div className="contentfaq__question">

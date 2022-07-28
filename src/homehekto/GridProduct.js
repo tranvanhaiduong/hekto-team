@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { addItem } from "../redux/CartItemsSlice";
 import { toast } from "react-toastify";
 
-function GridProduct({ image, price, title, pid }) {
+function GridProduct({ image, price, title, pid, sale }) {
   const dispath = useDispatch();
   const addCart = () => {
     dispath(
@@ -51,8 +51,8 @@ function GridProduct({ image, price, title, pid }) {
           <img alt="" src="/images/Ellipse 30.png"></img>
         </div>
         <div className="contentShop__shopgrid__listitem__product__title__price">
-          <p>$26.00 </p>
-          <p className="sale">$42.00</p>
+          <p>${price}.00 </p>
+          <p className="sale">${sale}.00</p>
         </div>
       </div>
     </div>

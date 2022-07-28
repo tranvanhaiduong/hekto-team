@@ -27,20 +27,20 @@ function LeftProduct({
   return (
     <div className="contentShop__shopleft__listproduct__product">
       <div className="contentShop__shopleft__listproduct__product__img">
-        <img alt="" src={image} ></img>
+        <img alt="" src={image}></img>
       </div>
       <div className="contentShop__shopleft__listproduct__product__title">
         <div className="contentShop__shopleft__listproduct__product__title__item">
           <h1>{title}</h1>
           <div className="contentShop__shopleft__listproduct__product__title__item__color">
-            {colors.map((color,index) => (
-              <img alt="" src={color} key={index} ></img>
+            {colors.map((color, index) => (
+              <img alt="" src={color} key={index}></img>
             ))}
           </div>
         </div>
         <div className="contentShop__shopleft__listproduct__product__title__price">
-          <p>{price}</p>
-          <p className="sale">{sale}</p>
+          <p>${price}.00</p>
+          <p className="sale">${sale}.00</p>
           <div className="contentShop__shopleft__listproduct__product__title__price__rating">
             {ratings.map((rating, index) => (
               <img alt="" src={rating} key={index}></img>
@@ -51,7 +51,7 @@ function LeftProduct({
           <p>{description}</p>
         </div>
         <div className="contentShop__shopleft__listproduct__product__title__vector">
-          <div className="contentShop__shopleft__listproduct__product__title__vector__img" >
+          <div className="contentShop__shopleft__listproduct__product__title__vector__img">
             <p onClick={addCart}>
               <img alt="" src="/images/Group.png"></img>
             </p>

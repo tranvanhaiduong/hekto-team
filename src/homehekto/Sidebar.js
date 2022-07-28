@@ -1,12 +1,25 @@
-function Sidebar({ checkking, rating }) {
+function Sidebar({ checkking, rating, id, setCheck, check }) {
+  const handleChecked = (name) => {
+    const listItem = check.filter((item) => item === name);
+    if (listItem.length > 0) {
+      const item = check.filter((item) => item !== name);
 
+      setCheck([...item]);
+    } else {
+      setCheck((prev) => [...prev, name]);
+    }
+  };
   return (
     <div className="contentShop__shopleft__sidebar__brand__listbrand">
       <div className="contentShop__shopleft__sidebar__brand__listbrand__check">
         {/* <img alt="" src={image}></img> */}
         <div className="squaredcheck">
-          <input type="checkbox" id={`squaredcheck`} />
-          <label htmlFor="squaredcheck"></label>
+          <input
+            type="checkbox"
+            id={id}
+            onClick={(e) => handleChecked(checkking)}
+          />
+          <label htmlFor={id}></label>
         </div>
       </div>
 

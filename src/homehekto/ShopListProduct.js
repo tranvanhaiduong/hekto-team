@@ -1,9 +1,15 @@
-
 import ListProduct from "./ListProduct";
 import Slider from "react-slick";
-import  { shopgrid_product } from "../fake -data/fakedata-shopgrid";
-function ShopListProduct({toggleViewMode}) {
-
+import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
+function ShopListProduct({ toggleViewMode, change }) {
+  const shoplist_product =
+    change === "Name"
+      ? shopgrid_product.sort((a, b) =>
+          a.title > b.title ? 1 : a.title < b.title ? -1 : 0
+        )
+      : shopgrid_product.sort((a, b) =>
+          a.price > b.price ? 1 : a.price < b.price ? -1 : 0
+        );
   var settings = {
     dots: false,
     infinite: false,
@@ -39,67 +45,64 @@ function ShopListProduct({toggleViewMode}) {
   return (
     <div className="contentShop__shoplist" id="shoplist">
       <div id="shoplist__pc">
-
-        
-
-        {toggleViewMode===true?
-        <div id="shoplist__list">
-        {shopgrid_product.map((list, index) => (
-          list.pid.includes("sl")?
-          <ListProduct
-            pid={list.pid}
-            image={list.image}
-            title={list.title}
-            colors={list.color}
-            price={list.price}
-            sale={list.sale}
-            ratings={list.rating}
-            description={list.description}
-            vectors={list.vector}
-            key={index}
-          />
-          :null
-        ))}
-        </div>
-        :<div id="shoplist__grid">
-        {shopgrid_product.map((list, index) => (
-          list.pid.includes("sl")?
-          <ListProduct
-            pid={list.pid}
-            image={list.image}
-            title={list.title}
-            colors={list.color}
-            price={list.price}
-            sale={list.sale}
-            ratings={list.rating}
-            description={list.description}
-            vectors={list.vector}
-            key={index}
-          />
-          :null
-        ))}
-        </div>
-        }
+        {toggleViewMode === true ? (
+          <div id="shoplist__list">
+            {shoplist_product.map((list, index) =>
+              list.pid.includes("sl") ? (
+                <ListProduct
+                  pid={list.pid}
+                  image={list.image}
+                  title={list.title}
+                  colors={list.color}
+                  price={list.price}
+                  sale={list.sale}
+                  ratings={list.rating}
+                  description={list.description}
+                  vectors={list.vector}
+                  key={index}
+                />
+              ) : null
+            )}
+          </div>
+        ) : (
+          <div id="shoplist__grid">
+            {shoplist_product.map((list, index) =>
+              list.pid.includes("sl") ? (
+                <ListProduct
+                  pid={list.pid}
+                  image={list.image}
+                  title={list.title}
+                  colors={list.color}
+                  price={list.price}
+                  sale={list.sale}
+                  ratings={list.rating}
+                  description={list.description}
+                  vectors={list.vector}
+                  key={index}
+                />
+              ) : null
+            )}
+          </div>
+        )}
       </div>
       <div id="shoplist__mobile">
         <Slider {...settings}>
-          {shopgrid_product.map((list,index) => (
-            list.pid.includes("sl")?
-
-            <ListProduct
-              pid={list.pid}
-              image={list.image}
-              title={list.title}
-              colors={list.color}
-              price={list.price}
-              sale={list.sale}
-              ratings={list.rating}
-              description={list.description}
-              vectors={list.vector}
-              key={index}
-            />
-           : null)
-        )}
+          {shoplist_product.map((list, index) =>
+            list.pid.includes("sl") ? (
+              <ListProduct
+                pid={list.pid}
+                image={list.image}
+                title={list.title}
+                colors={list.color}
+                price={list.price}
+                sale={list.sale}
+                ratings={list.rating}
+                description={list.description}
+                vectors={list.vector}
+                key={index}
+              />
+            ) : null
+          )}
         </Slider>
       </div>
     </div>
