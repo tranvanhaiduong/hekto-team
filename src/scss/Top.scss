@@ -2,6 +2,14 @@
   &__categories {
     margin-top: 79px;
     margin-bottom: 56px;
+    @include mobile {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    @include tablet {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
     h1 {
       color: #151875;
       font-family: "Josefin Sans";
@@ -16,6 +24,14 @@
     align-items: center;
     justify-content: center;
     grid-gap: 40px;
+    @include mobile {
+      display: grid;
+      grid-template-columns: 90%;
+    }
+    @include tablet {
+      grid-template-columns: 95%;
+      grid-column-gap: 2%;
+    }
     &__LCW {
       padding: 10px;
       &__chair {
@@ -27,14 +43,37 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        @include mobile {
+          height: 269px;
+          width: 269px;
+          margin: 0 auto;
+        }
+        @include tablet {
+          height: 23%;
+        }
+        @include pc {
+          height: 220px;
+          width: 100%;
+        }
         img {
           object-fit: cover;
+          @include tablet {
+            width: 100%;
+          }
         }
         &__btn{
           position: absolute;
           left: 125px;
           top: 220px;
           display: none;
+          @include tablet {
+            left: 110px;
+            top: 170px;
+          }
+          @include pc {
+            left: 110px;
+            top: 170px;
+          }
           button{
             background: #08D15F;
             border-radius: 2px;
@@ -61,6 +100,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include tablet {
+          height: 23%;
+          img {
+            width: 100%;
+          }
+        }
       }
       &__price {
         text-align: center;
@@ -79,6 +124,17 @@
 }
 #mobile {
   display: block;
+  @include mobile {
+    display: block;
+  }
+  @include tablet {
+    display: block;
+  }
+  @include pc {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 90px;
+  }
 }
 .content__top__mini__LCW:hover {
   .content__top__mini__LCW__chairone {
@@ -91,59 +147,5 @@
     display: block;
   }
 }
-@media only screen and (max-width:495px) {
-  .content__top__mini {
-    display: grid;
-    grid-template-columns: 90%;
-  }
-  .content__top__mini__LCW__chair {
-    height: 269px;
-    width: 269px;
-    margin: 0 auto;
-  }
-  .content__top__categories {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  #mobile {
-    display: block;
-  }
-}
-@media only screen and (min-width:496px) and (max-width:767px) {
-  .content__top__mini {
-    display: grid;
-    grid-template-columns: 90%;
-  }
-  .content__top__categories {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  #mobile {
-    display: block;
-  }
-}
-@media only screen and (min-width:768px) and (max-width:1275px) {
-  .content__top {
-    #mobile {
-      display: block;
-    }
-    &__mini {
-      grid-template-columns: 95%;
-      grid-column-gap: 2%;
-      &__LCW {
-        &__chairone {
-          height: 23%;
-          img {
-            width: 100%;
-          }
-        }
-        &__chair {
-          height: 23%;
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-}
+
+

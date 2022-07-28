@@ -5,6 +5,12 @@
     padding-top: 20px;
     &__vp{
         margin-left: 16.66667%;
+        @include tablet {
+            margin-left: 6.66667%;
+        }
+        @include pc {
+            margin-left: 20%;
+        }
         &__n{
             font-family: 'Josefin Sans';
             font-size: 24px;
@@ -24,116 +30,141 @@
     }
     &__ship{
         margin: auto;
-        max-width: 1530px;
+        max-width: 1300px;
         margin-top: 40px;
         justify-content: center;
         display: grid;
-        gap: 100px;
+        gap: 10px;
         grid-template-columns: 4fr 2fr;
         grid-template-areas: "items adjustments";
-        &__right{
-            height: 920px;
-        }
-    }
-}
-
-@media only screen and (max-width: 495px) {
-    .RegisterAccountShip{
-        &__ship{
+        @include mobile {
             display: block;
             margin-left: 10px;
             margin-right: 10px;
-            &__left{
-                max-width: 100%;
-                margin-left: 0;
-            }
-            &__right{
-                max-width: 100%;
-                margin-left: 0x;
-                height: 500px;
-                &__checkout{
-                    margin-right: 3px;
-                    width: auto;
-                }
-                &__product{
-                    margin-top: 40px;
-                }
-            }
         }
-    }
-}
-@media screen and (min-width: 495px) and (max-width: 800px) {
-    .RegisterAccountShip{
-        &__ship{
+        @include  tablet {
             display: block;
-            &__left{
-                max-width: 100%;
-                margin-left: 0;
-            }
-            &__right{
-                max-width: 100%;
-                margin-left: 0x;
-                height: 500px;
-                &__checkout{
-                    margin-right: 3px;
-                    width: auto;
-                }
-                &__product{
-                    margin-top: 40px;
-                }
-            }
         }
-    }
-}
-@media only screen and (min-width:801px) and (max-width:1024px) {
-    .RegisterAccountShip{
-        &__ship{
+        @include pc {
             display: block;
-            &__left{
-                max-width: 100%;
-                margin-left: 0;
-            }
-            &__right{
+        }
+        &__right{
+            height: 920px;
+            max-width: 400px;
+            @include mobile {
                 max-width: 100%;
                 margin-left: 0x;
                 height: 500px;
-                &__checkout{
+            }
+            @include tablet {
+                max-width: 100%;
+                height: 500px;
+            }
+            @include pc {
+                max-width: 100%;
+                margin-left: 0x;
+                height: 500px;
+                margin-top: 400px;
+            }
+            &__checkout{
+                @include mobile {
                     margin-right: 3px;
                     width: auto;
                 }
-                &__product{
+                @include tablet {
+                    margin-right: 3px;
+                    width: auto;
+                }
+                @include pc {
+                    margin-right: 3px;
+                    width: auto;
+                }
+            }
+            &__product{
+                @include mobile {
                     margin-top: 40px;
                 }
-                &__cartTT{
+                @include tablet {
+                    margin-top: 40px;
+                }
+                @include pc {
+                    margin-top: 40px;
+                }
+            }
+            &__cartTT{
+                @include pc {
                     justify-content: left;
                 }
             }
         }
-    }    
-} 
-@media screen and (max-width:1024px) {
-    .RegisterAccountShip{
-        width: 100%;
-        margin: auto;
-        &__ship{
-            display: block;
-            &__left{
+        &__left {
+            @include mobile {
                 max-width: 100%;
                 margin-left: 0;
             }
-            &__right{
+            @include tablet {
+                max-width: 100%;
+                margin-left: 0;
+            }
+            @include pc {
                 max-width: 100%;
                 margin-left: 0x;
                 height: 500px;
-                &__checkout{
-                    margin-right: 3px;
-                    width: auto;
-                }
-                &__product{
-                    margin-top: 40px;
-                }
             }
         }
-    } 
+    }
 }
+
+
+// @media only screen and (min-width:801px) and (max-width:1024px) {
+//     .RegisterAccountShip{
+//         &__ship{
+//             display: block;
+//             &__left{
+//                 max-width: 100%;
+//                 margin-left: 0;
+//             }
+//             &__right{
+//                 max-width: 100%;
+//                 margin-left: 0x;
+//                 height: 500px;
+//                 &__checkout{
+//                     margin-right: 3px;
+//                     width: auto;
+//                 }
+//                 &__product{
+//                     margin-top: 40px;
+//                 }
+//                 &__cartTT{
+//                     justify-content: left;
+//                 }
+//             }
+//         }
+//     }    
+// } 
+// @media screen and (max-width:1024px) {
+//     .RegisterAccountShip{
+//         width: 100%;
+//         margin: auto;
+//         &__ship{
+//             display: block;
+//             &__left{
+//                 max-width: 100%;
+//                 margin-left: 0;
+//             }
+//             &__right{
+//                 max-width: 100%;
+//                 margin-left: 0x;
+//                 height: 500px;
+//                 &__checkout{
+//                     margin-right: 3px;
+//                     width: auto;
+//                 }
+//                 &__product{
+//                     margin-top: 40px;
+//                 }
+//             }
+//         }
+//     } 
+// }
     

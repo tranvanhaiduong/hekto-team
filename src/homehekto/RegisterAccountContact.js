@@ -7,7 +7,7 @@ export default function RegisterAccountContact(){
                     <p className="RegisterAccountContact__contact__cnp__alr">Already have an account?</p>
                     <a href="/myaccount" className="RegisterAccountContact__contact__cnp__login">Log in</a>   
                 </div>
-                <div class="RegisterAccountContact__contact__coi   form__group">
+                <div className="RegisterAccountContact__contact__coi   form__group">
                     <input type="input" className="form__field" placeholder="Email or mobile phone number" />
                 </div>
                 <div className="RegisterAccountContact__contact__cheb">
