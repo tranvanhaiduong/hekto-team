@@ -115,7 +115,7 @@
         @include mobile {
 
         }
-        @include tablet-mini {
+        @include tablet {
 
         }
 
@@ -124,12 +124,12 @@
         width: 867px;
         height: 141px;
         background: #fafafb;
-        @include mobile {
+        // @include mobile {
 
-        }
-        @include tablet {
+        // }
+        // @include tablet {
 
-        }
+        // }
         p {
           width: 832px;
           height: 88px;
@@ -171,24 +171,24 @@
         color: #8a8fb9;
         width: 871px;
         height: 122px;
-        @include mobile {
-          max-width: 320px;
-          height: 290px
-        }
-        @include tablet {
-          width: 530px;
-          height: 190px;
-        }
+        // @include mobile {
+        //   max-width: 320px;
+        //   height: 290px
+        // }
+        // @include tablet {
+        //   width: 530px;
+        //   height: 190px;
+        // }
       }
       &__products {
         display: flex;
         gap: 12.46px;
-        @include mobile{
+        // @include mobile{
  
-        }
-        @include tablet{
+        // }
+        // @include tablet{
 
-        }
+        // }
 
         &__product {
           display: flex;
@@ -236,12 +236,12 @@
               color: #000000;
             }
           }
-          @include mobile{
+          // @include mobile{
 
-          }
-          @include tablet {
+          // }
+          // @include tablet {
 
-          }
+          // }
         }
       }
       &__paragraph5 {
@@ -253,12 +253,12 @@
         font-size: 16px;
         line-height: 26px;
         color: #8a8fb9;
-        @include mobile{
+        // @include mobile{
 
-        }
-        @include tablet{
+        // }
+        // @include tablet{
 
-        }
+        // }
 
       }
       &__paragraph6 {
@@ -270,12 +270,12 @@
         font-size: 16px;
         line-height: 26px;
         color: #8a8fb9;
-        @include mobile {
+        // @include mobile {
 
-        }
-        @include tablet-mini {
+        // }
+        // @include tablet{
 
-        }
+        // }
 
       }
       &__footer {
@@ -309,12 +309,12 @@
             color: #8a8fb9;
           }
         }
-        @include mobile {
+        // @include mobile {
 
-        }
-        @include tablet {
+        // }
+        // @include tablet {
 
-        }
+        // }
 
       }
     }
@@ -505,12 +505,12 @@
     border-radius: 2.24765px;
     outline: none;
     border: none;
-    @include mobile {
+    // @include mobile {
  
-    }
-    @include tablet-mini {
+    // }
+    // @include tablet {
 
-    }
+    // }
 
   }
 }
