@@ -5,11 +5,17 @@ import Logo from "../homehekto/Logo";
 import { Fragment, useState } from "react";
 function ShopLeft() {
   const [toggleViewMode, setToggleViewMode] = useState(false);
+  const [change, setChange] = useState("");
   return (
     <Fragment>
       <Navigation title="Shop Left Sidebar" name="Shop Left Sidebar" />
-      <Search toggleViewMode={toggleViewMode} setToggleViewMode={setToggleViewMode}/>
-      <ShopLeftSidebar toggleViewMode={toggleViewMode}/>
+      <Search
+        toggleViewMode={toggleViewMode}
+        setToggleViewMode={setToggleViewMode}
+        change={change}
+        setChange={setChange}
+      />
+      <ShopLeftSidebar toggleViewMode={toggleViewMode} change={change} />
       <Logo />
     </Fragment>
   );

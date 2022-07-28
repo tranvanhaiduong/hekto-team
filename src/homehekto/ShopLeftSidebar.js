@@ -2,6 +2,7 @@ import Sidebar from "./Sidebar";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 import LeftProduct from "./LeftProduct";
 import Slider from "react-slick";
+import { useState } from "react";
 const settings = {
   dots: false,
   infinite: false,
@@ -128,8 +129,28 @@ const prices = [
   "$150.00 - $504.00",
   "$450.00 +",
 ];
-function ShopLeftSidebar({ toggleViewMode }) {
-  console.log(toggleViewMode);
+
+function ShopLeftSidebar({ toggleViewMode, change }) {
+  const shopleft_product =
+    change === "Name"
+      ? shopgrid_product.sort((a, b) =>
+          a.title > b.title ? 1 : a.title < b.title ? -1 : 0
+        )
+      : shopgrid_product.sort((a, b) =>
+          a.price > b.price ? 1 : a.price < b.price ? -1 : 0
+        );
+  const [check, setCheck] = useState([]);
+  console.log("check", check);
+  const shopleft_filter = check.map((item, index) =>
+    shopleft_product.filter(
+      (list) =>
+        list.productBrand === item ||
+        list.discountOffer === item ||
+        list.categories === item ||
+        list.priceFilter === item
+    )
+  );
+  console.log(shopleft_filter);
   return (
     <div className="contentShop__shopleft">
       <div id="shopleft__pc">
@@ -143,6 +164,8 @@ function ShopLeftSidebar({ toggleViewMode }) {
                 checkking={checkking}
                 key={index}
                 id={"productBrand" + index}
+                check={check}
+                setCheck={setCheck}
               />
             ))}
           </div>
@@ -155,6 +178,9 @@ function ShopLeftSidebar({ toggleViewMode }) {
                 image="./images/check_offer.png"
                 checkking={offer}
                 key={index}
+                id={"discountOffer" + index}
+                check={check}
+                setCheck={setCheck}
               />
             ))}
           </div>
@@ -168,6 +194,9 @@ function ShopLeftSidebar({ toggleViewMode }) {
                 checkking={rate.numbercount}
                 rating={rate.rating}
                 key={index}
+                id={"ratingItem" + index}
+                check={check}
+                setCheck={setCheck}
               />
             ))}
           </div>
@@ -179,6 +208,9 @@ function ShopLeftSidebar({ toggleViewMode }) {
                   image="./images/check_offer.png"
                   checkking={category}
                   key={index}
+                  id={"categories" + index}
+                  check={check}
+                  setCheck={setCheck}
                 />
               ))}
             </div>
@@ -191,6 +223,9 @@ function ShopLeftSidebar({ toggleViewMode }) {
                   image="./images/check_offer.png"
                   checkking={price}
                   key={index}
+                  id={"priceFilter" + index}
+                  check={check}
+                  setCheck={setCheck}
                 />
               ))}
             </div>
@@ -242,43 +277,81 @@ function ShopLeftSidebar({ toggleViewMode }) {
         {toggleViewMode ? (
           <div id="shopleft__list">
             <div className="contentShop__shopleft__listproduct">
-              {shopgrid_product.map((list, index) =>
-                list.pid.includes("sp") ? (
-                  <LeftProduct
-                    pid={list.pid}
-                    key={index}
-                    image={list.image}
-                    title={list.title}
-                    colors={list.color}
-                    price={list.price}
-                    sale={list.sale}
-                    ratings={list.rating}
-                    description={list.description}
-                    vectors={list.vector}
-                  />
-                ) : null
-              )}
+              {shopleft_filter.length > 0
+                ? shopleft_filter.map((lists, index) =>
+                    lists.map((list, index) =>
+                      list.pid.includes("sp") ? (
+                        <LeftProduct
+                          pid={list.pid}
+                          key={index}
+                          image={list.image}
+                          title={list.title}
+                          colors={list.color}
+                          price={list.price}
+                          sale={list.sale}
+                          ratings={list.rating}
+                          description={list.description}
+                          vectors={list.vector}
+                        />
+                      ) : null
+                    )
+                  )
+                : shopleft_product.map((list, index) =>
+                    list.pid.includes("sp") ? (
+                      <LeftProduct
+                        pid={list.pid}
+                        key={index}
+                        image={list.image}
+                        title={list.title}
+                        colors={list.color}
+                        price={list.price}
+                        sale={list.sale}
+                        ratings={list.rating}
+                        description={list.description}
+                        vectors={list.vector}
+                      />
+                    ) : null
+                  )}
             </div>
           </div>
         ) : (
           <div id="shopleft__grid">
             <div className="contentShop__shopleft__listproduct">
-              {shopgrid_product.map((list, index) =>
-                list.pid.includes("sp") ? (
-                  <LeftProduct
-                    pid={list.pid}
-                    key={index}
-                    image={list.image}
-                    title={list.title}
-                    colors={list.color}
-                    price={list.price}
-                    sale={list.sale}
-                    ratings={list.rating}
-                    description={list.description}
-                    vectors={list.vector}
-                  />
-                ) : null
-              )}
+              {shopleft_filter.length > 0
+                ? shopleft_filter.map((lists, index) =>
+                    lists.map((list, index) =>
+                      list.pid.includes("sp") ? (
+                        <LeftProduct
+                          pid={list.pid}
+                          key={index}
+                          image={list.image}
+                          title={list.title}
+                          colors={list.color}
+                          price={list.price}
+                          sale={list.sale}
+                          ratings={list.rating}
+                          description={list.description}
+                          vectors={list.vector}
+                        />
+                      ) : null
+                    )
+                  )
+                : shopleft_product.map((list, index) =>
+                    list.pid.includes("sp") ? (
+                      <LeftProduct
+                        pid={list.pid}
+                        key={index}
+                        image={list.image}
+                        title={list.title}
+                        colors={list.color}
+                        price={list.price}
+                        sale={list.sale}
+                        ratings={list.rating}
+                        description={list.description}
+                        vectors={list.vector}
+                      />
+                    ) : null
+                  )}
             </div>
           </div>
         )}
@@ -294,6 +367,9 @@ function ShopLeftSidebar({ toggleViewMode }) {
                     image="./images/check.png"
                     checkking={checkking}
                     key={index}
+                    id={"productBrand" + index}
+                    check={check}
+                    setCheck={setCheck}
                   />
                 ))}
               </div>
@@ -306,6 +382,9 @@ function ShopLeftSidebar({ toggleViewMode }) {
                     image="./images/check_offer.png"
                     checkking={offer}
                     key={index}
+                    id={"discountOffer" + index}
+                    check={check}
+                    setCheck={setCheck}
                   />
                 ))}
               </div>
@@ -319,6 +398,9 @@ function ShopLeftSidebar({ toggleViewMode }) {
                     checkking={rate.numbercount}
                     rating={rate.rating}
                     key={index}
+                    id={"ratingItem" + index}
+                    check={check}
+                    setCheck={setCheck}
                   />
                 ))}
               </div>
@@ -331,6 +413,9 @@ function ShopLeftSidebar({ toggleViewMode }) {
                     image="./images/check_offer.png"
                     checkking={category}
                     key={index}
+                    id={"categories" + index}
+                    check={check}
+                    setCheck={setCheck}
                   />
                 ))}
               </div>
@@ -343,6 +428,9 @@ function ShopLeftSidebar({ toggleViewMode }) {
                     image="./images/check_offer.png"
                     checkking={price}
                     key={index}
+                    id={"priceFilter" + index}
+                    check={check}
+                    setCheck={setCheck}
                   />
                 ))}
               </div>
