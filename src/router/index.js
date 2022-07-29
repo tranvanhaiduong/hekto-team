@@ -32,7 +32,7 @@ const Main = () => {
       <Route path="/page" element={<ShopLeft />} />
       <Route path="/product/:pid" element={<ProductDetails />} />
       <Route path="/ShoppingCurt" element={<ShoppingCurt />} />
-      <Route path="/myaccount" element={<MyAccount />} />
+      <Route path="/login" element={<MyAccount />} />
       <Route path="/blog" element={<BlogPage />} />
     </Routes>
   );
