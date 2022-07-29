@@ -55,9 +55,10 @@ function Related() {
     dots: false,
     infinite: false,
     arrows: false,
+    slidesToShow: 4,
     responsive: [
       {
-        breakpoint: 495,
+        breakpoint: 460,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -67,20 +68,20 @@ function Related() {
         },
       },
       {
-        breakpoint: 820,
+        breakpoint: 960,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 3000,
           rows: 1,
         },
       },
       {
-        breakpoint: 1209,
+        breakpoint: 1220,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 3000,
           rows: 1,

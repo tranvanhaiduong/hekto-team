@@ -8,7 +8,11 @@ import ShopGridProduct from "../homehekto/ShopGridProduct";
 function GridDefault() {
   return (
     <div className="Shop_Grid">
-      <Navigation title="Shop Grid Default" name="Shop Grid Default" />
+      <Navigation
+        title="Shop Grid Default"
+        name="Shop Grid Default"
+        page="product"
+      />
       <Search />
       <ShopGridProduct />
     </div>

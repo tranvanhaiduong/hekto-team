@@ -7,9 +7,16 @@ function ShopLeft() {
   const [toggleViewMode, setToggleViewMode] = useState(false);
   return (
     <Fragment>
-      <Navigation title="Shop Left Sidebar" name="Shop Left Sidebar" />
-      <Search toggleViewMode={toggleViewMode} setToggleViewMode={setToggleViewMode}/>
-      <ShopLeftSidebar toggleViewMode={toggleViewMode}/>
+      <Navigation
+        title="Shop Left Sidebar"
+        name="Shop Left Sidebar"
+        page="page"
+      />
+      <Search
+        toggleViewMode={toggleViewMode}
+        setToggleViewMode={setToggleViewMode}
+      />
+      <ShopLeftSidebar toggleViewMode={toggleViewMode} />
       <Logo />
     </Fragment>
   );

@@ -9,7 +9,70 @@
   margin: 0 auto;
   justify-content: center;
   margin-top: 80px;
+  @include mobile {
+    justify-content: center;
+    position: relative;
+    height: 330px;
+  }
+  @include tablet {
+    justify-content: center;
+    position: relative;
+    height: 450px;
+  }
+  @include pc {
+    position: relative;
+  }
+  &__featuresofa {
+    margin-top: 15px;
+    @include mobile {
+      img {
+        height: 185px;
+        width: 52%;
+        position: absolute;
+        left: 5%;
+        top: 20%;
+      }
+    }
+    @include tablet {
+      img {
+        height: 70%;
+        width: 45%;
+        position: absolute;
+        left: 4%;
+        top: 17%;
+      }
+    }
+    @include pc {
+      position: absolute;
+      top: 10%;
+      left: 6%;
+      width: 47%;
+      img {
+        @include pc {
+          width: 100%;
+        }
+      }
+    }
+  }
   &__slidetrending {
+    @include mobile {
+      width: 40%;
+      position: absolute;
+      right: 4%;
+      top: 4%;
+    }
+    @include tablet {
+      width: 45%;
+      position: absolute;
+      right: 4%;
+      top: 0;
+    }
+    @include pc {
+      width: 46%;
+      position: absolute;
+      right: 2%;
+      top: 9%;
+    }
     h1 {
       margin-top: 97px;
       color: #151875;
@@ -17,6 +80,21 @@
       font-size: 35px;
       font-weight: bold;
       margin-bottom: 29px;
+    }
+    @include mobile {
+      h1 {
+        font-size: 11px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 45%;
+      }
+    }
+    @include tablet {
+      h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        margin-top: 30%;
+      }
     }
     width: 507px;
     &__one {
@@ -27,6 +105,10 @@
         height: 11px;
         width: 11px;
         margin-right: 12px;
+        @include mobile {
+          height: 6px;
+          width: 6px;
+        }
       }
       p {
         color: #acabc3;
@@ -34,12 +116,21 @@
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
+        @include mobile {
+          font-size: 10px;
+        }
       }
     }
     &__addcart {
       display: flex;
       align-items: center;
       margin-top: 38px;
+      @include mobile {
+        margin-top: 10px;
+      }
+      @include tablet {
+        margin-top: 30px;
+      }
       button {
         width: 157px;
         height: 45px;
@@ -51,158 +142,40 @@
         border: none;
         outline: none;
         margin-right: 19px;
+        @include mobile {
+          width: 71px;
+          height: 28px;
+          margin-right: 3px;
+          font-size: 10px;
+        }
+        @include tablet {
+          width: 135px;
+          height: 45px;
+          font-size: 15px;
+        }
       }
       &__price {
         color: #151875;
         font-family: "Josefin Sans";
         font-size: 14px;
-        h3 {
-          color: #151875;
-          font-family: "Josefin Sans";
-          font-size: 14px;
-          line-height: 1.5;
-        }
-        p {
-          line-height: 1.5;
-        }
       }
-    }
-  }
-}
-
-@media only screen and (max-width:495px) {
-  .content__unique__featuresofa {
-    img {
-      height: 185px px;
-      width: 171px;
-      position: absolute;
-      left: 4%;
-      top: 20%;
-    }
-  }
-  .content__unique {
-    justify-content: center;
-    position: relative;
-    height: 330px;
-  }
-  .content__unique__slidetrending {
-    width: 145px;
-    position: absolute;
-    right: 4%;
-    top: 4%;
-    &__one {
-      img {
-        height: 6px;
-        width: 6px;
+      h3 {
+        color: #151875;
+        font-family: "Josefin Sans";
+        font-size: 14px;
+        line-height: 1.5;
+        @include mobile {
+          font-size: 9px;
+        }
+        @include tablet {
+          line-height: 1;
+        }
       }
       p {
-        font-size: 10px;
-      }
-    }
-    h1 {
-      font-size: 11px;
-      margin-bottom: 10px;
-      text-align: center;
-      margin-top: 45%;
-    }
-    &__addcart {
-      margin-top: 10px;
-      &__price {
-        h3 {
-          font-size: 9px;
-          line-height: normal;
-        }
-        p {
-          line-height: 1.2;
+        line-height: 1.5;
+        @include mobile {
           font-size: 9px;
         }
-      }
-      button {
-        width: 71px;
-        height: 28px;
-        margin-right: 3px;
-        font-size: 10px;
-      }
-    }
-  }
-}
-@media only screen and (min-width:495px) and (max-width:767px) {
-  .content__unique__featuresofa {
-    img {
-      height: 60%;
-      width: 40%;
-      position: absolute;
-      left: 4%;
-      top: 20%;
-    }
-  }
-  .content__unique {
-    justify-content: center;
-    position: relative;
-    height: 330px;
-  }
-  .content__unique__slidetrending {
-    width: 50%;
-    position: absolute;
-    right: 4%;
-    top: 0;
-    &__one {
-      img {
-        height: 6px;
-        width: 6px;
-      }
-      p {
-        font-size: 10px;
-      }
-    }
-    h1 {
-      font-size: 11px;
-      margin-bottom: 10px;
-      margin-top: 30%;
-    }
-    &__addcart {
-      margin-top: 10px;
-      &__price {
-        h3 {
-          font-size: 9px;
-          line-height: normal;
-        }
-        p {
-          line-height: 1.2;
-          font-size: 9px;
-        }
-      }
-      button {
-        width: 71px;
-        height: 28px;
-        margin-right: 3px;
-        font-size: 10px;
-      }
-    }
-  }
-}
-@media only screen and (min-width:768px) and (max-width:1275px) {
-  .content__unique {
-    position: relative;
-    &__featuresofa {
-      position: absolute;
-      top: 15%;
-      left: 2%;
-      width: 50%;
-      img {
-        width: 100%;
-      }
-    }
-    &__slidetrending {
-      width: 50%;
-      position: absolute;
-      right: 2%;
-      top: 9%;
-      h1 {
-        font-size: 29px;
-      }
-      &__addcart {
-        margin-top: 30px;
       }
     }
   }

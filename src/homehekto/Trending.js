@@ -2,16 +2,6 @@ import Slider from "react-slick";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 import TrendingProducts from "./TrendingProducts";
 function Trending() {
-  // const listImages = [
-  //   "./images/box for image.png",
-  //   "./images/box for image (1).png",
-  //   "./images/box for image (2).png",
-  //   "./images/box for image (3).png",
-  //   "./images/box for image.png",
-  //   "./images/box for image (1).png",
-  //   "./images/box for image (2).png",
-  //   "./images/box for image (3).png",
-  // ];
   const settings = {
     dots: false,
     arrows: false,
@@ -22,18 +12,18 @@ function Trending() {
     rows: 1,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 960,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 1,
           rows: 1,
         },
       },
       {
-        breakpoint: 495,
+        breakpoint: 460,
         settings: {
-          slidesToShow: 1,
-          slideToSroll: 1,
+          slidesToShow: 2,
+          slideToSroll: 2,
           slidesToScroll: 1,
           rows: 1,
         },
@@ -51,26 +41,22 @@ function Trending() {
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 960,
         settings: {
           arrows: false,
           slidesToShow: 2,
           slideToSroll: 2,
-          autoplay: true,
           slidesPerRow: 1,
-          autoplaySpeed: 3000,
           rows: 1,
         },
       },
       {
-        breakpoint: 495,
+        breakpoint: 460,
         settings: {
           arrows: false,
           slidesToShow: 1,
           slideToSroll: 1,
-          autoplay: true,
           slidesPerRow: 1,
-          autoplaySpeed: 3000,
           rows: 1,
         },
       },

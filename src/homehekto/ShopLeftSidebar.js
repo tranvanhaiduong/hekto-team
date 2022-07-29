@@ -6,36 +6,28 @@ const settings = {
   dots: false,
   infinite: false,
   arrows: false,
-  autoplay: true,
-  autoplaySpeed: 3000,
   responsive: [
     {
-      breakpoint: 495,
+      breakpoint: 460,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
         rows: 1,
       },
     },
     {
-      breakpoint: 767,
+      breakpoint: 960,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        autoplay: true,
-        autoplaySpeed: 3000,
         rows: 1,
       },
     },
     {
-      breakpoint: 1245,
+      breakpoint: 1220,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: true,
-        autoplaySpeed: 3000,
         rows: 1,
       },
     },

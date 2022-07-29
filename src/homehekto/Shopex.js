@@ -5,7 +5,7 @@ import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Shopex extends React.Component {
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: false,
       arrows: false,
       slidesToShow: 4,
@@ -13,10 +13,26 @@ class Shopex extends React.Component {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 650,
+          breakpoint: 460,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            rows: 1,
+          },
+        },
+        {
+          breakpoint: 960,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            rows: 1,
+          },
+        },
+        {
+          breakpoint: 1220,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
             rows: 1,
           },
         },
