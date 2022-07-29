@@ -51,24 +51,20 @@ function ShopGridProduct({ toggleViewMode, change }) {
       <div className="contentShop__shopgrid__listitem">
         <div id="shopgrid__mobile">
           <Slider {...settings}>
-
-            {shopgrid_product.map((product, index) =>
+            {shop_product.map((product, index) =>
               product.pid.includes("sg") ? (
-
-
                 <GridProduct
                   image={product.image}
                   title={product.title}
                   key={index}
-
                   price={product.price}
                   sale={product.sale}
+                  pid={product.pid}
                 />
               ) : null
             )}
           </Slider>
         </div>
-
       </div>
     </div>
   );
