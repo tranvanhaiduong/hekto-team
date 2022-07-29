@@ -1,7 +1,16 @@
 import ListProduct from "./ListProduct";
 import Slider from "react-slick";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
-function ShopListProduct({ toggleViewMode }) {
+
+function ShopListProduct({ toggleViewMode, change }) {
+  const shoplist_product =
+    change === "Name"
+      ? shopgrid_product.sort((a, b) =>
+          a.title > b.title ? 1 : a.title < b.title ? -1 : 0
+        )
+      : shopgrid_product.sort((a, b) =>
+          a.price > b.price ? 1 : a.price < b.price ? -1 : 0
+        );
   var settings = {
     dots: false,
     infinite: false,
@@ -39,7 +48,8 @@ function ShopListProduct({ toggleViewMode }) {
       <div id="shoplist__pc">
         {toggleViewMode === true ? (
           <div id="shoplist__list">
-            {shopgrid_product.map((list, index) =>
+
+            {shoplist_product.map((list, index) =>
               list.pid.includes("sl") ? (
                 <ListProduct
                   pid={list.pid}
@@ -58,7 +68,8 @@ function ShopListProduct({ toggleViewMode }) {
           </div>
         ) : (
           <div id="shoplist__grid">
-            {shopgrid_product.map((list, index) =>
+
+            {shoplist_product.map((list, index) =>
               list.pid.includes("sl") ? (
                 <ListProduct
                   pid={list.pid}
@@ -79,7 +90,9 @@ function ShopListProduct({ toggleViewMode }) {
       </div>
       <div id="shoplist__mobile">
         <Slider {...settings}>
-          {shopgrid_product.map((list, index) =>
+
+          {shoplist_product.map((list, index) =>
+
             list.pid.includes("sl") ? (
               <ListProduct
                 pid={list.pid}

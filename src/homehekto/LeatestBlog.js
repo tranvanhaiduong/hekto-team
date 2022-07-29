@@ -13,7 +13,7 @@ function LeatestBlog({ image }) {
         </div>
       </div>
       <h4>Top esssential Trends in 2021</h4>
-      <p>
+      <p className="content__leatestblg__top__esssential__contentxtext">
         More off this less hello samlande lied much over tightly circa horse
         taped mightly
       </p>

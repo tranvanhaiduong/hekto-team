@@ -16,6 +16,28 @@ export default function BlogPagebwt() {
       Name: "Sit nam congue feugiat nisl, mauris amet nisi. ",
     },
   ];
+  const Offer =[
+    {
+      image: "../images/offerproduct1.png",
+      Name: "Duis lectus est.",
+      price: "$12.00 - $15.00",
+    },
+    {
+      image: "../images/offerproduct2.png",
+      Name: "Sed placerat.",
+      price: "$12.00 - $15.00",
+    },
+    {
+      image: "../images/offerproduct3.png",
+      Name: "Netus proin.",
+      price: "$12.00 - $15.00",
+    },
+    {
+      image: "../images/offerproduct4.png",
+      Name: "Platea in.",
+      price: "$12.00 - $15.00",
+    }
+  ]
   const saleproduct=[
     {
       image:"./images/saleproduct1.png",
@@ -137,42 +159,18 @@ export default function BlogPagebwt() {
               Offer product
             </div>
             <div className="contentsingle__right__offerproduct__content">
-              <div className="contentsingle__right__offerproduct__content__product">
+              {Offer.map((product, index )=>(
+                <div key={index} className="contentsingle__right__offerproduct__content__product">
                 <div className="contentsingle__right__offerproduct__content__product__image">
-                  <img src="./images/offerproduct1.png" alt=""></img>
+                  <img src={product.image} alt=""></img>
                 </div>
                 <div className="contentsingle__right__offerproduct__content__product__text">
-                  <p>Duis lectus est.</p>
-                  <span>$12.00 - $15.00</span>
+                    <p>{product.title}</p>
+                  <span>{product.price}</span>
                 </div>
               </div>
-              <div className="contentsingle__right__offerproduct__content__product">
-                <div className="contentsingle__right__offerproduct__content__product__image">
-                  <img src="./images/offerproduct2.png" alt=""></img>
-                </div>
-                <div className="contentsingle__right__offerproduct__content__product__text">
-                  <p>Sed placerat.</p>
-                  <span>$12.00 - $15.00</span>
-                </div>
-              </div>
-              <div className="contentsingle__right__offerproduct__content__product">
-                <div className="contentsingle__right__offerproduct__content__product__image">
-                  <img src="./images/offerproduct3.png" alt=""></img>
-                </div>
-                <div className="contentsingle__right__offerproduct__content__product__text">
-                  <p>Netus proin.</p>
-                  <span>$12.00 - $15.00</span>
-                </div>
-              </div>
-              <div className="contentsingle__right__offerproduct__content__product">
-                <div className="contentsingle__right__offerproduct__content__product__image">
-                  <img src="./images/offerproduct4.png" alt=""></img>
-                </div>
-                <div className="contentsingle__right__offerproduct__content__product__text">
-                  <p>Platea in.</p>
-                  <span>$12.00 - $15.00</span>
-                </div>
-              </div>
+              ))}
+
             </div>
           </div>
           <div className="contentsingle__right__follow">
@@ -220,6 +218,5 @@ export default function BlogPagebwt() {
           </div>
         </div>
       </div>
-
   );
 }

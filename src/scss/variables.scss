@@ -1,16 +1,15 @@
-// $mobile-width: 495px;
-// $tabletmini-width: 800px;
-// $tabletport-width: 1240px;
-
 $mobile-width: 460px;
 $tablet-width: 960px;
 $pc-width: 1220px;
 
-// $mobileN-width: 600px;
-// $tabletportN-width: 1024px;
 // color
 $colors: (
   "white": #fff,
   "black": #000,
   "primary": "",
 );
+
+$breakpoint: (
+  max-width: 1200px,
+);
+

@@ -124,7 +124,7 @@ span.header__bar__right__list__cart__quantity {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width:495px) {
+@include mobile {
   .header {
     &__bar {
       display: none;
@@ -176,7 +176,7 @@ span.header__bar__right__list__cart__quantity {
     justify-content: center;
   }
 }
-@media only screen and (min-width:495px) and (max-width:767px) {
+@include tablet {
   .header {
     &__bar {
       display: none;
@@ -224,7 +224,7 @@ span.header__bar__right__list__cart__quantity {
     justify-content: center;
   }
 }
-@media only screen and (min-width:768px) and (max-width:1275px) {
+@include pc {
   .header {
     &__bar {
       max-width: 960px;

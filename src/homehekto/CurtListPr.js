@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 function CurtListPr() {
   const cartItems = useSelector((state) => state.cartItems.value);
   const navigate = useNavigate();
-  console.log(cartItems);
+
   const dispatch = useDispatch();
   const [cartProducts, setCartProducts] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -24,10 +24,9 @@ function CurtListPr() {
     dispatch(clearCart());
     toast.warning("Delete");
   };
-  
-  const handleCheckOut = () => (
-    navigate("/ordercompleted",dispatch(clearCart()))
-  );
+
+  const handleCheckOut = () =>
+    navigate("/ordercompleted", dispatch(clearCart()));
   return (
     <div className="ProductCurt">
       <div className="ProductCurt__left">
@@ -43,6 +42,7 @@ function CurtListPr() {
               <CurtProduct item={item} key={index} />
             ))}
         </div>
+        <div className="total__price__mobile">Thanh toán: £{totalPrice}.00</div>
         <div className="ProductCurt__left__down">
           <button className="ProductCurt__left__down__upd">Update Curt</button>
           <button className="ProductCurt__left__down__cle" onClick={clearCarts}>
@@ -62,7 +62,9 @@ function CurtListPr() {
             </div>
             <div className="ProductCurt__right__cartTT__btn__tot">
               <p className="ProductCurt__right__cartTT__btn__tot__i">Totals:</p>
-              <p className="ProductCurt__right__cartTT__btn__tot__p">£{totalPrice}.00</p>
+              <p className="ProductCurt__right__cartTT__btn__tot__p">
+                £{totalPrice}.00
+              </p>
             </div>
             <div className="ProductCurt__right__cartTT__btn__ckb">
               <input
@@ -84,7 +86,9 @@ function CurtListPr() {
           </div>
         </div>
         <div className="ProductCurt__right__calS">
-          <div className="ProductCurt__right__calS__name">Calculate Shopping</div>
+          <div className="ProductCurt__right__calS__name">
+            Calculate Shopping
+          </div>
           <div className="ProductCurt__right__calS__btn">
             <Label />
             <button className="ProductCurt__right__calS__btn__btcl">

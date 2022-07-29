@@ -11,11 +11,18 @@
         padding-right: 10px;
         height: 915px;  
     }
+    @include pc {
+        max-width: 1000px;
+    }
     // @include tablet-port {
     //     padding-right: 10px;
     //     height: 915px;  
     // }
     &__contact{
+        @include pc {
+            max-width: 1000px;
+            margin: auto;
+        }
         &__cnp{
             padding-top: 90px;
             display: flex;
@@ -92,6 +99,10 @@
         }
     }
     &__shipping{
+        @include pc {
+            max-width: 1000px;
+            margin: auto;
+        }
         &__n{
             font-family: 'Josefin Sans';
             font-size: 18px;
@@ -112,7 +123,7 @@
         }
         &__flname{
             display: grid;
-            gap: 30px;
+            gap: 0px;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "items adjustments";
             margin-top: 20px;
@@ -121,6 +132,9 @@
             }
             @include tablet {
                 display: block;
+            }
+            @include pc {
+                gap: 95px;
             }
             // @include tablet-port {
             //     isplay: block;
@@ -180,7 +194,7 @@
         }
         &__bp{
             display: grid;
-            gap: 60px;
+            gap: 0px;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "items adjustments";
             margin-top: 20px;
@@ -190,9 +204,9 @@
             @include tablet{
                 display: block;
             }
-            // @include tablet-port{
-            //     gap: 100px;
-            // }
+            @include pc {
+                gap: 95px;
+            }
             &__ba{
                 width: 340px;
                 margin-left: 40px;

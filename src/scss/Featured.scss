@@ -12,7 +12,7 @@
     }
   }
   li.slick-active {
-    div{
+    div {
       background: #fb2e86 !important;
     }
   }
@@ -95,6 +95,7 @@
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
+          padding-top: 12px;
         }
 
         img {
@@ -133,9 +134,7 @@
   display: none;
 }
 
-
-
-#featured__mobile{
+#featured__mobile {
   .slick-track {
     display: flex;
     gap: 15px;
@@ -162,7 +161,7 @@
     display: block;
   }
 }
-@media only screen and (max-width:495px) {
+@include mobile {
   #featured__mobile {
     display: block;
   }
@@ -205,7 +204,7 @@
     display: none;
   }
 }
-@media only screen and (min-width:495px) and (max-width:767px) {
+@include tablet {
   #featured__mobile {
     display: block;
   }
@@ -251,9 +250,7 @@
   }
 }
 
-@media only screen and (min-width:768px) and (max-width:1275px) {
-  
-  
+@include pc {
   .content__featured {
     #featured__ipad {
       display: block;
@@ -273,7 +270,6 @@
           width: 100%;
         }
       }
-      
     }
   }
 }

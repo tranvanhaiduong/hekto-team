@@ -1,4 +1,4 @@
-  .contentfaq {
+.contentfaq {
   display: flex;
   justify-content: center;
   text-align: left;
@@ -9,24 +9,33 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    max-width: 98%;
-    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 10px;
   }
   @include tablet {
     max-width: 95%;
-    margin: 0 auto;
+    margin: 5% auto;
+    column-gap: 5%;
+  }
+  @include pc {
+    max-width: 95%;
+    margin: 5% auto;
     column-gap: 5%;
   }
   &__infomations {
     display: flex;
     flex-direction: column;
     @include mobile {
-      max-width: 98%;
-      margin: 0 auto;
+      max-width: 100%;
     }
     @include tablet {
+      max-width: 40%;
+    }
+    @include pc {
       max-width: 50%;
+      padding-left: 16px;
     }
     h1 {
       font-family: "Josefin Sans";
@@ -35,10 +44,10 @@
       text-align: center;
       color: #1d3178;
       font-weight: bold;
-      @include mobile{
+      @include mobile {
         margin-top: 0;
       }
-      @include tablet{
+      @include tablet {
         margin-top: 0;
       }
     }
@@ -46,11 +55,15 @@
       display: flex;
       flex-direction: column;
       margin-top: 64px;
-      gap:64px;
+      gap: 64px;
+      @include mobile {
+        display: flex;
+        gap: 5%;
+      }
       &__infomation {
         display: flex;
         flex-direction: column;
-        gap:15px;
+        gap: 15px;
         &__title {
           width: 395px;
           height: 30px;
@@ -100,19 +113,20 @@
     @include mobile {
       margin: 0 auto;
       max-width: 98%;
-      textarea{
+      height: 572px;
+      textarea {
         max-width: 90%;
-        margin-left: 0px ;
+        margin-left: 0px;
       }
     }
-    // @include tablet-port {
-    //   margin: 0 auto;
-    //   max-width: 50%;
-    //   textarea{
-    //     max-width: 90%;
-    //     margin-left: 0px ;
-    //   }
-    // }
+    @include tablet {
+      max-width: 60%;
+      margin-left: 0px;
+    }
+    @include pc {
+      max-width: 50%;
+      margin-left: 0px;
+    }
     h1 {
       position: absolute;
       top: 66px;
@@ -124,22 +138,29 @@
       margin-left: 46px;
       font-weight: bold;
       color: #1d3178;
+      @include mobile {
+        top: 22px;
+      }
     }
     input {
-      margin-left: 46px;
+      padding-left: 5px;
       width: 445px;
       background: #ffffff;
       border: 1px solid #cdcedc;
       border-radius: 5px;
       //   vertical-align: top;
       @include mobile {
-        max-width: 90%;
-        margin: 0 auto;
-      } 
-      // @include tablet-port {
-      //   max-width: 90%;
-      //   margin: 0 auto;
-      // }
+        max-width: 80%;
+        left: 10%;
+      }
+      @include tablet {
+        max-width: 80%;
+        left: 10%;
+      }
+      @include pc {
+        max-width: 80%;
+        left: 10%;
+      }
     }
     input[type="text"]::placeholder {
       text-align: left;
@@ -148,27 +169,40 @@
       position: absolute;
       height: 50px;
       top: 30%;
+      @include mobile {
+        top: 15%;
+      }
     }
     #input__subject {
       position: absolute;
       height: 50px;
       top: 40%;
+      @include mobile {
+        top: 28%;
+      }
     }
     #input__mess {
       position: absolute;
       height: 197px;
       top: 50%;
-      margin-left: 46px;
+
       width: 445px;
       background: #ffffff;
       border: 1px solid #cdcedc;
       border-radius: 5px;
       @include mobile {
-        margin-left: 0;
+        left: 10%;
+        max-width: 80%;
+        top: 42%;
       }
-      // @include tablet-port {
-      //   margin-left: 0;
-      // }
+      @include tablet {
+        max-width: 80%;
+        left: 10%;
+      }
+      @include pc {
+        max-width: 80%;
+        left: 10%;
+      }
     }
     button {
       width: 156px;
