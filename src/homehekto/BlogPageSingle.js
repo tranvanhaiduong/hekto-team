@@ -29,7 +29,7 @@ export default function BlogPageSingle({ image, Name}) {
           malesuada vitae ultrices in in neque, porta dignissim. Adipiscing
           purus, cursus vulputate id id dictum at.
         </p>
-        <a href={{href:""}} className="BlogPageSingle__text__rmore">Read More</a>
+        <a href="/singleblock" className="BlogPageSingle__text__rmore">Read More</a>
       </div>
     </div>
   );
