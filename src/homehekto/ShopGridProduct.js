@@ -49,7 +49,7 @@ function ShopGridProduct({ toggleViewMode, change }) {
         <div id="shopgrid__mobile">
           <Slider {...settings}>
             {shop_product.map((product, index) =>
-              product.pid.includes("sg") ? (
+              product.pid.includes("bpage") ? (
                 <GridProduct
                   image={product.image}
                   title={product.title}

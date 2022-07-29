@@ -7,7 +7,7 @@ function ContentFAQ() {
         <h1>Generel Information</h1>
         <div className="contentfaq__infomations__all">
         {faq_data.map((data,index)=>(
-          <div className="contentfaq__infomations__all__infomation">
+          <div key={index} className="contentfaq__infomations__all__infomation">
           <div className="contentfaq__infomations__all__infomation__title">
             {data.title}
           </div>

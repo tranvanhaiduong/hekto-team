@@ -15,11 +15,27 @@ class Top extends React.Component {
       initialSlide: 0,
       responsive: [
         {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            rows: 1,
+          },
+        },
+        {
+          breakpoint: 1023,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            rows: 1,
+          },
+        },
+        {
           breakpoint: 767,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            rows: 2,
+            rows: 1,
           },
         },
         {
