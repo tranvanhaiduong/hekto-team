@@ -24,7 +24,6 @@ function ListProduct({
       })
     );
     toast.success("Add to cart");
-    console.log(price);
   };
   return (
     <div className="contentShop__shoplist__product">
@@ -54,7 +53,7 @@ function ListProduct({
         </div>
         <div className="contentShop__shoplist__product__title__vector">
           <div className="contentShop__shoplist__product__title__vector__img">
-            <a href={{href:""}} alt="" onClick={addCart}>
+            <a href={{ href: "" }} alt="" onClick={addCart}>
               <img alt="" src="/images/Group.png"></img>
             </a>
           </div>

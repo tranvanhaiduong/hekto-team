@@ -10,10 +10,10 @@
   &__top {
     display: flex;
     margin-top: 119px;
-    @include tablet{
+    @include tablet {
       max-width: 98%;
       margin: 0 auto;
-      gap: 20px;  
+      gap: 20px;
     }
     &__img {
     }
@@ -24,7 +24,7 @@
       align-items: left;
       text-align: left;
       margin-left: 30px;
-      @include tablet{
+      @include tablet {
         max-width: 50%;
         margin-left: 0;
       }
@@ -210,46 +210,62 @@
 }
 @media screen and (max-width: 600px) {
   #about__mobile {
-    display: block;
+    @include mobile {
+      display: block;
+    }
   }
   #about__pc {
-    display: none;
+    @include mobile {
+      display: none;
+    }
   }
   .aboutcontent__bot {
-    max-width: 95%;
-    margin: 0 auto;
+    @include mobile {
+      max-width: 95%;
+      margin: 0 auto;
+    }
   }
   .aboutcontent__center {
-    max-width: 100%;
+    @include mobile {
+      max-width: 100%;
+    }
   }
   .aboutcontent__top {
-    max-width: 98%;
-    margin: 0 auto;
-    flex-direction: column;
+    @include mobile {
+      max-width: 98%;
+      margin: 0 auto;
+      flex-direction: column;
+    }
   }
   .aboutcontent__top__image {
-    max-width: 100%;
-    img {
+    @include mobile {
       max-width: 100%;
-      height: 100%;
+      img {
+        max-width: 100%;
+        height: 100%;
+      }
     }
   }
   .aboutcontent__top__info {
-    max-width: 100%;
-    margin-left: 0;
-   
-    &__title {
+    @include mobile {
       max-width: 100%;
-      height: auto;
-    }
-    &__description {
-      max-width: 100%;
-      height: auto;
+      margin-left: 0;
+
+      &__title {
+        max-width: 100%;
+        height: auto;
+      }
+      &__description {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
   .aboutcontent__center__offers__offer__image {
-    display: flex;
-    justify-content: center;
+    @include mobile {
+      display: flex;
+      justify-content: center;
+    }
   }
   .aboutcontent__center .aboutcontent__center__offers {
     display: block;
@@ -257,13 +273,12 @@
   .aboutcontent__bot__footer {
     display: none;
   }
-  
 
-.aboutcontent__bot__content__description {
-  max-width: 100%;
+  .aboutcontent__bot__content__description {
+    max-width: 100%;
+  }
 }
-}
-@media screen and (min-width: 601px) and (max-width:1240px) {
+@media screen and (min-width: 601px) and (max-width: 1240px) {
   .aboutcontent__top {
     // max-width: 98%;
     // margin: 0 auto;

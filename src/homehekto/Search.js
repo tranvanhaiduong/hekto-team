@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function Search({ toggleViewMode, setToggleViewMode, change, setChange }) {
   return (
     <div className="contentShop__search">

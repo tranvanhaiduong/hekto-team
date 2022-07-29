@@ -1,296 +1,352 @@
-.ProductCurt{
-    width: 100%;
-    // height: 286px;
+.ProductCurt {
+  width: 100%;
+  // height: 286px;
+  margin: 0 auto;
+  max-width: 1920px;
+  display: flex;
+  padding-top: 31px;
+  justify-content: center;
+  margin-bottom: 147px;
+  @include mobile {
+    max-width: 98%;
     margin: 0 auto;
-    max-width: 1920px;
-    display: flex;
-    padding-top: 31px;
-    justify-content: center;
-    margin-bottom: 147px;
+  }
+  &__left {
+    .total__price__mobile {
+      display: none;
+    }
+    flex: 0 0 50%;
+    max-width: 70%;
+    font-weight: 700;
+
     @include mobile {
-        max-width: 98%;
-        margin: 0 auto;
+      flex: 0 0 100%;
+      max-width: 100%;
+      .total__price__mobile {
+        display: block;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        width: 100%;
+        color: #1d3178;
+      }
     }
-    &__left{
-        flex: 0 0 50%;
-        max-width: 70%;
-        font-weight: 700;
-        @include mobile {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-        &__up{
-            font-family: 'Josefin Sans';
-            font-size: 20px;
-            line-height: 23px;
-            color: #1D3178;
-            display: flex;
-            margin-bottom: 48px;
-            @include mobile {
-                display: none;
-            }
-            &__prd{
-                // max-width: 200px;
-                width: 40%;
-                max-width: 100%;
-                text-align: center;
-            }
-            &__pri{
-              
-              text-align: center;
-              width: 20%;
-            }
-            &__qtt{
-                width: 20%;
-              text-align: center;
-               
-            }
-            &__tol{
-                width: 20%;
-                text-align: center;
-            }
-        }
-        &__bwn{
-            margin-top: 10px;
-            @include mobile{
-                margin: 0;
-                display: flex;
-                flex-wrap: wrap;
-            }
-        }
-        &__down{
-            font-family: 'Josefin Sans';
-            font-size: 16px;
-            display: flex;
-            margin-top: 50px;
-            padding-bottom: 100px;
-            @include mobile {
-                display: none;
-            }
-            &__upd{
-                color: white;
-                background-color: rgba(251, 46, 134, 1);
-                border-radius: 2px;
-                border: 0px;
-                width: 134px;
-                height: 39px;
-            }
-            &__cle{
-                color: white;
-                background-color: rgba(251, 46, 134, 1);
-                border-radius: 2px;
-                border: 0px;
-                margin-left: 450px;
-                width: 134px;
-                height: 39px;
-            }
-        }
+    @include tablet {
+      .total__price__mobile {
+        display: block;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        width: 100%;
+        color: #1d3178;
+      }
     }
-    &__right{
-        flex: 0 0 25%;
-        max-width: 35%;
-        margin-left: 20px;
-        @include mobile {
-            display: none;
-        }
-        &__cartTT{
-            text-align: center;
-            &__na{
-                font-weight: 700;
-                font-family: 'Josefin Sans';
-                font-size: 20px;
-                line-height: 23px;
-                color: #1D3178;
-            }
-            &__btn{
-                text-align: left;
-                max-width: 370px;
-                margin: auto;
-                width: 100%;
-                height: 290px;
-                margin-top: 40px;
-                background-color:  rgba(244, 244, 252, 1);
-                &__sub{
-                    display: flex;
-                    font-family: 'Lato';
-                    font-style: normal;
-                    color:  rgba(29, 49, 120, 1);
-                    padding-top: 34px;
-                    border-bottom: 2px solid rgb(225, 225, 228);
-                    width: 310px;
-                    margin-left: 23px;
-                    &__i{
-                        font-weight: 600;
-                        font-size: 18px;
-                        line-height: 22px;
-                        padding-bottom: 13px;
-                    }
-                    &__p{
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 20px;
-                        margin-left: 170px;
-                    }
-                }
-                &__tot{
-                    display: flex;
-                    font-family: 'Lato';
-                    font-style: normal;
-                    color:  rgba(29, 49, 120, 1);
-                    padding-top: 34px;
-                    border-bottom: 2px solid rgb(225, 225, 228);
-                    width: 310px;
-                    margin-left: 23px;
-                    &__i{
-                        font-weight: 600;
-                        font-size: 18px;
-                        line-height: 22px;
-                        padding-bottom: 13px;
-                    }
-                    &__p{
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 20px;
-                        margin-left: 200px;
-                    }
-                }
-                &__ckb{
-                    display: flex;
-                    margin-top: 30px;
-                    margin-left: 23px;
-                    &__p{
-                        font-family: 'Lato';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 14px;
-                        color: #8A91AB;
-                        margin-top: 5px;
-                        margin-left: 10px;
-                    }
-                }
-                &__btcl{
-                    text-align: center;
-                    margin-top: 30px;
-                    &__bt{
-                        width: 312px;
-                        height: 40px;
-                        background: #19D16F;
-                        border-radius: 3px;
-                        border: #19D16F;
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 17px;
-                        color:#FFFFFF;
-                    }
-                }
-            }
-        }
-        &__calS{
-            margin-top: 50px;
-            text-align: center;
-            &__name{
-                font-family: 'Josefin Sans';
-                font-size: 20px;
-                line-height: 23px;
-                color: #1D3178;
-                font-weight: 700;
-            }
-            &__btn{
-                text-align: left;
-                max-width: 370px;
-                margin: auto;
-                width: 100%;
-                height: 290px;
-                margin-top: 40px;
-                background-color:  rgba(244, 244, 252, 1);
-                &__na{
-                    font-family: 'Josefin Sans';
-                    font-size: 14px;
-                    line-height: 16px;
-                    color: #C5CBE3;
-                    padding-top: 44px;
-                    margin-left: 32px;
-                    border-bottom: 2px solid rgb(225, 225, 228);
-                    width: 300px;
-                    line-height: 30px;
-                }
-                &__ar{
-                    font-family: 'Josefin Sans';
-                    font-size: 14px;
-                    line-height: 16px;
-                    color: #C5CBE3;
-                    margin-left: 32px;
-                    border-bottom: 2px solid rgb(225, 225, 228);
-                    width: 300px;
-                    line-height: 30px;
-                    margin-top: 30px;
-                }
-                &__pc{
-                    font-family: 'Josefin Sans';
-                    font-size: 14px;
-                    line-height: 16px;
-                    color: #C5CBE3;
-                    margin-left: 32px;
-                    border-bottom: 2px solid rgb(225, 225, 228);
-                    width: 300px;
-                    line-height: 30px;
-                    margin-top: 30px;
-                }
-                &__btcl{
-                    width: 180px;
-                    height: 40px;
-                    background: #FB2E86;
-                    border-radius: 3px;
-                    border: #FB2E86;
-                    font-weight: 700;
-                    font-size: 14px;
-                    line-height: 17px;
-                    margin-top: 25px;
-                    margin-left: 32px;
-                    color:#FFFFFF;
-                }
-            }
-        }
+    @include pc {
+      .total__price__mobile {
+        display: block;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        width: 100%;
+        color: #1d3178;
+      }
     }
-}
-@media screen and (max-width:600px) {
-    .ProductCurt{
-        max-width: 98%;
-        margin: 0 auto;
-        &__right{
-            display: none;
-        }
-        &__left{
-            flex: 0 0 100%;
-            max-width: 100%;
-            &__up{
-                display: none;
-            }
-            &__down{
-                display: none;
-            }
-            &__bwn{
-                margin: 0;
-                display: flex;
-                flex-wrap: wrap;
-            }
-        }
+    &__up {
+      font-family: "Josefin Sans";
+      font-size: 20px;
+      line-height: 23px;
+      color: #1d3178;
+      display: flex;
+      margin-bottom: 48px;
+      @include mobile {
+        display: none;
+      }
+      &__prd {
+        // max-width: 200px;
+        width: 40%;
+        max-width: 100%;
+        text-align: center;
+      }
+      &__pri {
+        text-align: center;
+        width: 20%;
+      }
+      &__qtt {
+        width: 20%;
+        text-align: center;
+      }
+      &__tol {
+        width: 20%;
+        text-align: center;
+      }
     }
-    .CurtProduct {
+    &__bwn {
+      margin-top: 10px;
+      @include mobile {
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
-        max-width: 100%;
+      }
     }
-    
-}
-@media screen and (max-width:1420px) and (min-width:601px) {
-    .ProductCurt{
-        max-width: 98%;
-        margin: 0 auto;
-        &__right{
-            display: none;
+    &__down {
+      font-family: "Josefin Sans";
+      font-size: 16px;
+      display: flex;
+      margin-top: 50px;
+      padding-bottom: 100px;
+      @include mobile {
+        display: none;
+      }
+      &__upd {
+        color: white;
+        background-color: rgba(251, 46, 134, 1);
+        border-radius: 2px;
+        border: 0px;
+        width: 134px;
+        height: 39px;
+      }
+      &__cle {
+        color: white;
+        background-color: rgba(251, 46, 134, 1);
+        border-radius: 2px;
+        border: 0px;
+        margin-left: 450px;
+        width: 134px;
+        height: 39px;
+      }
+    }
+  }
+  &__right {
+    flex: 0 0 25%;
+    max-width: 35%;
+    margin-left: 20px;
+    @include mobile {
+      display: none;
+    }
+    &__cartTT {
+      text-align: center;
+      &__na {
+        font-weight: 700;
+        font-family: "Josefin Sans";
+        font-size: 20px;
+        line-height: 23px;
+        color: #1d3178;
+      }
+      &__btn {
+        text-align: left;
+        max-width: 370px;
+        margin: auto;
+        width: 100%;
+        height: 290px;
+        margin-top: 40px;
+        background-color: rgba(244, 244, 252, 1);
+        &__sub {
+          display: flex;
+          font-family: "Lato";
+          font-style: normal;
+          color: rgba(29, 49, 120, 1);
+          padding-top: 34px;
+          border-bottom: 2px solid rgb(225, 225, 228);
+          width: 310px;
+          margin-left: 23px;
+          &__i {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            padding-bottom: 13px;
+          }
+          &__p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            margin-left: 170px;
+          }
         }
+        &__tot {
+          display: flex;
+          font-family: "Lato";
+          font-style: normal;
+          color: rgba(29, 49, 120, 1);
+          padding-top: 34px;
+          border-bottom: 2px solid rgb(225, 225, 228);
+          width: 310px;
+          margin-left: 23px;
+          &__i {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            padding-bottom: 13px;
+          }
+          &__p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            margin-left: 200px;
+          }
+        }
+        &__ckb {
+          display: flex;
+          margin-top: 30px;
+          margin-left: 23px;
+          &__p {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #8a91ab;
+            margin-top: 5px;
+            margin-left: 10px;
+          }
+        }
+        &__btcl {
+          text-align: center;
+          margin-top: 30px;
+          &__bt {
+            width: 312px;
+            height: 40px;
+            background: #19d16f;
+            border-radius: 3px;
+            border: #19d16f;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+          }
+        }
+      }
     }
-    
+    &__calS {
+      margin-top: 50px;
+      text-align: center;
+      &__name {
+        font-family: "Josefin Sans";
+        font-size: 20px;
+        line-height: 23px;
+        color: #1d3178;
+        font-weight: 700;
+      }
+      &__btn {
+        text-align: left;
+        max-width: 370px;
+        margin: auto;
+        width: 100%;
+        height: 290px;
+        margin-top: 40px;
+        background-color: rgba(244, 244, 252, 1);
+        &__na {
+          font-family: "Josefin Sans";
+          font-size: 14px;
+          line-height: 16px;
+          color: #c5cbe3;
+          padding-top: 44px;
+          margin-left: 32px;
+          border-bottom: 2px solid rgb(225, 225, 228);
+          width: 300px;
+          line-height: 30px;
+        }
+        &__ar {
+          font-family: "Josefin Sans";
+          font-size: 14px;
+          line-height: 16px;
+          color: #c5cbe3;
+          margin-left: 32px;
+          border-bottom: 2px solid rgb(225, 225, 228);
+          width: 300px;
+          line-height: 30px;
+          margin-top: 30px;
+        }
+        &__pc {
+          font-family: "Josefin Sans";
+          font-size: 14px;
+          line-height: 16px;
+          color: #c5cbe3;
+          margin-left: 32px;
+          border-bottom: 2px solid rgb(225, 225, 228);
+          width: 300px;
+          line-height: 30px;
+          margin-top: 30px;
+        }
+        &__btcl {
+          width: 180px;
+          height: 40px;
+          background: #fb2e86;
+          border-radius: 3px;
+          border: #fb2e86;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          margin-top: 25px;
+          margin-left: 32px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .ProductCurt {
+    max-width: 98%;
+    margin: 0 auto;
+    &__right {
+      display: none;
+    }
+    &__left {
+      flex: 0 0 100%;
+      max-width: 100%;
+      &__up {
+        display: none;
+      }
+      &__down {
+        display: none;
+      }
+      &__bwn {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .CurtProduct {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .total__price__mobile {
+    display: block;
+  }
+}
+@include tablet {
+  .ProductCurt {
+    max-width: 98%;
+    margin: 0 auto;
+    &__right {
+      display: none;
+    }
+  }
+  .total__price__mobile {
+    display: block;
+  }
+}
+@include pc {
+  .ProductCurt {
+    max-width: 98%;
+    margin: 0 auto;
+    &__right {
+      display: none;
+    }
+  }
+  .total__price__mobile {
+    display: block;
+  }
 }

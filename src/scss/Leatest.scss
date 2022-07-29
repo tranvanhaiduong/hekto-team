@@ -194,7 +194,7 @@
   }
 }
 
-@media only screen and (max-width:495px) {
+@include mobile {
   .content__trending__productitems__item1__cantilever__price {
     text-align: center;
     margin-top: 25px;
@@ -222,7 +222,7 @@
     margin: 0 10px;
   }
 }
-@media only screen and (min-width:495px) and (max-width:767px) {
+@include tablet {
   .content__leatest__menu {
     a {
       margin-right: 10px;
@@ -232,7 +232,7 @@
   #slider {
     display: block;
   }
-  
+
   .content__leatest__slide {
     display: grid;
     grid-template-columns: 90%;
@@ -242,7 +242,7 @@
     }
   }
 }
-@media only screen and (min-width:768px) and (max-width:1275px) {
+@include pc {
   .content__leatest {
     margin-bottom: 90px;
     &__slide {
@@ -258,5 +258,4 @@
   #slider {
     display: block;
   }
-  
 }

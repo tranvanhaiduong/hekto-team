@@ -1,14 +1,27 @@
 import React from "react";
 import Slider from "react-slick";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 class Slide extends React.Component {
   render() {
     const settings = {
       dots: true,
       arrows: false,
-      autoplaySpeed: 1000,
-      // autoplay: true,
-      // autoplaySpeed: 3000,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 460,
+          settings: {
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 960,
+          settings: {
+            dots: false,
+          },
+        },
+      ],
       appendDots: (dots) => (
         <div
           style={{

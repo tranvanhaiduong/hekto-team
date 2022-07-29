@@ -140,7 +140,7 @@ function ShopLeftSidebar({ toggleViewMode, change }) {
           a.price > b.price ? 1 : a.price < b.price ? -1 : 0
         );
   const [check, setCheck] = useState([]);
-  console.log("check", check);
+
   const shopleft_filter = check.map((item, index) =>
     shopleft_product.filter(
       (list) =>
@@ -150,7 +150,7 @@ function ShopLeftSidebar({ toggleViewMode, change }) {
         list.priceFilter === item
     )
   );
-  console.log(shopleft_filter);
+
   return (
     <div className="contentShop__shopleft">
       <div id="shopleft__pc">

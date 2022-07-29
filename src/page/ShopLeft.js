@@ -4,7 +4,7 @@ import ShopLeftSidebar from "../homehekto/ShopLeftSidebar";
 import Logo from "../homehekto/Logo";
 import { Fragment, useState } from "react";
 function ShopLeft() {
-  const [toggleViewMode, setToggleViewMode] = useState(false);
+  const [toggleViewMode, setToggleViewMode] = useState(true);
   const [change, setChange] = useState("");
   return (
     <Fragment>

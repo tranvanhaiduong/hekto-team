@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const items = localStorage.getItem("cart") !== null
+const items =
+  localStorage.getItem("cart") !== null
     ? JSON.parse(localStorage.getItem("cart"))
     : [];
 const initialState = { value: items };
@@ -11,10 +12,8 @@ export const cartItemSlice = createSlice({
     addItem: (state, action) => {
       const newItem = action.payload;
       const duplicate = findItem(state.value, newItem);
-      console.log("new:",newItem);
 
       if (duplicate.length > 0) {
-        console.log(1);
         state.value = delItem(state.value, newItem);
         state.value = [
           ...state.value,
@@ -24,9 +23,7 @@ export const cartItemSlice = createSlice({
             quantity: newItem.quantity + duplicate[0].quantity,
           },
         ];
-       
       } else {
-        console.log(2);
         state.value = [
           ...state.value,
           {
@@ -39,11 +36,9 @@ export const cartItemSlice = createSlice({
         ];
       }
       localStorage.setItem("cart", JSON.stringify(sortItems(state.value)));
-      // console.log(state.value);
     },
     updateItem: (state, action) => {
       const itemUpdate = action.payload;
-      // console.log(itemUpdate);
 
       const item = findItem(state.value, itemUpdate);
 
@@ -56,10 +51,7 @@ export const cartItemSlice = createSlice({
             id: item[0].id,
           },
         ];
-        localStorage.setItem(
-          "cart",
-          JSON.stringify(sortItems(state.value))
-        );
+        localStorage.setItem("cart", JSON.stringify(sortItems(state.value)));
       }
     },
     deleteItem: (state, action) => {

@@ -6,16 +6,15 @@ import Slider from "react-slick";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
 class Leatest extends React.Component {
   render() {
-
     const settings = {
-      dots: true,
+      dots: false,
 
       infinite: false,
       arrows: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
-      rows:2,
+      rows: 2,
       initialSlide: 0,
       responsive: [
         {
@@ -36,7 +35,7 @@ class Leatest extends React.Component {
         },
       ],
     };
-    
+
     return (
       <div className="content__leatest">
         <div className="content__leatest__products">
@@ -53,15 +52,22 @@ class Leatest extends React.Component {
         <div className="content__leatest__slide">
           <div id="slider">
             <Slider {...settings}>
-              {Array(2).fill().map(()=>
-              
-              shopgrid_product.map((list, index) => (
-                list.pid.includes("lt")?
-                <LeatestProducts image={list.image} pid={list.pid} title={list.title} price={list.price} sale={list.sale} key={index}/>
-                :null
-              ))
-              
-              )}
+              {Array(2)
+                .fill()
+                .map(() =>
+                  shopgrid_product.map((list, index) =>
+                    list.pid.includes("lt") ? (
+                      <LeatestProducts
+                        image={list.image}
+                        pid={list.pid}
+                        title={list.title}
+                        price={list.price}
+                        sale={list.sale}
+                        key={index}
+                      />
+                    ) : null
+                  )
+                )}
             </Slider>
           </div>
         </div>

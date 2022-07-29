@@ -21,7 +21,7 @@ function ShopListProduct({ toggleViewMode, change }) {
     rows: 1,
     responsive: [
       {
-        breakpoint: 495,
+        breakpoint: 460,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -31,7 +31,7 @@ function ShopListProduct({ toggleViewMode, change }) {
         },
       },
       {
-        breakpoint: 795,
+        breakpoint: 960,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
