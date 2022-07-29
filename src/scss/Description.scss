@@ -5,45 +5,55 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include mobile{
-    
+  @include mobile {
+    height: auto;
   }
-  @include tablet{
-
+  @include tablet {
+    height: auto;
   }
   @include pc {
-    
   }
   &__details {
     max-width: 1153px;
+    width: 100%;
     &__menu {
       display: flex;
       gap: 65px;
       @include mobile {
-
-      };
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+      }
       @include tablet {
-
+        margin-top: 50px;
+        gap: 45px;
       }
       @include pc {
-
       }
       h1 {
         color: #151875;
         font-family: "Josefin Sans";
         font-size: 24px;
         margin-bottom: 65px;
+        @include mobile {
+          margin-bottom: 30px;
+        }
+        @include tablet {
+          font-size: 23px;
+        }
       }
     }
     &__varius {
       @include mobile {
-
+        margin: 0 15px 50px;
       }
-      @include tablet{
-
+      @include tablet {
+        margin: 0 15px;
       }
       @include pc {
-
       }
       h2 {
         color: #151875;
@@ -60,13 +70,12 @@
     }
     &__moredetails {
       @include mobile {
-
+        margin: 55px 15px;
       }
       @include tablet {
-
+        margin: 15px 15px;
       }
       @include pc {
-
       }
       h2 {
         color: #151875;
@@ -101,64 +110,6 @@
   .contentShop__description__details__moredetails__img__arrow {
     i {
       color: #2f1ac4;
-    }
-  }
-}
-@media only screen and (max-width:495px) {
-  .contentShop__description {
-    height: auto;
-    &__details {
-      &__menu {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
-        h1 {
-          margin-bottom: 30px;
-        }
-      }
-      &__varius {
-        margin: 0 15px 50px;
-      }
-      &__moredetails {
-        margin: 0 15px;
-      }
-    }
-  }
-}
-@media only screen and (min-width:495px) and (max-width:820px) {
-  .contentShop__description {
-    &__details {
-      &__menu {
-        gap: 45px;
-        margin: 0 15px;
-        h1 {
-          font-size: 23px;
-        }
-      }
-      &__varius {
-        margin: 0 15px;
-      }
-      &__moredetails {
-        margin: 0 15px;
-      }
-    }
-  }
-}
-@media only screen and (min-width:821px) and (max-width:1209px) {
-  .contentShop__description {
-    &__details {
-      &__menu {
-        margin: 0 15px;
-      }
-      &__varius {
-        margin: 0 15px;
-      }
-      &__moredetails {
-        margin: 0 15px;
-      }
     }
   }
 }

@@ -8,6 +8,7 @@ function ShopLeft() {
   const [change, setChange] = useState("");
   return (
     <Fragment>
+
       <Navigation title="Shop Left Sidebar" name="Shop Left Sidebar" />
       <Search
         toggleViewMode={toggleViewMode}
@@ -16,6 +17,7 @@ function ShopLeft() {
         setChange={setChange}
       />
       <ShopLeftSidebar toggleViewMode={toggleViewMode} change={change} />
+
       <Logo />
     </Fragment>
   );

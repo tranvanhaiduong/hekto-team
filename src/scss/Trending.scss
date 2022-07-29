@@ -1,8 +1,8 @@
 .content__trending {
-  #trending__mobile {
-    display: block;
-  }
   margin-top: 132px;
+  @include mobile {
+    margin-top: 55px;
+  }
   &__products {
     margin-bottom: 39px;
     h1 {
@@ -11,6 +11,9 @@
       font-size: 42px;
       text-align: center;
       font-weight: bold;
+      @include mobile {
+        font-size: 40px;
+      }
     }
   }
   &__productitems {
@@ -20,6 +23,18 @@
       align-items: center;
       justify-content: center;
       grid-column-gap: 29px;
+      @include mobile {
+        display: grid;
+        grid-template-columns: 95%;
+      }
+      @include tablet {
+        display: grid;
+        grid-template-columns: 95%;
+      }
+      @include pc {
+        display: grid;
+        grid-template-columns: 95%;
+      }
       &__cantilever {
         height: 350px;
         margin-bottom: 39px;
@@ -28,6 +43,12 @@
         flex-direction: column;
         justify-content: center;
         box-shadow: 0px 8px 40px rgb(49 32 138 / 5%);
+        @include mobile {
+          height: 255px;
+        }
+        @include tablet {
+          height: auto;
+        }
         &__chair {
           position: relative;
           padding-top: 100%;
@@ -35,12 +56,27 @@
           max-width: 247px;
           left: 50%;
           transform: translateX(-50%);
+          @include mobile {
+            height: 174px;
+          }
+          @include tablet {
+            height: auto;
+          }
           img {
             top: -7px;
             position: absolute;
             left: 0;
             right: 0;
             margin: auto;
+            @include mobile {
+              width: 90%;
+            }
+            @include tablet {
+              width: 90%;
+            }
+            @include pc {
+              width: 90%;
+            }
           }
           img.img4 {
             top: 15px;
@@ -55,6 +91,9 @@
           text-align: center;
           margin-top: 5px;
           line-height: 2;
+          @include tablet {
+            margin-bottom: 15px;
+          }
           &__sale {
             display: flex;
             justify-content: center;
@@ -89,6 +128,18 @@
       justify-content: center;
       align-items: center;
       grid-column-gap: 29px;
+      @include mobile {
+        display: grid;
+        grid-template-columns: 96%;
+      }
+      @include tablet {
+        display: grid;
+        grid-template-columns: 96%;
+      }
+      @include pc {
+        display: grid;
+        grid-template-columns: 96%;
+      }
       &__sale1 {
         position: relative;
         background: #fff6fb;
@@ -98,6 +149,11 @@
           position: absolute;
           right: 0;
           bottom: 0;
+          img {
+            @include tablet {
+              width: 90%;
+            }
+          }
         }
         &__products {
           color: #151875;
@@ -131,6 +187,14 @@
           position: absolute;
           right: 0;
           bottom: 0;
+          img {
+            @include tablet {
+              width: 100%;
+            }
+            @include pc {
+              width: 100%;
+            }
+          }
         }
         &__products {
           position: absolute;
@@ -192,168 +256,19 @@
 }
 #trending__mobile {
   .slick-track {
+    @include mobile {
+      display: flex;
+      gap: 15px;
+    }
+    @include tablet {
+      display: flex;
+      gap: 20px;
+    }
+    @include pc {
+      display: flex;
+      gap: 20px;
+    }
     display: flex;
-    gap: 29px;
-  }
-}
-@media only screen and (max-width:495px) {
-  .content__trending {
-    margin-top: 55px;
-    &__products {
-      h1 {
-        font-size: 40px;
-      }
-    }
-    &__productitems {
-      #trending__mobile {
-        display: block;
-      }
-      &__item1 {
-        display: grid;
-        grid-template-columns: 86%;
-        &__cantilever {
-          margin-bottom: 60px;
-          &__chair {
-            img {
-              top: 0;
-              width: 100%;
-            }
-            img.chair4 {
-              width: 245px;
-            }
-          }
-        }
-      }
-      &__item2 {
-        display: grid;
-        grid-template-columns: 85%;
-        row-gap: 3%;
-        &__sale1 {
-          &__all {
-            img {
-              width: 170px;
-            }
-          }
-          &__products {
-            left: 14px;
-            h2 {
-              font-size: 21px;
-            }
-          }
-        }
-        &__sale2 {
-          &__products {
-            left: 14px;
-            h2 {
-              font-size: 21px;
-            }
-          }
-          &__all {
-            img {
-              width: 170px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (min-width:495px) and (max-width:768px) {
-  .content__trending {
-    margin-top: 55px;
-    &__products {
-      h1 {
-        font-size: 40px;
-      }
-    }
-    &__productitems {
-      #trending__mobile {
-        display: block;
-      }
-
-      &__item1 {
-        display: grid;
-        grid-template-columns: 90%;
-        &__cantilever {
-          &__chair {
-            img.chair4 {
-              width: 245px;
-            }
-          }
-          &__price {
-            margin-top: 40px;
-          }
-        }
-      }
-      &__item2 {
-        &__executive {
-          height: 270px;
-        }
-        display: grid;
-        grid-template-columns: 90%;
-        row-gap: 3%;
-        &__sale1 {
-          &__all {
-            img {
-              width: 170px;
-            }
-          }
-          &__products {
-            left: 14px;
-            h2 {
-              font-size: 21px;
-            }
-          }
-        }
-        &__sale2 {
-          &__products {
-            left: 14px;
-            h2 {
-              font-size: 21px;
-            }
-          }
-          &__all {
-            img {
-              width: 170px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (min-width:769px) and (max-width:1275px) {
-  .content__trending__productitems {
-    #trending__mobile {
-      display: block;
-    }
-    &__item1 {
-      grid-template-columns: 95%;
-      grid-column-gap: 2%;
-      &__cantilever {
-        &__chair {
-          img {
-            top: 0;
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-  .content__trending__productitems {
-    &__item2 {
-      grid-template-columns: 97%;
-      grid-column-gap: 2%;
-    }
-    .content__trending__productitems__item2__sale1__all {
-      img {
-        width: 85%;
-      }
-    }
-    .content__trending__productitems__item2__sale2__all {
-      img {
-        width: 85%;
-      }
-    }
+    gap: 25px;
   }
 }

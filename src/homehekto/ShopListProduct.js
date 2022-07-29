@@ -1,6 +1,7 @@
 import ListProduct from "./ListProduct";
 import Slider from "react-slick";
 import { shopgrid_product } from "../fake -data/fakedata-shopgrid";
+
 function ShopListProduct({ toggleViewMode, change }) {
   const shoplist_product =
     change === "Name"
@@ -47,6 +48,7 @@ function ShopListProduct({ toggleViewMode, change }) {
       <div id="shoplist__pc">
         {toggleViewMode === true ? (
           <div id="shoplist__list">
+
             {shoplist_product.map((list, index) =>
               list.pid.includes("sl") ? (
                 <ListProduct
@@ -66,6 +68,7 @@ function ShopListProduct({ toggleViewMode, change }) {
           </div>
         ) : (
           <div id="shoplist__grid">
+
             {shoplist_product.map((list, index) =>
               list.pid.includes("sl") ? (
                 <ListProduct
@@ -87,7 +90,9 @@ function ShopListProduct({ toggleViewMode, change }) {
       </div>
       <div id="shoplist__mobile">
         <Slider {...settings}>
+
           {shoplist_product.map((list, index) =>
+
             list.pid.includes("sl") ? (
               <ListProduct
                 pid={list.pid}

@@ -7,7 +7,7 @@ import BlogPagebwt from "../homehekto/BlogPagebwt";
 export default function BlogPage() {
   return (
     <Fragment>
-      <Navigation title="Blog Page" name="Blog Page" />
+      <Navigation title="Blog Page" name="Blog Page" page="blog" />
       <BlogPagebwt />
       <Logo />
     </Fragment>

@@ -4,6 +4,7 @@ import Navigation from "../homehekto/Navigation";
 import Search from "../homehekto/Search";
 import ShopListProduct from "../homehekto/ShopListProduct";
 function ShopList() {
+
   const [toggleViewMode, setToggleViewMode] = useState(true);
   const [change, setChange] = useState("");
   return (

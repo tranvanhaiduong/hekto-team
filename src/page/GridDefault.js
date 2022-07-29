@@ -11,6 +11,7 @@ function GridDefault() {
   const [change, setChange] = useState("");
   return (
     <div className="Shop_Grid">
+
       <Navigation title="Shop Grid Default" name="Shop Grid Default" />
       <Search
         toggleViewMode={toggleViewMode}
@@ -19,6 +20,7 @@ function GridDefault() {
         setChange={setChange}
       />
       <ShopGridProduct toggleViewMode={toggleViewMode} change={change} />
+
     </div>
   );
 }

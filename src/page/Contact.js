@@ -7,7 +7,7 @@ import Navigation from "../homehekto/Navigation";
 function Contact() {
   return (
     <>
-      <Navigation title="Contact Us" name="Contact Us" />
+      <Navigation title="Contact Us" name="Contact Us" page="contact" />
       <ContentContact />
     </>
   );

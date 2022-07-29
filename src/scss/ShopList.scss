@@ -20,6 +20,7 @@
       justify-content: center;
       &__vector {
         display: flex;
+
         gap: 20px;
         margin-top: 15px;
         &__img {
@@ -337,10 +338,12 @@
   }
 }
 
+
 #shoplist__mobile {
   display: none;
 }
 @include mobile {
+
   .contentShop__shoplist {
     #shoplist__mobile {
       display: block;
@@ -364,6 +367,7 @@
     }
   }
 }
+
 @include tablet {
   .contentShop__shoplist {
     margin: 100px 10px;
@@ -394,7 +398,9 @@
     }
   }
 }
+
 @include pc {
+
   .contentShop__shoplist {
     margin: 100px 10px;
   }

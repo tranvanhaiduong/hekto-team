@@ -8,29 +8,32 @@ function ShopGridProduct({ toggleViewMode, change }) {
     infinite: false,
     arrows: false,
     slidesToShow: 4,
-    slidesToScroll: 4,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    rows: 1,
+    rows: 3,
     responsive: [
       {
-        breakpoint: 495,
+        breakpoint: 460,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 3000,
-          rows: 2,
+          rows: 1,
         },
       },
       {
-        breakpoint: 795,
+        breakpoint: 960,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+      {
+        breakpoint: 1220,
+        settings: {
+          slidesToShow: 4,
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 3000,
-          rows: 2,
+          rows: 1,
         },
       },
     ],
@@ -48,12 +51,16 @@ function ShopGridProduct({ toggleViewMode, change }) {
       <div className="contentShop__shopgrid__listitem">
         <div id="shopgrid__mobile">
           <Slider {...settings}>
-            {shop_product.map((product, index) =>
-              product.pid.includes("bpage") ? (
+
+            {shopgrid_product.map((product, index) =>
+              product.pid.includes("sg") ? (
+
+
                 <GridProduct
                   image={product.image}
                   title={product.title}
                   key={index}
+
                   price={product.price}
                   sale={product.sale}
                 />
@@ -61,20 +68,7 @@ function ShopGridProduct({ toggleViewMode, change }) {
             )}
           </Slider>
         </div>
-        <div id="shopgrid__pc">
-          {shop_product.map((product, index) =>
-            product.pid.includes("sg") ? (
-              <GridProduct
-                price={product.price}
-                image={product.image}
-                title={product.title}
-                pid={product.pid}
-                key={index}
-                sale={product.sale}
-              />
-            ) : null
-          )}
-        </div>
+
       </div>
     </div>
   );

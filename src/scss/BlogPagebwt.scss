@@ -1,70 +1,70 @@
-.BlogPagebwt{
-    display: flex;
-    max-width: 1530px;
-    width: 100%;
-    margin: auto;
-    justify-content: center;
-    @include mobile {
-        display: block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    @include tablet{
-        display: block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        }
+.BlogPagebwt {
+  display: flex;
+  max-width: 1530px;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  @include mobile {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @include tablet {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-    &__left{
-        @include mobile {
-            max-width: 460px;
-            width: 90%;
-            margin: auto;   
-        }
-        @include tablet{
-            max-width:600px;
-            width: 90%;
-            margin: auto;
-        }
+  &__left {
+    @include mobile {
+      max-width: 460px;
+      width: 90%;
+      margin: auto;
     }
-    &__right{
-        max-width: 300px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 28px;
-        row-gap: 37px;
-        height: auto;
-        @include mobile {
-            max-width: 100%;
-            margin-left: 8.33333%;
-            height: 1500px;
-            margin-top: 50px;
-            max-width: 300px;
-            display: flex;
-            flex-direction: column;
-            margin-left: 28px;
-            row-gap: 37px;
-            height: auto;   
-        }
-        @include tablet {
-            width: 90%;
-            margin-left: 8.33333%;
-            height: 1500px;
-            margin-top: 50px;
-            max-width: 800px;
-            display: flex;
-            flex-direction: column;
-            margin-left: 28px;
-            row-gap: 37px;
-            height: auto;
-            &__tags{
-                max-width: 800px;
-                width: 100%;
-                margin: auto;
-            }    
-            .contentsingle__right__offerproduct__content{
-                column-gap: 5px;
-            }
-        }
+    @include tablet {
+      max-width: 600px;
+      width: 90%;
+      margin: auto;
     }
+  }
+  &__right {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+    row-gap: 37px;
+    height: auto;
+    @include mobile {
+      max-width: 100%;
+      margin-left: 8.33333%;
+      height: 1500px;
+      margin-top: 50px;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 28px;
+      row-gap: 37px;
+      height: auto;
+    }
+    @include tablet {
+      width: 90%;
+      margin-left: 8.33333%;
+      height: 1500px;
+      margin-top: 50px;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 28px;
+      row-gap: 37px;
+      height: auto;
+      &__tags {
+        max-width: 800px;
+        width: 100%;
+        margin: auto;
+      }
+      .contentsingle__right__offerproduct__content {
+        column-gap: 5px;
+      }
+    }
+  }
 }

@@ -1,12 +1,15 @@
 $mobile-width: 460px;
 $tablet-width: 960px;
 $pc-width: 1220px;
+
 // color
 $colors: (
   "white": #fff,
   "black": #000,
   "primary": "",
 );
+
 $breakpoint: (
   max-width: 1200px,
 );
+
